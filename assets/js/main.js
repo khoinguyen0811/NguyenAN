@@ -571,38 +571,74 @@ function initMobileMenu() {
   if (!menuBtn || !drawer) return;
 
   function openDrawer() {
+    drawer.style.transform = 'translateX(0%)';
+    drawer.style.opacity = '1';
+    drawer.style.visibility = 'visible';
     drawer.classList.remove('translate-x-full');
     drawer.classList.add('translate-x-0');
-    if (overlay) overlay.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
+
+    if (overlay) {
+      overlay.style.display = 'block';
+      overlay.style.opacity = '1';
+      overlay.classList.remove('hidden');
+    }
+    document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
+    drawer.style.transform = 'translateX(100%)';
     drawer.classList.add('translate-x-full');
     drawer.classList.remove('translate-x-0');
-    if (overlay) overlay.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
+
+    if (overlay) {
+      overlay.style.opacity = '0';
+      overlay.classList.add('hidden');
+      setTimeout(() => {
+        if (overlay.classList.contains('hidden')) {
+          overlay.style.display = 'none';
+        }
+      }, 300);
+    }
+    document.body.style.overflow = '';
   }
 
-  menuBtn.addEventListener('click', (e) => {
+  // Handle both click and touch events seamlessly
+  let lastToggleTime = 0;
+  const handleToggle = (e) => {
+    const now = Date.now();
+    if (now - lastToggleTime < 300) return;
+    lastToggleTime = now;
     e.preventDefault();
     e.stopPropagation();
-    if (drawer.classList.contains('translate-x-0')) {
-      closeDrawer();
-    } else {
+
+    const isClosed = !drawer.style.transform || 
+                     drawer.style.transform === 'translateX(100%)' || 
+                     drawer.classList.contains('translate-x-full');
+
+    if (isClosed) {
       openDrawer();
+    } else {
+      closeDrawer();
     }
-  });
+  };
+
+  menuBtn.addEventListener('click', handleToggle);
+  menuBtn.addEventListener('touchstart', handleToggle, { passive: false });
 
   if (closeBtn) {
     closeBtn.addEventListener('click', (e) => {
       e.preventDefault();
       closeDrawer();
     });
+    closeBtn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      closeDrawer();
+    }, { passive: false });
   }
 
   if (overlay) {
     overlay.addEventListener('click', closeDrawer);
+    overlay.addEventListener('touchstart', closeDrawer, { passive: true });
   }
 
   links.forEach(l => {
