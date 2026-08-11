@@ -55,7 +55,7 @@ function initSlidingNavIndicator() {
   }
 
   function moveIndicatorTo(element) {
-    if (!element) {
+    if (!element || element.offsetWidth === 0) {
       indicator.style.opacity = '0';
       return;
     }
@@ -67,18 +67,21 @@ function initSlidingNavIndicator() {
     indicator.style.opacity = '1';
   }
 
-  // Set initial position on load
-  setTimeout(() => {
+  // Set initial position after fonts and layouts render
+  const updateInitialPos = () => {
     const currentActive = nav.querySelector('.nav-link-active');
     if (currentActive) {
       moveIndicatorTo(currentActive);
     } else if (links.length) {
       moveIndicatorTo(links[0]);
     }
-  }, 50);
+  };
+
+  setTimeout(updateInitialPos, 50);
+  setTimeout(updateInitialPos, 300);
 
   links.forEach(link => {
-    link.parentElement.addEventListener('mouseenter', () => {
+    link.addEventListener('mouseenter', () => {
       moveIndicatorTo(link);
     });
   });
@@ -87,6 +90,8 @@ function initSlidingNavIndicator() {
     const currentActive = nav.querySelector('.nav-link-active');
     if (currentActive) {
       moveIndicatorTo(currentActive);
+    } else {
+      indicator.style.opacity = '0';
     }
   });
 
