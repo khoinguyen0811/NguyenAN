@@ -663,6 +663,34 @@ function initMobileMenu() {
   links.forEach(l => {
     l.addEventListener('click', closeDrawer);
   });
+
+  // Mobile Products Submenu Accordion Toggle
+  const prodToggle = document.getElementById('mobile-products-toggle');
+  const prodSubmenu = document.getElementById('mobile-products-submenu');
+  const prodArrow = document.getElementById('mobile-products-arrow');
+
+  if (prodToggle && prodSubmenu) {
+    let lastSubmenuToggle = 0;
+    const handleSubmenuToggle = (e) => {
+      const now = Date.now();
+      if (now - lastSubmenuToggle < 250) return;
+      lastSubmenuToggle = now;
+      e.preventDefault();
+      e.stopPropagation();
+
+      const isHidden = prodSubmenu.classList.contains('hidden');
+      if (isHidden) {
+        prodSubmenu.classList.remove('hidden');
+        if (prodArrow) prodArrow.classList.add('rotate-180');
+      } else {
+        prodSubmenu.classList.add('hidden');
+        if (prodArrow) prodArrow.classList.remove('rotate-180');
+      }
+    };
+
+    prodToggle.addEventListener('click', handleSubmenuToggle);
+    prodToggle.addEventListener('touchstart', handleSubmenuToggle, { passive: false });
+  }
 }
 
 /* -------------------------------------------------------------------------- */

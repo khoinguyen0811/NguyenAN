@@ -119,13 +119,14 @@
         <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
         <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
         <div class="border-b border-slate-50 py-2">
-          <a href="san-pham.html" class="mobile-nav-link text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between">
+          <button type="button" id="mobile-products-toggle" class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none">
             <span>Products</span>
-          </a>
-          <div class="pl-3 pt-2 space-y-1.5 text-xs text-slate-600 font-medium">
-            <a href="san-pham.html#woven" class="mobile-nav-link block hover:text-primary-blue">• Woven</a>
-            <a href="san-pham.html#nonwoven" class="mobile-nav-link block hover:text-primary-blue">• Non woven</a>
-            <a href="san-pham.html#fusible" class="mobile-nav-link block hover:text-primary-blue">• Fusible</a>
+            <i id="mobile-products-arrow" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div id="mobile-products-submenu" class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600">
+            <a href="san-pham.html#woven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Woven</a>
+            <a href="san-pham.html#nonwoven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Non woven</a>
+            <a href="san-pham.html#fusible" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Fusible</a>
           </div>
         </div>
         <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
