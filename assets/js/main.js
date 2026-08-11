@@ -155,81 +155,60 @@ function initGSAPAnimations() {
     });
   }
 
-  // --- B. SCROLL-TRIGGERED REVEALS FOR ALL SECTIONS ---
-  // Reveal section titles and subheadings
+  // --- B. SCROLL-TRIGGERED REVEALS FOR ALL SECTIONS & CARDS ---
+  
+  // 1. Reveal Section Headings, Titles & Subtitles
   document.querySelectorAll('section').forEach((sec) => {
-    const title = sec.querySelector('h2');
-    const badge = sec.querySelector('.text-primary-blue, span.uppercase');
-    
-    if (title && !title.classList.contains('gsap-ignore')) {
-      gsap.from(title, {
-        scrollTrigger: {
-          trigger: sec,
-          start: 'top 85%',
-          toggleActions: 'play none none none'
-        },
-        y: 35,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power2.out'
-      });
-    }
-
-    if (badge && !badge.classList.contains('gsap-ignore')) {
-      gsap.from(badge, {
-        scrollTrigger: {
-          trigger: sec,
-          start: 'top 88%',
-          toggleActions: 'play none none none'
-        },
-        y: 20,
-        opacity: 0,
-        duration: 0.6,
-        ease: 'power2.out'
-      });
-    }
-  });
-
-  // Explicit .gsap-reveal items
-  const revealElements = document.querySelectorAll('.gsap-reveal');
-  revealElements.forEach((el) => {
-    gsap.from(el, {
-      scrollTrigger: {
-        trigger: el,
-        start: 'top 88%',
-        toggleActions: 'play none none none'
-      },
-      y: 35,
-      opacity: 0,
-      duration: 0.75,
-      ease: 'power2.out',
-      clearProps: 'all'
+    const headings = sec.querySelectorAll('h2, .space-y-1, .space-y-2, .gsap-reveal');
+    headings.forEach((heading) => {
+      if (!heading.classList.contains('gsap-ignore') && !heading.closest('.hero-animate')) {
+        gsap.fromTo(heading,
+          { opacity: 0, y: 35 },
+          {
+            scrollTrigger: {
+              trigger: heading,
+              start: 'top 90%',
+              toggleActions: 'play none none none'
+            },
+            opacity: 1,
+            y: 0,
+            duration: 0.75,
+            ease: 'power2.out'
+          }
+        );
+      }
     });
   });
 
-  // Staggered Grids (Only target explicit .gsap-stagger-grid)
-  const cardGrids = document.querySelectorAll('.gsap-stagger-grid');
+  // 2. Staggered Entrance Animations for ALL Grid Cards (News, Products, Services, Certifications)
+  const cardGrids = document.querySelectorAll('.grid, .gsap-stagger-grid');
   cardGrids.forEach((grid) => {
-    const cards = Array.from(grid.children);
-    gsap.from(cards, {
-      scrollTrigger: {
-        trigger: grid,
-        start: 'top 85%',
-        toggleActions: 'play none none none'
-      },
-      y: 40,
-      opacity: 0,
-      duration: 0.7,
-      stagger: 0.1,
-      ease: 'power3.out',
-      clearProps: 'all'
-    });
+    if (grid.children.length > 0 && !grid.classList.contains('gsap-ignore')) {
+      const cards = Array.from(grid.children);
+      gsap.fromTo(cards,
+        { opacity: 0, y: 45, scale: 0.96 },
+        {
+          scrollTrigger: {
+            trigger: grid,
+            start: 'top 88%',
+            toggleActions: 'play none none none'
+          },
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.75,
+          stagger: 0.1,
+          ease: 'power3.out',
+          clearProps: 'transform'
+        }
+      );
+    }
   });
 
-  // Refresh ScrollTrigger after initial render to ensure perfect calculations
+  // Refresh ScrollTrigger after initial render
   setTimeout(() => {
     ScrollTrigger.refresh();
-  }, 300);
+  }, 400);
 
   // --- C. DYNAMIC NUMBER COUNTER ANIMATION ---
   const counterElements = document.querySelectorAll('.counter-val');
