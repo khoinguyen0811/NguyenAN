@@ -128,21 +128,36 @@ header button {
   font-family: var(--font-serif);
 }
 
-/* Navigation Link & Sliding Indicator (Closer to text & Smooth Glide) */
-.nav-link-active {
-  color: #0071ce !important;
-  font-weight: 800 !important;
+/* Navigation Links 100% Pixel-Perfect Underline System */
+.nav-item-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-#nav-indicator {
+.nav-item-link::after {
+  content: '';
   position: absolute;
-  bottom: 0px;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
   height: 2.5px;
   background-color: #0071ce;
   border-radius: 2px;
-  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1), width 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s ease;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
-  z-index: 30;
+}
+
+.nav-item-link:hover::after,
+.nav-item-link.nav-link-active::after {
+  transform: scaleX(1);
+}
+
+.nav-link-active {
+  color: #0071ce !important;
+  font-weight: 800 !important;
 }
 
 /* Hero Section Background Overlay (Solid white fade on left/top for crystal-clear mobile text readability) */
