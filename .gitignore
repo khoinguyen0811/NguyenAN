@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+node_modules/
+.vercel
+page_preview-*.png
+pdf_extracted_content.txt
+pdf_text.txt

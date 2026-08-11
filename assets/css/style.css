@@ -1,0 +1,264 @@
+/* ==========================================================================
+   NGUYEN AN INTERLINING - 1-TO-1 PIXEL PERFECT REPLICA STYLESHEET
+   ========================================================================== */
+
+/* Google Serif Font for Title Replica */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap');
+
+/* Local Gilroy Web Font Family Definitions */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   Design System Tokens & Global Styles (Phudu Font for Titles + Gilroy for Body)
+   ========================================================================== */
+:root {
+  --color-primary-blue: #0071ce;
+  --color-primary-hover: #005bb5;
+  --color-primary-dark: #0b1320;
+  
+  --font-title: 'Phudu', sans-serif;
+  --font-serif: 'Phudu', sans-serif;
+  --font-sans: 'Gilroy', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Enforce Phudu Font for Titles and Headings */
+.font-serif-title,
+.font-phudu,
+h1, h2, h3,
+.hero-title,
+.section-title {
+  font-family: var(--font-title) !important;
+}
+
+/* Enforce Max Width 1440px for Site Containers */
+.max-w-7xl,
+.max-w-site,
+.max-w-1440 {
+  max-width: 1440px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+/* Enforce Gilroy Font for Navbar & Navigation Links */
+header,
+#main-nav,
+nav,
+.nav-link,
+.nav-link-active,
+header a,
+header button {
+  font-family: var(--font-sans) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0071ce;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #005bb5;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(0, 113, 206, 0.2);
+  color: #0071ce;
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+/* Navigation Link & Sliding Indicator (Closer to text & Smooth Glide) */
+.nav-link-active {
+  color: #0071ce !important;
+  font-weight: 800 !important;
+}
+
+#nav-indicator {
+  position: absolute;
+  bottom: -4px;
+  height: 2.5px;
+  background-color: #0071ce;
+  border-radius: 2px;
+  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), width 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  pointer-events: none;
+}
+
+/* Hero Section Background Overlay (Left subtle white fade for text legibility, crisp suit image on right) */
+.hero-gradient-overlay {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 35%, rgba(255, 255, 255, 0.05) 65%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Product Card Circular Badge Overlap */
+.card-badge-overlap {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  z-index: 30 !important;
+}
+
+/* Infinite Marquee Scroll Animation for Certifications Slider */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 22s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* Card Hover Action Bar (At rest: simple blue arrow on left. On hover: solid blue bar, white XEM THÊM text, arrow slides to right end) */
+.card-hover-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  margin: 0 8px 8px 8px;
+  min-height: 40px;
+  background-color: transparent;
+  border-radius: 0.125rem;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.group:hover .card-hover-bar {
+  background-color: #0071ce;
+}
+
+.card-hover-text {
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.group:hover .card-hover-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-hover-arrow {
+  color: #0071ce;
+  font-size: 12px;
+  position: absolute;
+  left: 16px;
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+}
+
+.group:hover .card-hover-arrow {
+  color: #ffffff;
+  left: calc(100% - 28px);
+}
+
+/* Progress bar top fixed */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0071ce, #48a0e5, #00a3e0);
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* Modal Overlay Styling */
+.modal-overlay {
+  background: rgba(11, 19, 32, 0.7);
+  backdrop-filter: blur(4px);
+}

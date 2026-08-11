@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGUYEN AN INTERLINING | Value Added Interlining Solutions</title>
+  <meta name="description" content="Nguyen An Interlining - Professional development & production of high-quality warp knitted interlining. Reliable Interlining Solutions for the Global Apparel Industry.">
+  <meta name="keywords" content="Nguyen An Interlining, Value Added Interlining Solutions, Woven Interlining, Non Woven Interlining, Fusible Interlining">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          maxWidth: {
+            '7xl': '1440px',
+            'site': '1440px',
+          },
+          colors: {
+            'primary-blue': '#0071ce',
+            'primary-hover': '#005bb5',
+            'primary-dark': '#0b1320',
+            'primary-deep': '#060a12',
+            'primary-light': '#338edd',
+            'primary-accent': '#0071ce',
+            'primary-ice': '#f0f7fc',
+          },
+          fontFamily: {
+            serif: ['"Phudu"', 'sans-serif'],
+            phudu: ['"Phudu"', 'sans-serif'],
+            sans: ['"Gilroy"', '"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icon Library CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts for Phudu Titles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+
+  <!-- Top Scroll Progress Indicator Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- 1. MAIN NAVIGATION HEADER (1-TO-1 PIXEL PERFECT REPLICA WITH FONTAWESOME ICONS) -->
+  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Official Brand Logo Image (No extra side text) -->
+      <a href="index.html" class="flex items-center group py-0.5">
+        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Nav Menu Links (Sliding Underline & Seamless Dropdown Bridge) -->
+      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
+        <a href="index.html" class="nav-item-link nav-link-active transition py-1">Home</a>
+        <a href="gioi-thieu.html" class="nav-item-link hover:text-primary-blue transition py-1">About Us</a>
+        
+        <div class="relative group cursor-pointer py-1">
+          <a href="san-pham.html" class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1">
+            <span>Products</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
+          </a>
+          <!-- Seamless Dropdown Bridge Container -->
+          <div class="absolute left-0 top-full pt-1 w-56 hidden group-hover:block z-50">
+            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Warp Knitted Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Circular Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Water Jet Loom Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Interlining & Pocketing</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="dich-vu-logistics.html" class="nav-item-link hover:text-primary-blue transition py-1">Solutions</a>
+        <a href="phat-trien-ben-vung.html" class="nav-item-link hover:text-primary-blue transition py-1">Capabilities</a>
+        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
+        <a href="lien-he.html" class="nav-item-link hover:text-primary-blue transition py-1">Contact</a>
+      </nav>
+
+      <!-- Right Call-to-Action Phone Button with FontAwesome Phone Icon -->
+      <div class="hidden sm:flex items-center">
+        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
+          <i class="fa-solid fa-phone text-xs"></i>
+          <span>(+84) 986 945 537</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <a href="index.html" class="flex items-center">
+          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
+        </a>
+        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
+        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold">Home</a>
+        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
+        <a href="san-pham.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Products</a>
+        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
+        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Capabilities</a>
+        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
+        <a href="lien-he.html" class="mobile-nav-link py-2 hover:text-primary-blue">Contact</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-slate-100 space-y-3">
+      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
+        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+
+    <!-- 2. HERO BANNER SECTION -->
+    <section class="relative min-h-[520px] lg:min-h-[580px] flex items-center bg-slate-100 overflow-hidden">
+      
+      <!-- Suit Coat Background Image (Right Aligned Crisp Display) -->
+      <div class="absolute inset-0 z-0 flex justify-end">
+        <img src="assets/img/hero-suit-banner.png?v=3" alt="Value Added Interlining Suit Garment" class="w-full lg:w-3/4 h-full object-cover object-right">
+        <div class="hero-gradient-overlay absolute inset-0 z-10"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full py-16 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <!-- Left Text Content -->
+          <div class="lg:col-span-7 space-y-5">
+            
+            <div class="space-y-0.5">
+              <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-[62px] font-extrabold text-primary-blue tracking-tight leading-[1.08] uppercase">
+                VALUE ADDED
+              </h1>
+              <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-[62px] font-extrabold text-primary-blue tracking-tight leading-[1.08] uppercase">
+                INTERLINING
+              </h1>
+              <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-[62px] font-extrabold text-slate-800 tracking-tight leading-[1.08] uppercase">
+                SOLUTIONS
+              </h1>
+            </div>
+
+            <!-- Small Accent Blue Line -->
+            <div class="w-12 h-1 bg-primary-blue rounded-full"></div>
+
+            <p class="text-sm sm:text-base text-slate-600 font-medium max-w-md leading-relaxed">
+              Professional development & production of high-quality warp knitted interlining.
+            </p>
+
+            <div class="pt-3">
+              <a href="san-pham.html" class="inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-sm text-xs font-bold tracking-wider text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 uppercase">
+                <span>DISCOVER MORE</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Callout Overlay Text (Minimalist Floating Text Level with Discover More Button) -->
+          <div class="lg:col-span-5 hidden lg:flex justify-end pr-8 self-end pb-1">
+            <div class="flex items-center space-x-3.5">
+              <div class="w-[2px] h-12 bg-primary-blue rounded-full shadow-xs"></div>
+              
+              <div class="space-y-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-white drop-shadow-sm">
+                <div>QUALITY</div>
+                <div>RELIABILITY</div>
+                <div>PARTNERSHIP</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BLUE FEATURE RIBBON BANNER WITH FONTAWESOME ICONS -->
+    <section class="bg-primary-blue text-white py-7">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-blue-400/30">
+          
+          <!-- Item 1: HIGH QUALITY -->
+          <div class="flex items-start space-x-4 pt-3 md:pt-0 pr-4">
+            <div class="w-10 h-10 shrink-0 flex items-center justify-center text-white text-2xl">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-xs font-extrabold uppercase tracking-wider text-white">HIGH QUALITY</h3>
+              <p class="text-[11px] text-blue-100 leading-relaxed font-normal">
+                Strict quality control from raw materials to finished goods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: ADVANCED TECHNOLOGY -->
+          <div class="flex items-start space-x-4 pt-5 md:pt-0 md:pl-6 pr-4">
+            <div class="w-10 h-10 shrink-0 flex items-center justify-center text-white text-2xl">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-xs font-extrabold uppercase tracking-wider text-white">ADVANCED TECHNOLOGY</h3>
+              <p class="text-[11px] text-blue-100 leading-relaxed font-normal">
+                Modern production lines and innovative techniques.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: GLOBAL SUPPLY -->
+          <div class="flex items-start space-x-4 pt-5 md:pt-0 md:pl-6 pr-4">
+            <div class="w-10 h-10 shrink-0 flex items-center justify-center text-white text-2xl">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-xs font-extrabold uppercase tracking-wider text-white">GLOBAL SUPPLY</h3>
+              <p class="text-[11px] text-blue-100 leading-relaxed font-normal">
+                Flexible logistics solutions FOB, LDP, DDP.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: LONG-TERM PARTNERSHIP -->
+          <div class="flex items-start space-x-4 pt-5 md:pt-0 md:pl-6">
+            <div class="w-10 h-10 shrink-0 flex items-center justify-center text-white text-2xl">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-xs font-extrabold uppercase tracking-wider text-white">LONG-TERM PARTNERSHIP</h3>
+              <p class="text-[11px] text-blue-100 leading-relaxed font-normal">
+                Building enduring relationships for mutual growth & success.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PRODUCT CARDS GRID SECTION WITH FONTAWESOME BADGE ICONS -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Section Header -->
+        <div class="text-center space-y-1.5">
+          <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">OUR PRODUCTS</span>
+          <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase">
+            INTERLINING & POCKETING SOLUTIONS
+          </h2>
+          <div class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"></div>
+        </div>
+
+        <!-- 4 Column Product Grid (2 Cards per row on Mobile grid-cols-2, 4 Cards on Desktop lg:grid-cols-4) -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
+          
+          <!-- Product Card 1: WARP KNITTED INTERLINING -->
+          <a href="san-pham.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="relative h-36 sm:h-44 bg-slate-100">
+                <div class="w-full h-full overflow-hidden rounded-t-sm">
+                  <img src="assets/img/product-warp-knitted.png" alt="Warp Knitted Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                
+                <!-- Circular Badge Overlay (100% Fully Visible Floating Badge) -->
+                <div class="card-badge-overlap">
+                  <i class="fa-solid fa-border-all text-slate-700 text-base sm:text-lg"></i>
+                </div>
+              </div>
+
+              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
+                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                  WARP KNITTED INTERLINING
+                </h3>
+                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
+                  High stability and durability for various garment applications.
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="card-hover-bar">
+              <span class="card-hover-text">XEM THÊM</span>
+              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+            </div>
+          </a>
+
+          <!-- Product Card 2: CIRCULAR INTERLINING -->
+          <a href="san-pham.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="relative h-36 sm:h-44 bg-slate-100">
+                <div class="w-full h-full overflow-hidden rounded-t-sm">
+                  <img src="assets/img/product-spec.png" alt="Circular Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                
+                <!-- Circular Badge Overlay -->
+                <div class="card-badge-overlap">
+                  <i class="fa-solid fa-circle-notch text-slate-700 text-base sm:text-lg"></i>
+                </div>
+              </div>
+
+              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
+                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                  CIRCULAR INTERLINING
+                </h3>
+                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
+                  Excellent dimensional stability and performance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="card-hover-bar">
+              <span class="card-hover-text">XEM THÊM</span>
+              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+            </div>
+          </a>
+
+          <!-- Product Card 3: WATER JET LOOM INTERLINING -->
+          <a href="san-pham.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="relative h-36 sm:h-44 bg-slate-100">
+                <div class="w-full h-full overflow-hidden rounded-t-sm">
+                  <img src="assets/img/lab-room.png" alt="Water Jet Loom Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                
+                <!-- Circular Badge Overlay -->
+                <div class="card-badge-overlap">
+                  <i class="fa-solid fa-water text-slate-700 text-base sm:text-lg"></i>
+                </div>
+              </div>
+
+              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
+                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                  WATER JET LOOM <span class="text-primary-blue">INTERLINING</span>
+                </h3>
+                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
+                  Smooth surface and consistent quality for premium garments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="card-hover-bar">
+              <span class="card-hover-text">XEM THÊM</span>
+              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+            </div>
+          </a>
+
+          <!-- Product Card 4: WOVEN INTERLINING -->
+          <a href="san-pham.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="relative h-36 sm:h-44 bg-slate-100">
+                <div class="w-full h-full overflow-hidden rounded-t-sm">
+                  <img src="assets/img/about-interlining.png" alt="Woven Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                
+                <!-- Circular Badge Overlay -->
+                <div class="card-badge-overlap">
+                  <i class="fa-solid fa-layer-group text-slate-700 text-base sm:text-lg"></i>
+                </div>
+              </div>
+
+              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
+                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                  WOVEN INTERLINING
+                </h3>
+                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
+                  Classic woven structure for structured and tailored looks.
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="card-hover-bar">
+              <span class="card-hover-text">XEM THÊM</span>
+              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ABOUT US SECTION (100% REPLICA MATCH WITH MOSAIC GALLERY & STAT BADGE BOX) -->
+    <section class="py-16 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column Text & Stat Badge Box -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="space-y-1">
+              <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">WHO WE ARE</span>
+              <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold tracking-tight uppercase">
+                <span class="text-primary-blue">ABOUT</span> <span class="text-slate-800">US</span>
+              </h2>
+              <div class="w-12 h-[3px] bg-primary-blue rounded-full mt-2"></div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              With over a decade of specialization, NGUYEN AN Interlining Manufacturers is a trusted partner in providing value-added woven and non-woven fusible interlining solutions for the global apparel industry. We are committed to excellence in production, rigorous quality assurance, cost efficiency, and punctual delivery—helping our customers stay competitive in a fast-changing market.
+            </p>
+
+            <!-- White Stat Badge Box (3 Stats Horizontal) -->
+            <div class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-xs grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+              
+              <div class="flex items-center space-x-3 pr-3 border-b sm:border-b-0 sm:border-r border-slate-100 pb-3 sm:pb-0">
+                <div class="w-10 h-10 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-lg">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                  <div class="text-lg font-extrabold text-slate-800 leading-none">10+</div>
+                  <div class="text-[10px] font-medium text-slate-500 mt-0.5">Years Experience</div>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-3 pr-3 border-b sm:border-b-0 sm:border-r border-slate-100 pb-3 sm:pb-0 sm:pl-1">
+                <div class="w-10 h-10 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-lg">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                  <div class="text-lg font-extrabold text-slate-800 leading-none">4</div>
+                  <div class="text-[10px] font-medium text-slate-500 mt-0.5">Main Product Lines</div>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-3 sm:pl-1">
+                <div class="w-10 h-10 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-lg">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-slate-800 leading-tight">Flexible Logistics</div>
+                  <div class="text-[10px] font-medium text-slate-500 mt-0.5">FOB / LDP / DDP</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column Image Mosaic Grid -->
+          <div class="lg:col-span-6">
+            <div class="grid grid-cols-12 gap-3.5">
+              
+              <!-- Large Left Main Machinery Roll Image -->
+              <div class="col-span-8 space-y-3.5">
+                <div class="h-64 rounded-xl overflow-hidden shadow-xs border border-slate-200/60">
+                  <img src="assets/img/capabilities.png" alt="Warp Knitted Machinery Production" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="h-44 rounded-xl overflow-hidden shadow-xs border border-slate-200/60">
+                  <img src="assets/img/about-interlining.png" alt="Fusible Interlining Fabric Layers" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+              </div>
+
+              <!-- Right Stacked 2 Images -->
+              <div class="col-span-4 space-y-3.5">
+                <div class="h-40 rounded-xl overflow-hidden shadow-xs border border-slate-200/60">
+                  <img src="assets/img/product-spec.png" alt="Interlining Fabric Rolls" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="h-68 rounded-xl overflow-hidden shadow-xs border border-slate-200/60">
+                  <img src="assets/img/product-warp-knitted.png" alt="High Quality Warp Knitted Mesh" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BUSINESS SOLUTIONS SECTION (100% REPLICA MATCH WITH 4 WHITE FEATURE CARDS & CENTERED CTA) -->
+    <section class="py-16 bg-blue-50/40 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Header -->
+        <div class="text-center space-y-1.5">
+          <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">OUR APPROACH</span>
+          <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold tracking-tight uppercase">
+            <span class="text-slate-800">BUSINESS</span> <span class="text-primary-blue">SOLUTIONS</span>
+          </h2>
+          <div class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"></div>
+        </div>
+
+        <!-- 4 White Feature Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: PRODUCT DEVELOPMENT -->
+          <div class="bg-white rounded-xl p-6 border border-slate-200/70 shadow-2xs hover:shadow-md transition duration-300 flex items-start space-x-4">
+            <div class="w-12 h-12 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-xl">
+              <i class="fa-solid fa-flask"></i>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider leading-snug">
+                PRODUCT DEVELOPMENT
+              </h3>
+              <p class="text-[11px] text-slate-500 leading-relaxed font-normal">
+                Innovative interlining solutions designed to meet market trends and customer needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: PRODUCT EXECUTION -->
+          <div class="bg-white rounded-xl p-6 border border-slate-200/70 shadow-2xs hover:shadow-md transition duration-300 flex items-start space-x-4">
+            <div class="w-12 h-12 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-xl">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider leading-snug">
+                PRODUCT EXECUTION
+              </h3>
+              <p class="text-[11px] text-slate-500 leading-relaxed font-normal">
+                Advanced production lines ensure consistency, efficiency, and scalability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: QUALITY CONTROL -->
+          <div class="bg-white rounded-xl p-6 border border-slate-200/70 shadow-2xs hover:shadow-md transition duration-300 flex items-start space-x-4">
+            <div class="w-12 h-12 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-xl">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider leading-snug">
+                QUALITY CONTROL
+              </h3>
+              <p class="text-[11px] text-slate-500 leading-relaxed font-normal">
+                Strict quality assurance at every stage to deliver reliable and high-performance products.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: LOGISTICS & CUSTOMS -->
+          <div class="bg-white rounded-xl p-6 border border-slate-200/70 shadow-2xs hover:shadow-md transition duration-300 flex items-start space-x-4">
+            <div class="w-12 h-12 shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue text-xl">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider leading-snug">
+                LOGISTICS & CUSTOMS
+              </h3>
+              <p class="text-[11px] text-slate-500 leading-relaxed font-normal">
+                Flexible logistics and customs support for smooth global delivery.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered CTA Button -->
+        <div class="text-center pt-2">
+          <a href="dich-vu-logistics.html" class="inline-flex items-center space-x-2 px-7 py-3 rounded-sm text-xs font-bold tracking-wider text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 uppercase">
+            <span>LEARN MORE</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. COMPANY METRICS & OVERVIEW SECTION -->
+    <section class="relative bg-slate-900 text-white py-14 my-3">
+      
+      <!-- TOP CUSTOM ACCENT DIVIDER LINE (Spaced 8px away from section) -->
+      <div class="absolute -top-2 left-0 right-0 w-full flex items-center h-[5px] bg-white overflow-hidden">
+        <div class="flex-1 h-full bg-slate-200/90"></div>
+        <div class="w-1.5 h-full bg-white"></div>
+        <div class="w-24 sm:w-36 h-full bg-primary-blue"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">
+              <span class="counter-val" data-target="20" data-suffix="+">0</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Years Experience</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">
+              $<span class="counter-val" data-target="2.8" data-decimals="1" data-suffix="M">0</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Annual Revenue</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">
+              <span class="counter-val" data-target="222800" data-suffix="m">0</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">40' HQ Loading Capacity</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">
+              OEKO-TEX 100
+            </div>
+            <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Certified Compliance</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BOTTOM CUSTOM ACCENT DIVIDER LINE (Spaced 8px away from section) -->
+      <div class="absolute -bottom-2 left-0 right-0 w-full flex items-center h-[5px] bg-white overflow-hidden">
+        <div class="w-24 sm:w-36 h-full bg-primary-blue"></div>
+        <div class="w-1.5 h-full bg-white"></div>
+        <div class="flex-1 h-full bg-slate-200/90"></div>
+      </div>
+
+    </section>
+
+    <!-- 7. OUR CAPABILITIES & LOGISTICS SERVICE SECTION (100% REPLICA MATCH SPLIT 2-COLUMNS) -->
+    <section class="py-12 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 rounded-sm overflow-hidden divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+          
+          <!-- LEFT COLUMN: OUR CAPABILITIES (END-TO-END SOLUTIONS) -->
+          <div class="relative py-14 px-6 sm:px-10 lg:px-12 bg-blue-50/50 flex flex-col justify-between overflow-hidden">
+            
+            <!-- Background Image Overlay (Textile Production Weaving Machine) -->
+            <div class="absolute inset-0 z-0 opacity-20 pointer-events-none flex justify-end">
+              <img src="assets/img/about-interlining.png" alt="Garment Machinery Production" class="w-full h-full object-cover object-right filter grayscale">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-50 via-blue-50/80 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 space-y-8">
+              <!-- Header -->
+              <div class="space-y-1">
+                <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">OUR CAPABILITIES</span>
+                <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase">
+                  END-TO-END SOLUTIONS
+                </h2>
+                <div class="w-12 h-[3px] bg-primary-blue rounded-full mt-2"></div>
+              </div>
+
+              <!-- 5 Checklist Items with Circular Checkmark Icons -->
+              <div class="space-y-3.5 text-xs sm:text-sm font-semibold text-slate-700">
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-xs shrink-0 bg-white shadow-2xs">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Product Development & Sample Execution</span>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-xs shrink-0 bg-white shadow-2xs">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Production & Quality Control</span>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-xs shrink-0 bg-white shadow-2xs">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Material Sourcing & Cost Management</span>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-xs shrink-0 bg-white shadow-2xs">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Logistics & Customs Clearance</span>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-6 h-6 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-xs shrink-0 bg-white shadow-2xs">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>On-time Delivery & After-sales Support</span>
+                </div>
+              </div>
+
+              <!-- Button at Bottom -->
+              <div class="pt-2">
+                <a href="phat-trien-ben-vung.html" class="inline-flex items-center space-x-2 px-6 py-3 rounded-sm text-xs font-bold tracking-wider text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 uppercase">
+                  <span>VIEW MORE</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: LOGISTICS SERVICE (FLEXIBLE DELIVERY OPTIONS) -->
+          <div class="relative py-14 px-6 sm:px-10 lg:px-12 bg-slate-50/80 flex flex-col justify-between overflow-hidden">
+            
+            <!-- Background Image Overlay (Container Shipping Vessel & Logistics) -->
+            <div class="absolute inset-0 z-0 opacity-25 pointer-events-none flex justify-end">
+              <img src="assets/img/logistics-ship.png" alt="Logistics Container Shipping" class="w-full h-full object-cover object-right filter grayscale">
+              <div class="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 space-y-8">
+              <!-- Header -->
+              <div class="space-y-1">
+                <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">LOGISTICS SERVICE</span>
+                <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase">
+                  FLEXIBLE DELIVERY OPTIONS
+                </h2>
+                <div class="w-12 h-[3px] bg-primary-blue rounded-full mt-2"></div>
+              </div>
+
+              <!-- 3 Delivery Models (FOB, LDP, DDP) -->
+              <div class="space-y-5">
+                
+                <!-- FOB -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-11 h-11 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-base shrink-0 bg-white shadow-2xs mt-0.5">
+                    <i class="fa-solid fa-ship"></i>
+                  </div>
+                  <div class="space-y-0.5">
+                    <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider">FOB</h4>
+                    <p class="text-xs text-slate-500 font-normal leading-relaxed">
+                      Transfer of ownership once goods are aboard the ship or plane.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- LDP -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-11 h-11 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-base shrink-0 bg-white shadow-2xs mt-0.5">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                  </div>
+                  <div class="space-y-0.5">
+                    <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider">LDP</h4>
+                    <p class="text-xs text-slate-500 font-normal leading-relaxed">
+                      We handle logistics to destination port, including customs clearance and duties.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- DDP -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-11 h-11 rounded-full border-2 border-primary-blue text-primary-blue flex items-center justify-center text-base shrink-0 bg-white shadow-2xs mt-0.5">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                  </div>
+                  <div class="space-y-0.5">
+                    <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider">DDP</h4>
+                    <p class="text-xs text-slate-500 font-normal leading-relaxed">
+                      End-to-end delivery to your warehouse including local transportation.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Button at Bottom -->
+              <div class="pt-2">
+                <a href="dich-vu-logistics.html" class="inline-flex items-center space-x-2 px-6 py-3 rounded-sm text-xs font-bold tracking-wider text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 uppercase">
+                  <span>LEARN MORE</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CERTIFICATIONS & LATEST NEWS SECTION (100% REPLICA MATCH RIGHT ABOVE FOOTER) -->
+    <section class="py-16 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- LEFT COLUMN: CERTIFICATIONS (5 Cols) -->
+          <div class="lg:col-span-5 space-y-8">
+            <!-- Header -->
+            <div class="space-y-1">
+              <h2 class="font-serif-title text-2xl font-extrabold text-slate-800 tracking-tight uppercase">
+                CERTIFICATIONS
+              </h2>
+              <div class="w-12 h-[3px] bg-primary-blue rounded-full"></div>
+            </div>
+
+            <!-- Infinite Marquee Scroll Slider for Certification Logo Cards -->
+            <div class="marquee-container py-1">
+              <div class="animate-infinite-scroll space-x-3.5">
+                
+                <!-- Card Set 1: ISO 9001:2015 -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center space-y-1">
+                    <div class="w-11 h-11 mx-auto rounded-full border-2 border-blue-600 flex flex-col items-center justify-center p-0.5">
+                      <span class="text-[9px] font-black text-blue-600 leading-none uppercase">ISO</span>
+                      <span class="text-[7px] font-extrabold text-blue-600 leading-none">9001</span>
+                    </div>
+                    <div class="text-[10px] font-black text-blue-800 tracking-tight">9001:2015</div>
+                  </div>
+                </div>
+
+                <!-- Card Set 1: OEKO-TEX Standard 100 -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center space-y-1">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-emerald-600 text-white flex flex-col items-center justify-center p-1 rounded-br-2xl">
+                      <span class="text-[8px] font-black tracking-tight leading-none">OEKO</span>
+                      <span class="text-[7px] font-bold tracking-tighter leading-none mt-0.5">TEX®</span>
+                    </div>
+                    <div class="text-[9px] font-extrabold text-emerald-700">STANDARD 100</div>
+                  </div>
+                </div>
+
+                <!-- Card Set 1: SGS -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <span class="text-xl font-black text-slate-700 tracking-tighter block leading-none">SGS</span>
+                    <div class="w-full h-0.5 bg-orange-500 my-1"></div>
+                    <span class="text-[8px] font-bold text-slate-400 uppercase tracking-widest">TESTED</span>
+                  </div>
+                </div>
+
+                <!-- Card Set 1: BSCI -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <div class="flex items-center justify-center text-emerald-600 text-lg mb-0.5">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <span class="text-xs font-black text-emerald-800 block leading-none">BSCI</span>
+                    <span class="text-[7px] font-medium text-slate-400 block mt-0.5 leading-tight">Social Audit</span>
+                  </div>
+                </div>
+
+                <!-- Card Set 1: GRS Recycled -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <div class="flex items-center justify-center text-blue-600 text-lg mb-0.5">
+                      <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <span class="text-xs font-black text-blue-900 block leading-none">GRS</span>
+                    <span class="text-[7px] font-medium text-slate-400 block mt-0.5 leading-tight">Global Recycled</span>
+                  </div>
+                </div>
+
+                <!-- Card Set 2 (DUPLICATE FOR SEAMLESS INFINITE LOOP) -->
+                <!-- Card Set 2: ISO 9001:2015 -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center space-y-1">
+                    <div class="w-11 h-11 mx-auto rounded-full border-2 border-blue-600 flex flex-col items-center justify-center p-0.5">
+                      <span class="text-[9px] font-black text-blue-600 leading-none uppercase">ISO</span>
+                      <span class="text-[7px] font-extrabold text-blue-600 leading-none">9001</span>
+                    </div>
+                    <div class="text-[10px] font-black text-blue-800 tracking-tight">9001:2015</div>
+                  </div>
+                </div>
+
+                <!-- Card Set 2: OEKO-TEX Standard 100 -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center space-y-1">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-emerald-600 text-white flex flex-col items-center justify-center p-1 rounded-br-2xl">
+                      <span class="text-[8px] font-black tracking-tight leading-none">OEKO</span>
+                      <span class="text-[7px] font-bold tracking-tighter leading-none mt-0.5">TEX®</span>
+                    </div>
+                    <div class="text-[9px] font-extrabold text-emerald-700">STANDARD 100</div>
+                  </div>
+                </div>
+
+                <!-- Card Set 2: SGS -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <span class="text-xl font-black text-slate-700 tracking-tighter block leading-none">SGS</span>
+                    <div class="w-full h-0.5 bg-orange-500 my-1"></div>
+                    <span class="text-[8px] font-bold text-slate-400 uppercase tracking-widest">TESTED</span>
+                  </div>
+                </div>
+
+                <!-- Card Set 2: BSCI -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <div class="flex items-center justify-center text-emerald-600 text-lg mb-0.5">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <span class="text-xs font-black text-emerald-800 block leading-none">BSCI</span>
+                    <span class="text-[7px] font-medium text-slate-400 block mt-0.5 leading-tight">Social Audit</span>
+                  </div>
+                </div>
+
+                <!-- Card Set 2: GRS Recycled -->
+                <div class="w-32 shrink-0 bg-white rounded-lg p-3 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-200 flex items-center justify-center h-28">
+                  <div class="text-center">
+                    <div class="flex items-center justify-center text-blue-600 text-lg mb-0.5">
+                      <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <span class="text-xs font-black text-blue-900 block leading-none">GRS</span>
+                    <span class="text-[7px] font-medium text-slate-400 block mt-0.5 leading-tight">Global Recycled</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Button at Bottom -->
+            <div>
+              <button class="open-pdf-modal inline-flex items-center space-x-2 px-5 py-2.5 rounded-sm border border-primary-blue text-primary-blue font-bold text-xs hover:bg-blue-50 transition duration-200 uppercase">
+                <span>VIEW ALL CERTIFICATES</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: LATEST NEWS (7 Cols) -->
+          <div class="lg:col-span-7 space-y-8">
+            <!-- Header -->
+            <div class="space-y-1">
+              <h2 class="font-serif-title text-2xl font-extrabold text-slate-800 tracking-tight uppercase">
+                LATEST NEWS
+              </h2>
+              <div class="w-12 h-[3px] bg-primary-blue rounded-full"></div>
+            </div>
+
+            <!-- 3 News Cards Grid on Desktop (sm:grid-cols-3), 4 Cards Grid on Mobile (2x2 grid-cols-2) -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-5">
+              
+              <!-- News Card 1 -->
+              <a href="gioi-thieu.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div class="relative h-36 sm:h-40 bg-slate-100">
+                    <div class="w-full h-full overflow-hidden rounded-t-sm">
+                      <img src="assets/img/about-interlining.png" alt="Importance of Quality Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <!-- Circular Badge Overlay -->
+                    <div class="card-badge-overlap">
+                      <i class="fa-solid fa-border-all text-slate-700 text-base"></i>
+                    </div>
+                  </div>
+
+                  <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-4 space-y-1.5 sm:space-y-2">
+                    <span class="text-[9px] sm:text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">MAY 10, 2024</span>
+                    <h3 class="text-[11px] sm:text-[12px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                      THE IMPORTANCE OF QUALITY INTERLINING IN GARMENT MANUFACTURING
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Action Bar -->
+                <div class="card-hover-bar">
+                  <span class="card-hover-text">XEM THÊM</span>
+                  <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+                </div>
+              </a>
+
+              <!-- News Card 2 -->
+              <a href="gioi-thieu.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div class="relative h-36 sm:h-40 bg-slate-100">
+                    <div class="w-full h-full overflow-hidden rounded-t-sm">
+                      <img src="assets/img/capabilities.png" alt="Innovative Interlining Solutions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <!-- Circular Badge Overlay -->
+                    <div class="card-badge-overlap">
+                      <i class="fa-solid fa-industry text-slate-700 text-base"></i>
+                    </div>
+                  </div>
+
+                  <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-4 space-y-1.5 sm:space-y-2">
+                    <span class="text-[9px] sm:text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">APRIL 25, 2024</span>
+                    <h3 class="text-[11px] sm:text-[12px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                      INNOVATIVE INTERLINING SOLUTIONS FOR MODERN APPAREL
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Action Bar -->
+                <div class="card-hover-bar">
+                  <span class="card-hover-text">XEM THÊM</span>
+                  <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+                </div>
+              </a>
+
+              <!-- News Card 3 -->
+              <a href="phat-trien-ben-vung.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div class="relative h-36 sm:h-40 bg-slate-100">
+                    <div class="w-full h-full overflow-hidden rounded-t-sm">
+                      <img src="assets/img/product-spec.png" alt="Sustainable Practices in Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <!-- Circular Badge Overlay -->
+                    <div class="card-badge-overlap">
+                      <i class="fa-solid fa-leaf text-slate-700 text-base"></i>
+                    </div>
+                  </div>
+
+                  <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-4 space-y-1.5 sm:space-y-2">
+                    <span class="text-[9px] sm:text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">APRIL 08, 2024</span>
+                    <h3 class="text-[11px] sm:text-[12px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                      SUSTAINABLE PRACTICES IN INTERLINING PRODUCTION
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Action Bar -->
+                <div class="card-hover-bar">
+                  <span class="card-hover-text">XEM THÊM</span>
+                  <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+                </div>
+              </a>
+
+              <!-- News Card 4 (Visible on Mobile for 2x2 grid, Hidden on Desktop for 3 cards display) -->
+              <a href="phat-trien-ben-vung.html" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden sm:hidden">
+                <div>
+                  <div class="relative h-36 sm:h-40 bg-slate-100">
+                    <div class="w-full h-full overflow-hidden rounded-t-sm">
+                      <img src="assets/img/hero-suit-banner.png" alt="Advanced Fusible Interlining Technology" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <!-- Circular Badge Overlay -->
+                    <div class="card-badge-overlap">
+                      <i class="fa-solid fa-shirt text-slate-700 text-base"></i>
+                    </div>
+                  </div>
+
+                  <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-4 space-y-1.5 sm:space-y-2">
+                    <span class="text-[9px] sm:text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">MARCH 18, 2024</span>
+                    <h3 class="text-[11px] sm:text-[12px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
+                      ADVANCED FUSIBLE INTERLINING TECHNOLOGY FOR OUTERWEAR
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Action Bar -->
+                <div class="card-hover-bar">
+                  <span class="card-hover-text">XEM THÊM</span>
+                  <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+                </div>
+              </a>
+
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PDF PROFILE MODAL VIEWER -->
+  <div id="pdf-modal" class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay p-4">
+    <div class="bg-white w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-lg bg-primary-blue flex items-center justify-center font-bold text-sm">PDF</div>
+          <div>
+            <h3 class="font-bold text-base">Nguyen An Interlining Profile 2026</h3>
+            <p class="text-xs text-blue-200">Official Company Profile Document</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <a href="Profile Company 2026 (2).pdf" download class="px-3.5 py-1.5 bg-primary-blue hover:bg-blue-600 rounded-lg text-xs font-bold text-white transition flex items-center space-x-1">
+            <i class="fa-solid fa-download mr-1"></i>
+            <span>Download PDF (41MB)</span>
+          </a>
+          <button id="close-pdf-modal" class="p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-1 bg-slate-900 p-2 overflow-y-auto">
+        <iframe src="Profile Company 2026 (2).pdf" class="w-full h-[70vh] rounded-xl border border-slate-700" title="Company Profile PDF"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER (100% REPLICA MATCH WITH OVERLAPPING FLOATING CALLOUT & BRIGHT BLUE THEME) -->
+  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
+    
+    <!-- Top Overlapping Floating Call-to-Action Bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
+      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
+        
+        <!-- Left Content with Headset Icon & Text -->
+        <div class="flex items-center space-x-5 text-center lg:text-left">
+          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="space-y-1">
+            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
+              BẠN ĐANG TÌM KIẾM GIẢI PHÁP DỰNG KEO TỐI ƯU?
+            </h3>
+            <p class="text-xs sm:text-sm text-blue-100 font-normal">
+              Hãy để chuyên gia của Nguyen An Interlining tư vấn trực tiếp cho dự án của bạn.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Action Buttons (Phone Call + Consultation Request) -->
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
+          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
+            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+            <span>0986 945 537</span>
+          </a>
+
+          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span>Gửi yêu cầu tư vấn</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Footer Body Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Column 1: Logo & Company Contact Details (4 Cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <!-- White Card Container for Logo -->
+          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
+          </div>
+
+          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
+            Đơn vị tiên phong trong lĩnh vực dệt kim, cung cấp giải pháp dựng keo mùng (Interlining) chất lượng cao và thiết bị tự động hóa cho ngành may mặc toàn cầu.
+          </p>
+
+          <div class="space-y-2 text-xs text-blue-50 font-medium">
+            <p class="flex items-start space-x-2">
+              <i class="fa-solid fa-location-dot text-blue-200 mt-0.5 shrink-0"></i>
+              <span><strong>Địa chỉ:</strong> 609/9/5C QL13, Hiệp Bình Phước, Thủ Đức, TP.HCM | Nhà máy: Nam Sách, Hải Dương</span>
+            </p>
+            <p class="flex items-center space-x-2">
+              <i class="fa-solid fa-user-tie text-blue-200 shrink-0"></i>
+              <span><strong>Kinh doanh:</strong> Mr. Thanh – <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a> – <a href="tel:+84986945537" class="underline hover:text-white">0986 945 537</a></span>
+            </p>
+            <p class="flex items-center space-x-2">
+              <i class="fa-solid fa-wrench text-blue-200 shrink-0"></i>
+              <span><strong>Kỹ thuật:</strong> Mr. Thanh – <a href="tel:+84986945537" class="underline hover:text-white">0986 945 537</a></span>
+            </p>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="flex items-center space-x-2.5 pt-1">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: VỀ CHÚNG TÔI (2.5 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">VỀ CHÚNG TÔI</h4>
+          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+          <ul class="space-y-2.5 text-xs text-blue-100">
+            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Giới thiệu chung</span></a></li>
+            <li><a href="san-pham.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Danh mục sản phẩm</span></a></li>
+            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Năng lực sản xuất</span></a></li>
+            <li><a href="index.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Tin tức & Sự kiện</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: DỊCH VỤ & CHÍNH SÁCH (2.5 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">DỊCH VỤ & CHÍNH SÁCH</h4>
+          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+          <ul class="space-y-2.5 text-xs text-blue-100">
+            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Chính sách giao hàng FOB / LDP / DDP</span></a></li>
+            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Quy định vận chuyển & Hải quan</span></a></li>
+            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Chứng nhận ISO 9001 & OEKO-TEX</span></a></li>
+            <li><a href="lien-he.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Chính sách bảo hành chất lượng</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: BẢN ĐỒ VỊ TRÍ (3 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">BẢN ĐỒ VỊ TRÍ</h4>
+          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+          
+          <!-- Map Preview Card -->
+          <div class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright Line -->
+      <div class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4">
+        <div>
+          © 2026 NGUYEN AN INTERLINING Manufacturers. Tất cả quyền được bảo lưu.
+        </div>
+        <div>
+          Thiết kế bởi <a href="#" class="font-bold underline hover:text-white">Mắt Bão WS</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Fixed Bottom Right Action Widgets (Zalo, WhatsApp, Back to Top) -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+    <!-- Chat Widget -->
+    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat với chúng tôi">
+      <i class="fa-solid fa-comments text-lg"></i>
+    </a>
+    <!-- Phone Call Widget -->
+    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Gọi hotline">
+      <i class="fa-solid fa-phone text-lg"></i>
+    </a>
+    <!-- Back to Top Widget -->
+    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Lên đầu trang">
+      <i class="fa-solid fa-chevron-up text-sm"></i>
+    </a>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

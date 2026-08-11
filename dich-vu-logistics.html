@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions & Logistics | NGUYEN AN INTERLINING - FOB, LDP & DDP Delivery Models</title>
+  <meta name="description" content="Giải pháp dịch vụ logistics & thủ tục hải quan linh hoạt mô hình FOB, LDP và DDP giao hàng tận kho khách hàng toàn cầu.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          maxWidth: {
+            '7xl': '1440px',
+            'site': '1440px',
+          },
+          colors: {
+            'primary-blue': '#0071ce',
+            'primary-hover': '#005bb5',
+            'primary-dark': '#003b7a',
+            'primary-deep': '#061e33',
+            'primary-light': '#48a0e5',
+            'primary-ice': '#f0f7fc',
+          },
+          fontFamily: {
+            serif: ['"Phudu"', 'sans-serif'],
+            phudu: ['"Phudu"', 'sans-serif'],
+            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icon Library CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+
+  <div id="scroll-progress"></div>
+
+  <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
+  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Official Brand Logo Image -->
+      <a href="index.html" class="flex items-center group py-0.5">
+        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Nav Menu Links -->
+      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
+        <a href="index.html" class="nav-item-link hover:text-primary-blue transition py-1">Home</a>
+        <a href="gioi-thieu.html" class="nav-item-link hover:text-primary-blue transition py-1">About Us</a>
+        
+        <div class="relative group cursor-pointer py-1">
+          <a href="san-pham.html" class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1">
+            <span>Products</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
+          </a>
+          <!-- Seamless Dropdown Bridge Container -->
+          <div class="absolute left-0 top-full pt-1 w-56 hidden group-hover:block z-50">
+            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Warp Knitted Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Circular Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Water Jet Loom Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven Interlining</a>
+              <a href="san-pham.html" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Interlining & Pocketing</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="dich-vu-logistics.html" class="nav-item-link nav-link-active hover:text-primary-blue transition py-1">Solutions</a>
+        <a href="phat-trien-ben-vung.html" class="nav-item-link hover:text-primary-blue transition py-1">Capabilities</a>
+        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
+        <a href="lien-he.html" class="nav-item-link hover:text-primary-blue transition py-1">Contact</a>
+      </nav>
+
+      <!-- Right Call-to-Action Phone Button -->
+      <div class="hidden sm:flex items-center">
+        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
+          <i class="fa-solid fa-phone text-xs"></i>
+          <span>(+84) 986 945 537</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <a href="index.html" class="flex items-center">
+          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
+        </a>
+        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
+        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
+        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
+        <a href="san-pham.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Products</a>
+        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold">Solutions (Logistics)</a>
+        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Capabilities</a>
+        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
+        <a href="lien-he.html" class="mobile-nav-link py-2 hover:text-primary-blue">Contact</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-slate-100 space-y-3">
+      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
+        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
+        <img src="assets/img/logistics-ship.png" alt="Logistics Vessel" class="w-full h-full object-cover">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
+        <!-- Breadcrumb Navigation -->
+        <nav class="flex items-center space-x-2 text-xs font-semibold text-slate-300">
+          <a href="index.html" class="hover:text-white transition flex items-center">
+            <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
+            <span>Home</span>
+          </a>
+          <span class="text-slate-500">/</span>
+          <span class="text-blue-300 font-bold">Solutions</span>
+        </nav>
+      </div>
+
+      <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
+      <div class="relative w-full my-8 font-sans">
+        
+        <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30">
+          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-l-4 border-white"></div>
+        </div>
+
+        <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
+        <div class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-white text-xl sm:text-3xl font-extrabold uppercase tracking-wide whitespace-nowrap pl-4">
+              LOGISTICS SERVICES
+            </h1>
+          </div>
+        </div>
+
+        <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10">
+          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-t-4 border-b-4 border-r-4 border-white"></div>
+        </div>
+
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
+          Tailored logistics and customs clearance models tailored to international apparel supply chain requirements.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: 3 LOGISTICS MODELS (PDF PAGE 05 - 100% ACCURATE DATA) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">05 / FULFILLMENT MODELS</span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
+            OUR 3 LOGISTICS SERVICE OPTIONS
+          </h2>
+          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- FOB Model Card -->
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 shadow-2xs space-y-4 relative flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-primary-blue flex items-center justify-center font-extrabold text-lg mb-4">
+                FOB
+              </div>
+              <h3 class="font-bold text-lg text-slate-800 uppercase tracking-wide">FOB MODEL (FREE ON BOARD)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Transfer of legal ownership of finished products occurs once goods are aboard the ship or plane for delivery at origin port.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200/60 text-[11px] font-bold text-primary-blue uppercase">
+              <i class="fa-solid fa-ship mr-1.5"></i> Origin Port Transfer
+            </div>
+          </div>
+
+          <!-- LDP Model Card -->
+          <div class="bg-slate-900 text-white p-8 rounded-2xl border border-slate-800 shadow-xl space-y-4 relative flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-extrabold text-lg mb-4">
+                LDP
+              </div>
+              <h3 class="font-bold text-lg text-white uppercase tracking-wide">LDP MODEL (LANDED DUTY PAID)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mt-2">
+                We handle complete logistics from origin port to destination port, including all import/export customs clearance and duties.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 text-[11px] font-bold text-blue-400 uppercase">
+              <i class="fa-solid fa-file-invoice mr-1.5"></i> Port-to-Port + Duties
+            </div>
+          </div>
+
+          <!-- DDP Model Card -->
+          <div class="bg-primary-blue text-white p-8 rounded-2xl border border-blue-400/30 shadow-xl space-y-4 relative flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-white/20 text-white flex items-center justify-center font-extrabold text-lg mb-4">
+                DDP
+              </div>
+              <h3 class="font-bold text-lg text-white uppercase tracking-wide">DDP MODEL (DELIVERED DUTY PAID)</h3>
+              <p class="text-xs text-blue-100 leading-relaxed mt-2">
+                In addition to LDP, we coordinate inland local transportation and deliver finished products directly to the customer's designated warehouse.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-blue-300/40 text-[11px] font-bold text-white uppercase">
+              <i class="fa-solid fa-warehouse mr-1.5"></i> Door-to-Door Warehouse Delivery
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ESSENTIAL PROCEDURES & MANAGEMENT SOLUTIONS (PDF PAGE 03) -->
+    <section class="py-16 bg-slate-50 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">03 / END-TO-END WORKFLOW</span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
+            MANAGEMENT SOLUTIONS & PROCEDURES
+          </h2>
+          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-2xs space-y-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-bold text-sm">01</div>
+            <h4 class="font-bold text-base uppercase text-slate-800">Product Development</h4>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Fashion & market research</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Raw material sourcing & cost analysis</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Developing technical packages</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Executing product samples</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-2xs space-y-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-bold text-sm">02</div>
+            <h4 class="font-bold text-base uppercase text-slate-800">Product Execution</h4>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Procurement of raw materials</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Production in own facilities & outsourcing</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Quality control of raw & output goods</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-2xs space-y-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-bold text-sm">03</div>
+            <h4 class="font-bold text-base uppercase text-slate-800">Logistics & Clearance</h4>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Customs clearance documentation</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>Global shipment tracking</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-primary-blue"></i><span>FOB, LDP, and DDP delivery models</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (100% SHARED WITH INDEX.HTML) -->
+  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
+      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
+        <div class="flex items-center space-x-5 text-center lg:text-left">
+          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="space-y-1">
+            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
+              BẠN ĐANG TÌM KIẾM GIẢI PHÁP DỰNG KEO TỐI ƯU?
+            </h3>
+            <p class="text-xs sm:text-sm text-blue-100 font-normal">
+              Hãy để chuyên gia của Nguyen An Interlining tư vấn trực tiếp cho dự án của bạn.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
+          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
+            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+            <span>0986 945 537</span>
+          </a>
+          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span>Gửi yêu cầu tư vấn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-4 space-y-4">
+          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
+          </div>
+          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
+            Đơn vị tiên phong trong lĩnh vực dệt kim, cung cấp giải pháp dựng keo mùng (Interlining) chất lượng cao và thiết bị tự động hóa cho ngành may mặc toàn cầu.
+          </p>
+          <div class="space-y-2 text-xs text-blue-100 pt-1 font-medium">
+            <div class="flex items-start space-x-2.5">
+              <i class="fa-solid fa-location-dot mt-0.5 text-blue-300 shrink-0"></i>
+              <span><strong>Địa chỉ:</strong> 609/9/5C QL13, Hiệp Bình Phước, Thủ Đức, TP.HCM | Nhà máy: Nam Sách, Hải Dương</span>
+            </div>
+            <div class="flex items-center space-x-2.5">
+              <i class="fa-solid fa-user-tie text-blue-300 shrink-0"></i>
+              <span><strong>Kinh doanh:</strong> Mr. Thanh – <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a> – <a href="tel:+84986945537" class="underline hover:text-white">0986 945 537</a></span>
+            </div>
+            <div class="flex items-center space-x-2.5">
+              <i class="fa-solid fa-wrench text-blue-300 shrink-0"></i>
+              <span><strong>Kỹ thuật:</strong> Mr. Thanh – <a href="tel:+84986945537" class="underline hover:text-white">0986 945 537</a></span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-blue-600/40 hover:bg-white hover:text-primary-blue text-white flex items-center justify-center transition border border-blue-400/30 shadow-sm"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-blue-600/40 hover:bg-white hover:text-primary-blue text-white flex items-center justify-center transition border border-blue-400/30 shadow-sm"><i class="fa-brands fa-youtube text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-blue-600/40 hover:bg-white hover:text-primary-blue text-white flex items-center justify-center transition border border-blue-400/30 shadow-sm"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-white border-b border-blue-400/30 pb-2">VỀ CHÚNG TÔI</h4>
+          <ul class="space-y-2.5 text-xs text-blue-100 font-medium">
+            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Giới thiệu chung</a></li>
+            <li><a href="san-pham.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Danh mục sản phẩm</a></li>
+            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Năng lực sản xuất</a></li>
+            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Tin tức & Sự kiện</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-white border-b border-blue-400/30 pb-2">DỊCH VỤ & CHÍNH SÁCH</h4>
+          <ul class="space-y-2.5 text-xs text-blue-100 font-medium">
+            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Chính sách giao hàng FOB / LDP / DDP</a></li>
+            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Quy định vận chuyển & Hải quan</a></li>
+            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Chứng nhận ISO 9001 & OEKO-TEX</a></li>
+            <li><a href="lien-he.html" class="hover:text-white transition flex items-center"><span class="mr-1.5 text-blue-300">–</span>Hỗ trợ kỹ thuật & Nhận mẫu thử</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-extrabold uppercase tracking-wider text-white border-b border-blue-400/30 pb-2">BẢN ĐỒ VỊ TRÍ</h4>
+          <div class="rounded-xl overflow-hidden shadow-lg border border-blue-400/30 h-36 bg-blue-900/50">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.477028734997!2d106.7161!3d10.8512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUxJzA0LjMiTiAxMDbCsDQyJzU4LjAiRQ!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-blue-400/20 text-center md:flex md:justify-between md:items-center text-xs text-blue-200">
+        <div>© 2026 NGUYEN AN INTERLINING Manufacturers. Tất cả quyền được bảo lưu.</div>
+        <div>Thiết kế bởi <a href="#" class="font-bold underline hover:text-white">Mắt Bão WS</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat với chúng tôi"><i class="fa-solid fa-comments text-lg"></i></a>
+    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Gọi hotline"><i class="fa-solid fa-phone text-lg"></i></a>
+    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Lên đầu trang"><i class="fa-solid fa-chevron-up text-sm"></i></a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
