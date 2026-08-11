@@ -196,36 +196,40 @@ function initGSAPAnimations() {
     gsap.from(el, {
       scrollTrigger: {
         trigger: el,
+        start: 'top 88%',
+        toggleActions: 'play none none none'
+      },
+      y: 35,
+      opacity: 0,
+      duration: 0.75,
+      ease: 'power2.out',
+      clearProps: 'all'
+    });
+  });
+
+  // Staggered Grids (Only target explicit .gsap-stagger-grid)
+  const cardGrids = document.querySelectorAll('.gsap-stagger-grid');
+  cardGrids.forEach((grid) => {
+    const cards = Array.from(grid.children);
+    gsap.from(cards, {
+      scrollTrigger: {
+        trigger: grid,
         start: 'top 85%',
         toggleActions: 'play none none none'
       },
       y: 40,
       opacity: 0,
-      duration: 0.8,
-      ease: 'power2.out'
+      duration: 0.7,
+      stagger: 0.1,
+      ease: 'power3.out',
+      clearProps: 'all'
     });
   });
 
-  // Staggered Grids (Product cards, Advantage cards, News cards, Feature grids)
-  const cardGrids = document.querySelectorAll('.gsap-stagger-grid, .grid');
-  cardGrids.forEach((grid) => {
-    // Avoid double-animating nested items
-    if (grid.children.length > 1 && !grid.closest('.gsap-stagger-grid')) {
-      const cards = Array.from(grid.children);
-      gsap.from(cards, {
-        scrollTrigger: {
-          trigger: grid,
-          start: 'top 82%',
-          toggleActions: 'play none none none'
-        },
-        y: 45,
-        opacity: 0,
-        duration: 0.75,
-        stagger: 0.1,
-        ease: 'power3.out'
-      });
-    }
-  });
+  // Refresh ScrollTrigger after initial render to ensure perfect calculations
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 300);
 
   // --- C. DYNAMIC NUMBER COUNTER ANIMATION ---
   const counterElements = document.querySelectorAll('.counter-val');
