@@ -116,33 +116,81 @@ function initGSAPAnimations() {
     return;
   }
 
-  // Hero Section Stagger Fade In
-  gsap.from('.hero-animate', {
-    y: 40,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.15,
-    ease: 'power3.out',
-    delay: 0.2
-  });
+  // --- A. MASTER PAGE HERO ENTRANCE TIMELINE ---
+  const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.85 } });
+
+  // Page Hero Banner Elements (Breadcrumb, Blue Ribbon, Description)
+  if (document.querySelector('main')) {
+    heroTl.from('main section:first-of-type nav', { y: -20, opacity: 0, duration: 0.6 })
+          .from('main section:first-of-type .font-sans', { x: -40, opacity: 0, duration: 0.8 }, '-=0.3')
+          .from('main section:first-of-type h1', { scale: 0.95, opacity: 0, duration: 0.6 }, '-=0.5')
+          .from('main section:first-of-type p', { y: 25, opacity: 0, duration: 0.6 }, '-=0.4');
+  }
+
+  // Index Page Hero Specific Stagger
+  if (document.querySelectorAll('.hero-animate').length) {
+    gsap.from('.hero-animate', {
+      y: 35,
+      opacity: 0,
+      duration: 0.9,
+      stagger: 0.12,
+      ease: 'power3.out',
+      delay: 0.1
+    });
+  }
 
   // Hero Image 3D Parallax Tilt
   const heroCard = document.querySelector('.hero-card-tilt');
   if (heroCard) {
     document.addEventListener('mousemove', (e) => {
       const { clientX, clientY } = e;
-      const xPos = (clientX / window.innerWidth - 0.5) * 15;
-      const yPos = (clientY / window.innerHeight - 0.5) * 15;
+      const xPos = (clientX / window.innerWidth - 0.5) * 12;
+      const yPos = (clientY / window.innerHeight - 0.5) * 12;
       gsap.to(heroCard, {
         rotationY: xPos,
         rotationX: -yPos,
         ease: 'power1.out',
-        duration: 0.6
+        duration: 0.5
       });
     });
   }
 
-  // Reveal Animations for all sections
+  // --- B. SCROLL-TRIGGERED REVEALS FOR ALL SECTIONS ---
+  // Reveal section titles and subheadings
+  document.querySelectorAll('section').forEach((sec) => {
+    const title = sec.querySelector('h2');
+    const badge = sec.querySelector('.text-primary-blue, span.uppercase');
+    
+    if (title && !title.classList.contains('gsap-ignore')) {
+      gsap.from(title, {
+        scrollTrigger: {
+          trigger: sec,
+          start: 'top 85%',
+          toggleActions: 'play none none none'
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power2.out'
+      });
+    }
+
+    if (badge && !badge.classList.contains('gsap-ignore')) {
+      gsap.from(badge, {
+        scrollTrigger: {
+          trigger: sec,
+          start: 'top 88%',
+          toggleActions: 'play none none none'
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power2.out'
+      });
+    }
+  });
+
+  // Explicit .gsap-reveal items
   const revealElements = document.querySelectorAll('.gsap-reveal');
   revealElements.forEach((el) => {
     gsap.from(el, {
@@ -151,32 +199,35 @@ function initGSAPAnimations() {
         start: 'top 85%',
         toggleActions: 'play none none none'
       },
-      y: 45,
+      y: 40,
       opacity: 0,
-      duration: 0.85,
+      duration: 0.8,
       ease: 'power2.out'
     });
   });
 
-  // Staggered Cards Reveal
-  const cardGrids = document.querySelectorAll('.gsap-stagger-grid');
+  // Staggered Grids (Product cards, Advantage cards, News cards, Feature grids)
+  const cardGrids = document.querySelectorAll('.gsap-stagger-grid, .grid');
   cardGrids.forEach((grid) => {
-    const cards = grid.children;
-    gsap.from(cards, {
-      scrollTrigger: {
-        trigger: grid,
-        start: 'top 80%',
-        toggleActions: 'play none none none'
-      },
-      y: 50,
-      opacity: 0,
-      duration: 0.7,
-      stagger: 0.15,
-      ease: 'power3.out'
-    });
+    // Avoid double-animating nested items
+    if (grid.children.length > 1 && !grid.closest('.gsap-stagger-grid')) {
+      const cards = Array.from(grid.children);
+      gsap.from(cards, {
+        scrollTrigger: {
+          trigger: grid,
+          start: 'top 82%',
+          toggleActions: 'play none none none'
+        },
+        y: 45,
+        opacity: 0,
+        duration: 0.75,
+        stagger: 0.1,
+        ease: 'power3.out'
+      });
+    }
   });
 
-  // Number Counter Animation (20+ Years Experience, $2.8M Revenue, 222,800m 40' HQ)
+  // --- C. DYNAMIC NUMBER COUNTER ANIMATION ---
   const counterElements = document.querySelectorAll('.counter-val');
   counterElements.forEach((counter) => {
     const targetVal = parseFloat(counter.getAttribute('data-target'));
@@ -190,8 +241,8 @@ function initGSAPAnimations() {
         let obj = { val: 0 };
         gsap.to(obj, {
           val: targetVal,
-          duration: 1.4,
-          ease: 'power1.out',
+          duration: 1.5,
+          ease: 'power2.out',
           onUpdate: () => {
             counter.innerText = obj.val.toFixed(decimals) + suffix;
           }
