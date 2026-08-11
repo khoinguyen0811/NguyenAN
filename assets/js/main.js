@@ -59,11 +59,12 @@ function initSlidingNavIndicator() {
       indicator.style.opacity = '0';
       return;
     }
+    const targetElem = element.querySelector('span') || element;
     const navRect = nav.getBoundingClientRect();
-    const rect = element.getBoundingClientRect();
+    const targetRect = targetElem.getBoundingClientRect();
 
-    indicator.style.left = (rect.left - navRect.left) + 'px';
-    indicator.style.width = rect.width + 'px';
+    indicator.style.left = (targetRect.left - navRect.left) + 'px';
+    indicator.style.width = targetRect.width + 'px';
     indicator.style.opacity = '1';
   }
 
@@ -83,6 +84,14 @@ function initSlidingNavIndicator() {
   links.forEach(link => {
     link.addEventListener('mouseenter', () => {
       moveIndicatorTo(link);
+    });
+  });
+
+  const navGroups = nav.querySelectorAll('.group');
+  navGroups.forEach(group => {
+    group.addEventListener('mouseenter', () => {
+      const groupLink = group.querySelector('.nav-item-link');
+      if (groupLink) moveIndicatorTo(groupLink);
     });
   });
 
