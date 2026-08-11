@@ -25,7 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* -------------------------------------------------------------------------- */
-/* 0. Sliding Navigation Indicator Bar                                       */
+/* 0. Active Navigation Link Highlighting                                    */
+/* -------------------------------------------------------------------------- */
+function initActiveNavLink() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-item-link, .mobile-nav-link');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+      link.classList.add('nav-link-active');
+    }
+  });
+}
+
+/* -------------------------------------------------------------------------- */
+/* 0b. Sliding Navigation Indicator Bar                                      */
 /* -------------------------------------------------------------------------- */
 function initSlidingNavIndicator() {
   const nav = document.getElementById('desktop-nav-menu');
@@ -119,12 +133,17 @@ function initGSAPAnimations() {
   // --- A. MASTER PAGE HERO ENTRANCE TIMELINE ---
   const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.85 } });
 
-  // Page Hero Banner Elements (Breadcrumb, Blue Ribbon, Description)
-  if (document.querySelector('main')) {
-    heroTl.from('main section:first-of-type nav', { y: -20, opacity: 0, duration: 0.6 })
-          .from('main section:first-of-type .font-sans', { x: -40, opacity: 0, duration: 0.8 }, '-=0.3')
-          .from('main section:first-of-type h1', { scale: 0.95, opacity: 0, duration: 0.6 }, '-=0.5')
-          .from('main section:first-of-type p', { y: 25, opacity: 0, duration: 0.6 }, '-=0.4');
+  // Sub-page Hero Banner Elements (Breadcrumb, Blue Ribbon, Description)
+  const heroNav = document.querySelector('main section:first-of-type nav');
+  const heroBanner = document.querySelector('main section:first-of-type .font-sans');
+  const heroH1 = document.querySelector('main section:first-of-type h1');
+  const heroDesc = document.querySelector('main section:first-of-type p');
+  
+  if (heroNav && heroBanner && heroH1 && heroDesc) {
+    heroTl.from(heroNav, { y: -20, opacity: 0, duration: 0.6 })
+          .from(heroBanner, { x: -40, opacity: 0, duration: 0.8 }, '-=0.3')
+          .from(heroH1, { scale: 0.95, opacity: 0, duration: 0.6 }, '-=0.5')
+          .from(heroDesc, { y: 25, opacity: 0, duration: 0.6 }, '-=0.4');
   }
 
   // Index Page Hero Specific Stagger
