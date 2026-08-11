@@ -128,36 +128,23 @@ header button {
   font-family: var(--font-serif);
 }
 
-/* Navigation Links 100% Pixel-Perfect Underline System */
-.nav-item-link {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-.nav-item-link::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background-color: #0071ce;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-
-.nav-item-link:hover::after,
-.nav-item-link.nav-link-active::after {
-  transform: scaleX(1);
-}
-
+/* Navigation Link & Sliding Indicator (Closer to text & Smooth Glide) */
 .nav-link-active {
   color: #0071ce !important;
   font-weight: 800 !important;
+}
+
+#nav-indicator {
+  position: absolute !important;
+  bottom: -2px !important;
+  height: 2.5px !important;
+  background-color: #0071ce !important;
+  border-radius: 2px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), width 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s ease !important;
+  pointer-events: none !important;
+  z-index: 30 !important;
 }
 
 /* Hero Section Background Overlay (Solid white fade on left/top for crystal-clear mobile text readability) */

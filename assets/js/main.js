@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initScrollProgress();
   initActiveNavLink();
+  initSlidingNavIndicator();
   initMarketMapTab();
   initProductTabs();
   initAccordion();
@@ -34,6 +35,78 @@ function initActiveNavLink() {
     if (href === currentPath || (currentPath === '' && href === 'index.html')) {
       link.classList.add('nav-link-active');
     }
+  });
+}
+
+/* -------------------------------------------------------------------------- */
+/* 0b. Sliding Navigation Indicator Bar                                      */
+/* -------------------------------------------------------------------------- */
+function initSlidingNavIndicator() {
+  const nav = document.getElementById('desktop-nav-menu');
+  if (!nav) return;
+
+  const links = nav.querySelectorAll('.nav-item-link');
+  let indicator = document.getElementById('nav-indicator');
+
+  if (!indicator) {
+    indicator = document.createElement('div');
+    indicator.id = 'nav-indicator';
+    nav.appendChild(indicator);
+  }
+
+  function moveIndicatorTo(element) {
+    if (!element || element.offsetWidth === 0) {
+      indicator.style.opacity = '0';
+      return;
+    }
+    const targetElem = element.querySelector('span') || element;
+    const navRect = nav.getBoundingClientRect();
+    const targetRect = targetElem.getBoundingClientRect();
+
+    indicator.style.left = (targetRect.left - navRect.left) + 'px';
+    indicator.style.width = targetRect.width + 'px';
+    indicator.style.opacity = '1';
+  }
+
+  // Set initial position after fonts and layouts render
+  const updateInitialPos = () => {
+    const currentActive = nav.querySelector('.nav-link-active');
+    if (currentActive) {
+      moveIndicatorTo(currentActive);
+    } else if (links.length) {
+      moveIndicatorTo(links[0]);
+    }
+  };
+
+  setTimeout(updateInitialPos, 50);
+  setTimeout(updateInitialPos, 300);
+
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      moveIndicatorTo(link);
+    });
+  });
+
+  const navGroups = nav.querySelectorAll('.group');
+  navGroups.forEach(group => {
+    group.addEventListener('mouseenter', () => {
+      const groupLink = group.querySelector('.nav-item-link');
+      if (groupLink) moveIndicatorTo(groupLink);
+    });
+  });
+
+  nav.addEventListener('mouseleave', () => {
+    const currentActive = nav.querySelector('.nav-link-active');
+    if (currentActive) {
+      moveIndicatorTo(currentActive);
+    } else {
+      indicator.style.opacity = '0';
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    const currentActive = nav.querySelector('.nav-link-active');
+    if (currentActive) moveIndicatorTo(currentActive);
   });
 }
 
