@@ -144,10 +144,16 @@ header button {
   pointer-events: none;
 }
 
-/* Hero Section Background Overlay (Left subtle white fade for text legibility, crisp suit image on right) */
+/* Hero Section Background Overlay (Solid white fade on left/top for crystal-clear mobile text readability) */
 .hero-gradient-overlay {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 35%, rgba(255, 255, 255, 0.05) 65%, transparent 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.15) 80%, transparent 100%);
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .hero-gradient-overlay {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.90) 60%, rgba(255, 255, 255, 0.4) 85%, transparent 100%);
+  }
 }
 
 /* Product Card Circular Badge Overlap */
