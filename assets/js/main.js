@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProductTabs();
   initAccordion();
   initRFQForm();
+  initCustomDropdown();
   initLanguageToggle();
   initMobileMenu();
 });
@@ -777,6 +778,81 @@ function initRFQForm() {
         }, 8000);
       }
     }, 1200);
+  });
+}
+
+/* -------------------------------------------------------------------------- */
+/* 7b. Custom Category Dropdown Component                                     */
+/* -------------------------------------------------------------------------- */
+function initCustomDropdown() {
+  const dropdown = document.getElementById('custom-category-dropdown');
+  if (!dropdown) return;
+
+  const trigger = document.getElementById('dropdown-trigger-btn');
+  const menu = document.getElementById('dropdown-menu-list');
+  const arrowIcon = document.getElementById('dropdown-arrow-icon');
+  const selectedText = document.getElementById('selected-category-text');
+  const hiddenInput = document.getElementById('selected-category-input');
+  const options = dropdown.querySelectorAll('.dropdown-option');
+
+  if (!trigger || !menu) return;
+
+  function openDropdown() {
+    menu.classList.remove('hidden');
+    if (arrowIcon) arrowIcon.classList.add('rotate-180');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDropdown() {
+    menu.classList.add('hidden');
+    if (arrowIcon) arrowIcon.classList.remove('rotate-180');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (menu.classList.contains('hidden')) {
+      openDropdown();
+    } else {
+      closeDropdown();
+    }
+  }
+
+  trigger.addEventListener('click', toggleDropdown);
+
+  options.forEach(opt => {
+    opt.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const val = opt.getAttribute('data-value');
+      const label = opt.getAttribute('data-label') || opt.innerText.trim();
+
+      if (hiddenInput) hiddenInput.value = val;
+      if (selectedText) {
+        selectedText.innerText = label;
+        selectedText.classList.add('font-semibold', 'text-slate-900');
+        selectedText.classList.remove('text-slate-700');
+      }
+
+      options.forEach(o => o.classList.remove('bg-blue-50', 'text-primary-blue', 'font-bold'));
+      opt.classList.add('bg-blue-50', 'text-primary-blue', 'font-bold');
+
+      closeDropdown();
+    });
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      closeDropdown();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDropdown();
+    }
   });
 }
 

@@ -1,482 +1,968 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | NGUYEN AN INTERLINING - Direct Consultation & Sample Request</title>
-  <meta name="description" content="Contact NGUYEN AN CO., LTD - Head office in Ho Chi Minh City, warehouse in Tay Thanh Ward and factory in Nam Sach, Hai Duong. Hotline/Zalo: 0986 945 537.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Contact Us | NGUYEN AN INTERLINING - Direct Consultation & Sample Request
+    </title>
+    <meta
+      name="description"
+      content="Contact NGUYEN AN CO., LTD - Head office in Ho Chi Minh City, warehouse in Tay Thanh Ward and factory in Nam Sach, Hai Duong. Hotline/Zalo: 0986 945 537."
+    />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          maxWidth: {
-            '7xl': '1440px',
-            'site': '1440px',
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            maxWidth: {
+              "7xl": "1440px",
+              site: "1440px",
+            },
+            colors: {
+              "primary-blue": "#0071ce",
+              "primary-hover": "#005bb5",
+              "primary-dark": "#003b7a",
+              "primary-deep": "#061e33",
+              "primary-light": "#48a0e5",
+              "primary-ice": "#f0f7fc",
+            },
+            fontFamily: {
+              serif: ['"Phudu"', "sans-serif"],
+              phudu: ['"Phudu"', "sans-serif"],
+              sans: ['"Inter"', '"Plus Jakarta Sans"', "sans-serif"],
+            },
           },
-          colors: {
-            'primary-blue': '#0071ce',
-            'primary-hover': '#005bb5',
-            'primary-dark': '#003b7a',
-            'primary-deep': '#061e33',
-            'primary-light': '#48a0e5',
-            'primary-ice': '#f0f7fc',
-          },
-          fontFamily: {
-            serif: ['"Phudu"', 'sans-serif'],
-            phudu: ['"Phudu"', 'sans-serif'],
-            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <!-- FontAwesome Icon Library CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <!-- FontAwesome Icon Library CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <div id="scroll-progress"></div>
+  <body
+    class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue"
+  >
+    <div id="scroll-progress"></div>
 
-  <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
-  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      
-      <!-- Official Brand Logo Image -->
-      <a href="index.html" class="flex items-center group py-0.5">
-        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
-      </a>
+    <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
+    <header
+      id="main-nav"
+      class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <!-- Official Brand Logo Image -->
+        <a href="index.html" class="flex items-center group py-0.5">
+          <img
+            src="assets/img/logo-brand.png"
+            alt="NGUYEN AN INTERLINING"
+            class="h-11 sm:h-12 w-auto object-contain"
+          />
+        </a>
 
-      <!-- Desktop Nav Menu Links -->
-      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
-        <a href="index.html" class="nav-item-link hover:text-primary-blue transition py-1">Home</a>
-        <a href="gioi-thieu.html" class="nav-item-link hover:text-primary-blue transition py-1">About Us</a>
-        
-        <div class="relative group cursor-pointer py-1">
-          <a href="san-pham.html" class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1">
-            <span>Products</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
-          </a>
-          <!-- Seamless Dropdown Bridge Container -->
-          <div class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50">
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
-              <a href="san-pham.html#woven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven</a>
-              <a href="san-pham.html#nonwoven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Non woven</a>
-              <a href="san-pham.html#fusible" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Fusible</a>
+        <!-- Desktop Nav Menu Links -->
+        <nav
+          id="desktop-nav-menu"
+          class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1"
+        >
+          <a
+            href="index.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >About Us</a
+          >
+
+          <div class="relative group cursor-pointer py-1">
+            <a
+              href="san-pham.html"
+              class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1"
+            >
+              <span>Products</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"
+              ></i>
+            </a>
+            <!-- Seamless Dropdown Bridge Container -->
+            <div
+              class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50"
+            >
+              <div
+                class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal"
+              >
+                <a
+                  href="san-pham.html#woven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Woven</a
+                >
+                <a
+                  href="san-pham.html#nonwoven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Non woven</a
+                >
+                <a
+                  href="san-pham.html#fusible"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Fusible</a
+                >
+              </div>
             </div>
           </div>
+
+          <a
+            href="dich-vu-logistics.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Solutions</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="nav-item-link nav-link-active hover:text-primary-blue transition py-1"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right Call-to-Action Phone Button -->
+        <div class="hidden sm:flex items-center">
+          <a
+            href="tel:+84986945537"
+            class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span>(+84) 986 945 537</span>
+          </a>
         </div>
 
-        <a href="dich-vu-logistics.html" class="nav-item-link hover:text-primary-blue transition py-1">Solutions</a>
-        <a href="phat-trien-ben-vung.html" class="nav-item-link hover:text-primary-blue transition py-1">Capabilities</a>
-        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
-        <a href="lien-he.html" class="nav-item-link nav-link-active hover:text-primary-blue transition py-1">Contact</a>
-      </nav>
-
-      <!-- Right Call-to-Action Phone Button -->
-      <div class="hidden sm:flex items-center">
-        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
-          <i class="fa-solid fa-phone text-xs"></i>
-          <span>(+84) 986 945 537</span>
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
-        <i class="fa-solid fa-bars text-lg"></i>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Backdrop Overlay -->
-  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
-
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <a href="index.html" class="flex items-center">
-          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-        </a>
-        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
-          <i class="fa-solid fa-xmark text-xl"></i>
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
+    </header>
 
-      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
-        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
-        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
-        <div class="border-b border-slate-50 py-2">
-          <button type="button" id="mobile-products-toggle" class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none">
-            <span>Products</span>
-            <i id="mobile-products-arrow" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
-          </button>
-          <div id="mobile-products-submenu" class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600">
-            <a href="san-pham.html#woven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Woven</a>
-            <a href="san-pham.html#nonwoven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Non woven</a>
-            <a href="san-pham.html#fusible" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Fusible</a>
-          </div>
-        </div>
-        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
-        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Capabilities</a>
-        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
-        <a href="lien-he.html" class="mobile-nav-link py-2 text-primary-blue font-bold">Contact</a>
-      </nav>
-    </div>
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div
+      id="mobile-drawer-overlay"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div class="pt-6 border-t border-slate-100 space-y-3">
-      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
-        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
-      </a>
-    </div>
-  </div>
-
-  <main>
-    <!-- PAGE HERO BANNER -->
-    <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
-        <img src="assets/img/capabilities.png" alt="Contact Background" class="w-full h-full object-cover">
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
-        <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center space-x-2 text-xs font-semibold text-slate-300">
-          <a href="index.html" class="hover:text-white transition flex items-center">
-            <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
-            <span>Home</span>
+    <!-- Mobile Drawer Menu -->
+    <div
+      id="mobile-drawer"
+      class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between"
+    >
+      <div>
+        <div
+          class="flex items-center justify-between pb-6 border-b border-slate-100"
+        >
+          <a href="index.html" class="flex items-center">
+            <img
+              src="assets/img/logo-brand.png"
+              alt="NGUYEN AN INTERLINING"
+              class="h-10 w-auto object-contain"
+            />
           </a>
-          <span class="text-slate-500">/</span>
-          <span class="text-blue-300 font-bold">Contact</span>
+          <button
+            id="close-mobile-drawer"
+            class="p-2 text-slate-400 hover:text-slate-700"
+          >
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <nav
+          class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm"
+        >
+          <a
+            href="index.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >About Us</a
+          >
+          <div class="border-b border-slate-50 py-2">
+            <button
+              type="button"
+              id="mobile-products-toggle"
+              class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none"
+            >
+              <span>Products</span>
+              <i
+                id="mobile-products-arrow"
+                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"
+              ></i>
+            </button>
+            <div
+              id="mobile-products-submenu"
+              class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600"
+            >
+              <a
+                href="san-pham.html#woven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Woven</a
+              >
+              <a
+                href="san-pham.html#nonwoven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Non woven</a
+              >
+              <a
+                href="san-pham.html#fusible"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Fusible</a
+              >
+            </div>
+          </div>
+          <a
+            href="dich-vu-logistics.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Solutions (Logistics)</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="mobile-nav-link py-2 text-primary-blue font-bold"
+            >Contact</a
+          >
         </nav>
       </div>
 
-      <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
-      <div class="relative w-full my-8 font-sans">
-        
-        <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-l-4 border-white"></div>
-        </div>
-
-        <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
-        <div class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4">
-              CONTACT US
-            </h1>
-          </div>
-        </div>
-
-        <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-t-4 border-b-4 border-r-4 border-white"></div>
-        </div>
-
+      <div class="pt-6 border-t border-slate-100 space-y-3">
+        <a
+          href="tel:+84986945537"
+          class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue"
+        >
+          <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+        </a>
       </div>
+    </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
-          Direct technical consultation, sample kit requests, and inquiries for apparel manufacturing projects.
-        </p>
-      </div>
-    </section>
+    <main>
+      <!-- PAGE HERO BANNER -->
+      <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none"
+        >
+          <img
+            src="assets/img/capabilities.png"
+            alt="Contact Background"
+            class="w-full h-full object-cover"
+          />
+        </div>
 
-    <!-- SECTION 1: CONTACT INFORMATION CARDS -->
-    <section class="py-14 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          <!-- Office Address Card -->
-          <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-3 shadow-xs hover:shadow-md transition">
-            <div class="w-12 h-12 rounded-xl bg-blue-50 text-primary-blue flex items-center justify-center text-xl">
-              <i class="fa-solid fa-building"></i>
-            </div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Head Office (TP.HCM)</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam.
-            </p>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3"
+        >
+          <!-- Breadcrumb Navigation -->
+          <nav
+            class="flex items-center space-x-2 text-xs font-semibold text-slate-300"
+          >
+            <a
+              href="index.html"
+              class="hover:text-white transition flex items-center"
+            >
+              <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
+              <span>Home</span>
+            </a>
+            <span class="text-slate-500">/</span>
+            <span class="text-blue-300 font-bold">Contact</span>
+          </nav>
+        </div>
+
+        <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
+        <div class="relative w-full my-8 font-sans">
+          <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-l-4 border-white"
+            ></div>
           </div>
 
-          <!-- Factory & Warehouse Address Card -->
-          <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-3 shadow-xs hover:shadow-md transition">
-            <div class="w-12 h-12 rounded-xl bg-blue-50 text-primary-blue flex items-center justify-center text-xl">
-              <i class="fa-solid fa-industry"></i>
-            </div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Warehouse & Factory</h4>
-            <div class="space-y-1.5 text-xs text-slate-600 leading-relaxed">
-              <p><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh Ward, Ho Chi Minh City, Vietnam.</p>
-              <p><strong>Factory:</strong> Nam Sach District, Hai Duong Province, Vietnam.</p>
-            </div>
-          </div>
-
-          <!-- Direct Contacts Card -->
-          <div class="p-8 bg-slate-900 text-white rounded-2xl border border-slate-800 space-y-3 shadow-md hover:shadow-lg transition">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl">
-              <i class="fa-solid fa-headset"></i>
-            </div>
-            <h4 class="font-bold text-sm uppercase text-white">Direct Communication</h4>
-            <div class="space-y-1 text-xs text-slate-300">
-              <p><strong>Hotline/WhatsApp:</strong> (+84) 986 945 537</p>
-              <p><strong>Email:</strong> infor@nguyenanacc.com.vn</p>
-              <p><strong>Contact Person:</strong> Mr. Vincen (Sales & Technical Director)</p>
+          <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
+          <div
+            class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20"
+          >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h1
+                class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4"
+              >
+                CONTACT US
+              </h1>
             </div>
           </div>
 
+          <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-t-4 border-b-4 border-r-4 border-white"
+            ></div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SECTION 2: MAP WITH OVERLAPPING FLOATING RFQ FORM CARD -->
-    <section class="relative bg-slate-50 pb-20 border-t border-slate-100 overflow-hidden">
-      
-      <!-- Top Half: Interactive Google Map -->
-      <div class="w-full h-[440px] sm:h-[500px] relative z-0 bg-slate-200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
-      </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <p
+            class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed"
+          >
+            Direct technical consultation, sample kit requests, and inquiries
+            for apparel manufacturing projects.
+          </p>
+        </div>
+      </section>
 
-      <!-- Bottom Half: Overlapping Floating Card (Overlaps 50% on top of Map) -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative -mt-52 sm:-mt-64 z-20">
-        <div class="bg-white rounded-[28px] sm:rounded-3xl shadow-2xl border border-slate-100 p-6 sm:p-8 lg:p-10">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-            
-            <!-- Left Column: Precision Craftsmanship Image with Overlapping Protruding Badge -->
-            <div class="lg:col-span-5 relative flex flex-col justify-center pb-6 sm:pb-8 lg:pb-0">
-              <!-- Main Image Box -->
-              <div class="relative w-full h-[360px] sm:h-[440px] rounded-2xl overflow-hidden shadow-lg border border-slate-100">
-                <img src="assets/img/capabilities.png" alt="Precision Interlining Manufacturing" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+      <!-- SECTION 1: CONTACT INFORMATION CARDS -->
+      <section class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Office Address Card -->
+            <div
+              class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-3 shadow-xs hover:shadow-md transition"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-50 text-primary-blue flex items-center justify-center text-xl"
+              >
+                <i class="fa-solid fa-building"></i>
               </div>
-              
-              <!-- Overlapping Protruding Hotline Callout Badge (Lệch góc dưới bên trái y như hình mẫu) -->
-              <div class="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 z-20 bg-gradient-to-br from-[#003b7a] to-[#061e33] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/20 max-w-[280px] sm:max-w-[320px] space-y-2.5">
-                <p class="text-xs sm:text-[13px] text-blue-100 leading-relaxed font-normal">
-                  Chúng tôi sẽ phản hồi trong vòng 24h, hoặc bạn có thể gọi hotline trực tiếp hàng ngày:
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Head Office (TP.HCM)
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh
+                City, Vietnam.
+              </p>
+            </div>
+
+            <!-- Factory & Warehouse Address Card -->
+            <div
+              class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-3 shadow-xs hover:shadow-md transition"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-50 text-primary-blue flex items-center justify-center text-xl"
+              >
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Warehouse & Factory
+              </h4>
+              <div class="space-y-1.5 text-xs text-slate-600 leading-relaxed">
+                <p>
+                  <strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh
+                  Ward, Ho Chi Minh City, Vietnam.
                 </p>
-                <div class="text-[11px] text-blue-300 font-semibold flex items-center space-x-1.5">
-                  <i class="fa-regular fa-clock text-xs"></i>
-                  <span>08:00 AM - 12:00 PM / 13:30 - 17:30</span>
-                </div>
-                <a href="tel:+84986945537" class="flex items-center space-x-2 text-white font-extrabold text-base sm:text-lg hover:text-blue-200 transition pt-0.5">
-                  <i class="fa-solid fa-phone text-blue-400"></i>
-                  <span>0986 945 537</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Right Column: RFQ Form -->
-            <div class="lg:col-span-7 space-y-5 flex flex-col justify-center">
-              
-              <!-- Header -->
-              <div class="space-y-2">
-                <div class="flex items-center space-x-3">
-                  <div class="flex items-center space-x-1 shrink-0">
-                    <span class="w-1.5 h-3.5 bg-[#2563eb] -skew-x-[25deg] rounded-[1px] inline-block"></span>
-                    <span class="w-1.5 h-3.5 bg-[#93c5fd] -skew-x-[25deg] rounded-[1px] inline-block"></span>
-                  </div>
-                  <span class="text-xs sm:text-[13px] font-black uppercase tracking-[0.18em] text-[#0f172a]">
-                    GET IN TOUCH & RFQ
-                  </span>
-                  <div class="flex items-center flex-1 max-w-xs sm:max-w-md">
-                    <div class="h-[1.5px] bg-[#bfdbfe] flex-1"></div>
-                    <div class="w-1.5 h-1.5 rounded-full bg-[#60a5fa] -ml-0.5"></div>
-                  </div>
-                </div>
-                <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight uppercase">
-                  LIÊN HỆ & BÁO GIÁ
-                </h2>
-                <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
-                  Kiểm soát toàn diện từ nguồn gốc vật tư đến quy trình sản xuất, đảm bảo khách hàng nhận được chất lượng và mức giá tốt nhất.
+                <p>
+                  <strong>Factory:</strong> Nam Sach District, Hai Duong
+                  Province, Vietnam.
                 </p>
               </div>
+            </div>
 
-              <!-- Form Fields -->
-              <form id="rfq-form" class="space-y-4 pt-1">
-                
-                <!-- Row 1: Name & Email -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <input type="text" required placeholder="Họ và tên *" class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition">
-                  </div>
-                  <div>
-                    <input type="email" required placeholder="Địa chỉ Email *" class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition">
-                  </div>
+            <!-- Direct Contacts Card -->
+            <div
+              class="p-8 bg-slate-900 text-white rounded-2xl border border-slate-800 space-y-3 shadow-md hover:shadow-lg transition"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl"
+              >
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <h4 class="font-bold text-sm uppercase text-white">
+                Direct Communication
+              </h4>
+              <div class="space-y-1 text-xs text-slate-300">
+                <p><strong>Hotline/WhatsApp:</strong> (+84) 986 945 537</p>
+                <p><strong>Email:</strong> infor@nguyenanacc.com.vn</p>
+                <p>
+                  <strong>Contact Person:</strong> Mr. Vincen (Sales & Technical
+                  Director)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: MAP WITH OVERLAPPING FLOATING RFQ FORM CARD -->
+      <section
+        class="relative bg-slate-50 pb-20 border-t border-slate-100 overflow-hidden"
+      >
+        <!-- Top Half: Interactive Google Map -->
+        <div class="w-full h-[440px] sm:h-[500px] relative z-0 bg-slate-200">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Nguyen An Location Map"
+          ></iframe>
+        </div>
+
+        <!-- Bottom Half: Overlapping Floating Card (Overlaps 50% on top of Map) -->
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative -mt-52 sm:-mt-64 z-20"
+        >
+          <div
+            class="bg-white rounded-[28px] sm:rounded-3xl shadow-2xl border border-slate-100 p-6 sm:p-8 lg:p-10"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch"
+            >
+              <!-- Left Column: Precision Craftsmanship Image with Overlapping Protruding Badge -->
+              <div
+                class="lg:col-span-5 relative flex flex-col justify-center pb-6 sm:pb-8 lg:pb-0"
+              >
+                <!-- Main Image Box -->
+                <div
+                  class="relative w-full h-[360px] sm:h-[440px] rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                >
+                  <img
+                    src="assets/img/capabilities.png"
+                    alt="Precision Interlining Manufacturing"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"
+                  ></div>
                 </div>
 
-                <!-- Row 2: Phone & Category Select -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <input type="tel" required placeholder="Số điện thoại / Zalo *" class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition">
+                <!-- Overlapping Protruding Hotline Callout Badge (Lệch góc dưới bên trái y như hình mẫu) -->
+                <div
+                  class="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 z-20 bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-white/20 max-w-[280px] sm:max-w-[320px] space-y-2.5"
+                >
+                  <p
+                    class="text-xs sm:text-[13px] text-blue-100 leading-relaxed font-normal"
+                  >
+                    Chúng tôi sẽ phản hồi trong vòng 24h, hoặc bạn có thể gọi
+                    hotline trực tiếp hàng ngày:
+                  </p>
+                  <div
+                    class="text-[11px] text-blue-300 font-semibold flex items-center space-x-1.5"
+                  >
+                    <i class="fa-regular fa-clock text-xs"></i>
+                    <span>08:00 AM - 12:00 PM / 13:30 - 17:30</span>
                   </div>
-                  <div class="relative">
-                    <select required class="w-full px-5 py-3.5 pr-12 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-700 focus:outline-none focus:border-primary-blue focus:bg-white transition appearance-none cursor-pointer">
-                      <option value="" disabled selected>Chọn hạng mục quan tâm *</option>
-                      <option value="warp">Warp Knitted Interlining (Mex Dệt Kim Dọc)</option>
-                      <option value="circular">Circular Interlining (Mex Dệt Kim Tròn)</option>
-                      <option value="water">Water Jet Loom Interlining (Mex Thoi Phun Nước)</option>
-                      <option value="woven">Woven Interlining (Mex Dệt Thoi)</option>
-                      <option value="nonwoven">Non-Woven Fusible (Mex Không Dệt)</option>
-                      <option value="custom">Yêu cầu mẫu & Quy cách riêng (Custom RFQ)</option>
-                    </select>
-                    <div class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center pointer-events-none text-xs shadow-xs">
-                      <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                  <a
+                    href="tel:+84986945537"
+                    class="flex items-center space-x-2 text-white font-extrabold text-base sm:text-lg hover:text-blue-200 transition pt-0.5"
+                  >
+                    <i class="fa-solid fa-phone text-blue-400"></i>
+                    <span>0986 945 537</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: RFQ Form -->
+              <div class="lg:col-span-7 space-y-5 flex flex-col justify-center">
+                <!-- Header -->
+                <div class="space-y-2">
+                  <div class="flex items-center space-x-3">
+                    <div class="flex items-center space-x-1 shrink-0">
+                      <span
+                        class="w-1.5 h-3.5 bg-[#2563eb] -skew-x-[25deg] rounded-[1px] inline-block"
+                      ></span>
+                      <span
+                        class="w-1.5 h-3.5 bg-[#93c5fd] -skew-x-[25deg] rounded-[1px] inline-block"
+                      ></span>
+                    </div>
+                    <span
+                      class="text-xs sm:text-[13px] font-black uppercase tracking-[0.18em] text-[#0f172a]"
+                    >
+                      GET IN TOUCH & RFQ
+                    </span>
+                    <div class="flex items-center flex-1 max-w-xs sm:max-w-md">
+                      <div class="h-[1.5px] bg-[#bfdbfe] flex-1"></div>
+                      <div
+                        class="w-1.5 h-1.5 rounded-full bg-[#60a5fa] -ml-0.5"
+                      ></div>
                     </div>
                   </div>
+                  <h2
+                    class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight uppercase"
+                  >
+                    LIÊN HỆ & BÁO GIÁ
+                  </h2>
+                  <p
+                    class="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal"
+                  >
+                    Kiểm soát toàn diện từ nguồn gốc vật tư đến quy trình sản
+                    xuất, đảm bảo khách hàng nhận được chất lượng và mức giá tốt
+                    nhất.
+                  </p>
                 </div>
 
-                <!-- Row 3: Message Textarea -->
-                <div>
-                  <textarea rows="4" placeholder="Mô tả yêu cầu chi tiết hoặc thông tin công trình / đơn hàng..." class="w-full px-5 py-3.5 rounded-2xl bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition resize-none"></textarea>
-                </div>
+                <!-- Form Fields -->
+                <form id="rfq-form" class="space-y-4 pt-1">
+                  <!-- Row 1: Name & Email -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <input
+                        type="text"
+                        required
+                        placeholder="Họ và tên *"
+                        class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="email"
+                        required
+                        placeholder="Địa chỉ Email *"
+                        class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition"
+                      />
+                    </div>
+                  </div>
 
-                <!-- Row 4: Submit Button -->
-                <div class="pt-2">
-                  <button type="submit" class="inline-flex items-center space-x-2.5 px-8 py-3.5 rounded-full text-xs font-extrabold tracking-wider text-white bg-slate-900 hover:bg-primary-blue shadow-lg hover:shadow-xl transition duration-300 uppercase cursor-pointer">
-                    <span>Gửi Yêu Cầu Báo Giá</span>
-                    <i class="fa-solid fa-arrow-right text-xs"></i>
-                  </button>
-                </div>
+                  <!-- Row 2: Phone & Category Select -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <input
+                        type="tel"
+                        required
+                        placeholder="Số điện thoại / Zalo *"
+                        class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition"
+                      />
+                    </div>
+                    <!-- Custom UI Dropdown Matching Image 2 (clean text, no icons) -->
+                    <div class="relative" id="custom-category-dropdown">
+                      <!-- Trigger Capsule Button -->
+                      <button
+                        type="button"
+                        id="dropdown-trigger-btn"
+                        class="w-full px-5 py-3.5 rounded-full bg-slate-100/90 border border-slate-200/60 text-xs text-slate-700 flex items-center justify-between focus:outline-none focus:border-primary-blue focus:bg-white transition cursor-pointer shadow-xs select-none"
+                      >
+                        <span id="selected-category-text" class="font-medium text-slate-700">Chọn hạng mục quan tâm *</span>
+                        <div id="dropdown-arrow-icon" class="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center pointer-events-none text-xs shadow-xs transition-transform duration-200 shrink-0">
+                          <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </div>
+                      </button>
+                      
+                      <!-- Hidden Form Input for Form Submission -->
+                      <input type="hidden" name="category" id="selected-category-input" value="" required />
 
-              </form>
+                      <!-- Dropdown Menu Popup Box (Image 2 style with top beak arrow) -->
+                      <div
+                        id="dropdown-menu-list"
+                        class="hidden absolute top-full mt-2.5 left-0 right-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 sm:p-2.5 space-y-1 transform transition-all duration-200"
+                      >
+                        <!-- Top Beak Arrow Pointer -->
+                        <div class="absolute -top-2 right-6 w-3.5 h-3.5 bg-white border-t border-l border-slate-100 rotate-45 pointer-events-none"></div>
 
+                        <!-- Top Header in Menu -->
+                        <div class="px-3.5 py-2.5 rounded-xl bg-slate-50 text-xs font-bold text-slate-800 tracking-wide select-none">
+                          Chọn hạng mục quan tâm *
+                        </div>
+
+                        <!-- Options List (No icons, clean text, beautiful hover states) -->
+                        <div class="space-y-1 pt-1 text-xs">
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="warp"
+                            data-label="Warp Knitted Interlining (Mex Dệt Kim Dọc)"
+                          >
+                            <span>Warp Knitted Interlining (Mex Dệt Kim Dọc)</span>
+                          </div>
+
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="circular"
+                            data-label="Circular Interlining (Mex Dệt Kim Tròn)"
+                          >
+                            <span>Circular Interlining (Mex Dệt Kim Tròn)</span>
+                          </div>
+
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="water"
+                            data-label="Water Jet Loom Interlining (Mex Thoi Phun Nước)"
+                          >
+                            <span>Water Jet Loom Interlining (Mex Thoi Phun Nước)</span>
+                          </div>
+
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="woven"
+                            data-label="Woven Interlining (Mex Dệt Thoi)"
+                          >
+                            <span>Woven Interlining (Mex Dệt Thoi)</span>
+                          </div>
+
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="nonwoven"
+                            data-label="Non-Woven Fusible (Mex Không Dệt)"
+                          >
+                            <span>Non-Woven Fusible (Mex Không Dệt)</span>
+                          </div>
+
+                          <div
+                            class="dropdown-option px-3.5 py-2.5 rounded-xl text-slate-700 hover:text-primary-blue hover:bg-blue-50/80 transition-colors duration-150 cursor-pointer font-medium"
+                            data-value="custom"
+                            data-label="Yêu cầu mẫu & Quy cách riêng (Custom RFQ)"
+                          >
+                            <span>Yêu cầu mẫu & Quy cách riêng (Custom RFQ)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 3: Message Textarea -->
+                  <div>
+                    <textarea
+                      rows="4"
+                      placeholder="Mô tả yêu cầu chi tiết hoặc thông tin công trình / đơn hàng..."
+                      class="w-full px-5 py-3.5 rounded-2xl bg-slate-100/90 border border-slate-200/60 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-primary-blue focus:bg-white transition resize-none"
+                    ></textarea>
+                  </div>
+
+                  <!-- Row 4: Submit Button -->
+                  <div class="pt-2">
+                    <button
+                      type="submit"
+                      class="inline-flex items-center space-x-2.5 px-8 py-3.5 rounded-full text-xs font-extrabold tracking-wider text-white bg-slate-900 hover:bg-primary-blue shadow-lg hover:shadow-xl transition duration-300 uppercase cursor-pointer"
+                    >
+                      <span>Gửi Yêu Cầu Báo Giá</span>
+                      <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
+    <footer
+      class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30"
+      >
+        <div
+          class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6"
+        >
+          <div class="flex items-center space-x-5 text-center lg:text-left">
+            <div
+              class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex"
+            >
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white"
+              >
+                LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
+              </h3>
+              <p class="text-xs sm:text-sm text-blue-100 font-normal">
+                Let Nguyen An Interlining experts consult directly for your
+                project requirements.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto"
+          >
+            <a
+              href="tel:+84986945537"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+              <span>(+84) 986 945 537</span>
+            </a>
+            <a
+              href="lien-he.html"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>Request a Consultation</span>
+            </a>
           </div>
         </div>
       </div>
 
-    </section>
-  </main>
-
-  <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
-  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
-      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
-        <div class="flex items-center space-x-5 text-center lg:text-left">
-          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
-            <i class="fa-solid fa-headset"></i>
-          </div>
-          <div class="space-y-1">
-            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
-              LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
-            </h3>
-            <p class="text-xs sm:text-sm text-blue-100 font-normal">
-              Let Nguyen An Interlining experts consult directly for your project requirements.
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start"
+        >
+          <div class="lg:col-span-4 space-y-4">
+            <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+              <img
+                src="assets/img/logo-brand.png"
+                alt="NGUYEN AN INTERLINING"
+                class="h-10 w-auto object-contain"
+              />
+            </div>
+            <p
+              class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal"
+            >
+              Pioneering manufacturer in warp knitting, providing
+              high-performance fusible interlining and pocketing solutions for
+              the global apparel industry.
             </p>
+            <div class="space-y-2 text-xs text-blue-50 font-medium">
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Head Office:</strong> No 609/9/5C, Highway 13,
+                  Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh
+                  Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Factory:</strong> Nam Sach District, Hai Duong
+                  Province, Vietnam</span
+                >
+              </p>
+              <p class="flex items-center space-x-2 pt-1">
+                <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Hotline:</strong>
+                  <a href="tel:+84986945537" class="underline hover:text-white"
+                    >(+84) 986 945 537</a
+                  >
+                  (Mr. Vincen)</span
+                >
+              </p>
+              <p class="flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Email:</strong>
+                  <a
+                    href="mailto:infor@nguyenanacc.com.vn"
+                    class="underline hover:text-white"
+                    >infor@nguyenanacc.com.vn</a
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="flex items-center space-x-2.5 pt-1">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              ABOUT US
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="gioi-thieu.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Company Overview</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="san-pham.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Product Catalog</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Manufacturing Capacity</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="tin-tuc.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>News & Insights</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              SERVICES & POLICIES
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span>
+                  <span>FOB / LDP / DDP Shipping Policy</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Logistics & Customs Clearance</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="lien-he.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Technical Support & Samples</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              LOCATION MAP
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <div
+              class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Nguyen An Location Map"
+              ></iframe>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
-          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
-            <span>(+84) 986 945 537</span>
-          </a>
-          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-paper-plane text-xs"></i>
-            <span>Request a Consultation</span>
-          </a>
+
+        <div
+          class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4"
+        >
+          <div>
+            © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
+          </div>
+          <div>
+            Crafted with excellence by
+            <a href="index.html" class="font-bold underline hover:text-white"
+              >Nguyen An Interlining</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
+
+    <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+      <a
+        href="https://wa.me/84986945537"
+        target="_blank"
+        class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200"
+        title="Chat via WhatsApp"
+        ><i class="fa-solid fa-comments text-lg"></i
+      ></a>
+      <a
+        href="tel:+84986945537"
+        class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200"
+        title="Call Hotline"
+        ><i class="fa-solid fa-phone text-lg"></i
+      ></a>
+      <a
+        href="#"
+        class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200"
+        title="Back to Top"
+        ><i class="fa-solid fa-chevron-up text-sm"></i
+      ></a>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-4 space-y-4">
-          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
-            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-          </div>
-          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
-            Pioneering manufacturer in warp knitting, providing high-performance fusible interlining and pocketing solutions for the global apparel industry.
-          </p>
-          <div class="space-y-2 text-xs text-blue-50 font-medium">
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Head Office:</strong> No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Factory:</strong> Nam Sach District, Hai Duong Province, Vietnam</span>
-            </p>
-            <p class="flex items-center space-x-2 pt-1">
-              <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
-              <span><strong>Hotline:</strong> <a href="tel:+84986945537" class="underline hover:text-white">(+84) 986 945 537</a> (Mr. Vincen)</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
-              <span><strong>Email:</strong> <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a></span>
-            </p>
-          </div>
-          <div class="flex items-center space-x-2.5 pt-1">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">ABOUT US</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Company Overview</span></a></li>
-            <li><a href="san-pham.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Product Catalog</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Manufacturing Capacity</span></a></li>
-            <li><a href="tin-tuc.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>News & Insights</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">SERVICES & POLICIES</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>FOB / LDP / DDP Shipping Policy</span></a></li>
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Logistics & Customs Clearance</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a></li>
-            <li><a href="lien-he.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Technical Support & Samples</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">LOCATION MAP</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <div class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4">
-        <div>
-          © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
-        </div>
-        <div>
-          Crafted with excellence by <a href="index.html" class="font-bold underline hover:text-white">Nguyen An Interlining</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
-    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat via WhatsApp"><i class="fa-solid fa-comments text-lg"></i></a>
-    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Call Hotline"><i class="fa-solid fa-phone text-lg"></i></a>
-    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Back to Top"><i class="fa-solid fa-chevron-up text-sm"></i></a>
-  </div>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
