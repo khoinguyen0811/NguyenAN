@@ -408,14 +408,41 @@ function initMarketMapTab() {
       const northGroup = document.getElementById('group-north');
       const centralGroup = document.getElementById('group-central');
       const southGroup = document.getElementById('group-south');
+      const dashedLines = document.getElementById('map-dashed-lines');
+      const overviewBoxes = document.getElementById('map-overview-boxes');
 
       if (northGroup && centralGroup && southGroup) {
         if (regionKey === 'all') {
           gsap.to([northGroup, centralGroup, southGroup], { opacity: 1, filter: 'none', duration: 0.4 });
         } else {
-          gsap.to(northGroup, { opacity: regionKey === 'north' ? 1 : 0.4, duration: 0.4 });
-          gsap.to(centralGroup, { opacity: regionKey === 'central' ? 1 : 0.4, duration: 0.4 });
-          gsap.to(southGroup, { opacity: regionKey === 'south' ? 1 : 0.4, duration: 0.4 });
+          gsap.to(northGroup, { opacity: regionKey === 'north' ? 1 : 0.35, duration: 0.4 });
+          gsap.to(centralGroup, { opacity: regionKey === 'central' ? 1 : 0.35, duration: 0.4 });
+          gsap.to(southGroup, { opacity: regionKey === 'south' ? 1 : 0.35, duration: 0.4 });
+        }
+      }
+
+      // 3b. Toggle Dashed Connecting Lines and Overview Boxes (Hide when zoomed, Show when All)
+      if (dashedLines && overviewBoxes) {
+        if (regionKey === 'all') {
+          gsap.to([dashedLines, overviewBoxes], {
+            opacity: 1,
+            duration: 0.45,
+            ease: 'power2.out',
+            onStart: () => {
+              dashedLines.style.pointerEvents = 'auto';
+              overviewBoxes.style.pointerEvents = 'auto';
+            }
+          });
+        } else {
+          gsap.to([dashedLines, overviewBoxes], {
+            opacity: 0,
+            duration: 0.3,
+            ease: 'power2.in',
+            onComplete: () => {
+              dashedLines.style.pointerEvents = 'none';
+              overviewBoxes.style.pointerEvents = 'none';
+            }
+          });
         }
       }
     }
