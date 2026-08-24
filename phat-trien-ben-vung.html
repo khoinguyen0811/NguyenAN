@@ -1,587 +1,1121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capabilities & Sustainability | NGUYEN AN INTERLINING - Reduce, Reuse, Respect</title>
-  <meta name="description" content="Sustainability strategy, automated in-house laboratory testing capability and international certifications including OEKO-TEX 100 and ISO 9001:2015.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Capabilities & Sustainability | NGUYEN AN INTERLINING - Reduce, Reuse,
+      Respect
+    </title>
+    <meta
+      name="description"
+      content="Sustainability strategy, automated in-house laboratory testing capability and international certifications including OEKO-TEX 100 and ISO 9001:2015."
+    />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          maxWidth: {
-            '7xl': '1440px',
-            'site': '1440px',
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            maxWidth: {
+              "7xl": "1440px",
+              site: "1440px",
+            },
+            colors: {
+              "primary-blue": "#0071ce",
+              "primary-hover": "#005bb5",
+              "primary-dark": "#003b7a",
+              "primary-deep": "#061e33",
+              "primary-light": "#48a0e5",
+              "primary-ice": "#f0f7fc",
+            },
+            fontFamily: {
+              serif: ['"Phudu"', "sans-serif"],
+              phudu: ['"Phudu"', "sans-serif"],
+              sans: ['"Inter"', '"Plus Jakarta Sans"', "sans-serif"],
+            },
           },
-          colors: {
-            'primary-blue': '#0071ce',
-            'primary-hover': '#005bb5',
-            'primary-dark': '#003b7a',
-            'primary-deep': '#061e33',
-            'primary-light': '#48a0e5',
-            'primary-ice': '#f0f7fc',
-          },
-          fontFamily: {
-            serif: ['"Phudu"', 'sans-serif'],
-            phudu: ['"Phudu"', 'sans-serif'],
-            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <!-- FontAwesome Icon Library CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <!-- FontAwesome Icon Library CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <div id="scroll-progress"></div>
+  <body
+    class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue"
+  >
+    <div id="scroll-progress"></div>
 
-  <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
-  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      
-      <!-- Official Brand Logo Image -->
-      <a href="index.html" class="flex items-center group py-0.5">
-        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
-      </a>
+    <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
+    <header
+      id="main-nav"
+      class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <!-- Official Brand Logo Image -->
+        <a href="index.html" class="flex items-center group py-0.5">
+          <img
+            src="assets/img/logo-brand.png"
+            alt="NGUYEN AN INTERLINING"
+            class="h-11 sm:h-12 w-auto object-contain"
+          />
+        </a>
 
-      <!-- Desktop Nav Menu Links -->
-      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
-        <a href="index.html" class="nav-item-link hover:text-primary-blue transition py-1">Home</a>
-        <a href="gioi-thieu.html" class="nav-item-link hover:text-primary-blue transition py-1">About Us</a>
-        
-        <div class="relative group cursor-pointer py-1">
-          <a href="san-pham.html" class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1">
-            <span>Products</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
-          </a>
-          <!-- Seamless Dropdown Bridge Container -->
-          <div class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50">
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
-              <a href="san-pham.html#woven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven</a>
-              <a href="san-pham.html#nonwoven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Non woven</a>
-              <a href="san-pham.html#fusible" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Fusible</a>
+        <!-- Desktop Nav Menu Links -->
+        <nav
+          id="desktop-nav-menu"
+          class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1"
+        >
+          <a
+            href="index.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >About Us</a
+          >
+
+          <div class="relative group cursor-pointer py-1">
+            <a
+              href="san-pham.html"
+              class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1"
+            >
+              <span>Products</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"
+              ></i>
+            </a>
+            <!-- Seamless Dropdown Bridge Container -->
+            <div
+              class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50"
+            >
+              <div
+                class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal"
+              >
+                <a
+                  href="san-pham.html#woven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Woven</a
+                >
+                <a
+                  href="san-pham.html#nonwoven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Non woven</a
+                >
+                <a
+                  href="san-pham.html#fusible"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Fusible</a
+                >
+              </div>
             </div>
           </div>
+
+          <a
+            href="dich-vu-logistics.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Solutions</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="nav-item-link nav-link-active hover:text-primary-blue transition py-1"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right Call-to-Action Phone Button -->
+        <div class="hidden sm:flex items-center">
+          <a
+            href="tel:+84986945537"
+            class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span>(+84) 986 945 537</span>
+          </a>
         </div>
 
-        <a href="dich-vu-logistics.html" class="nav-item-link hover:text-primary-blue transition py-1">Solutions</a>
-        <a href="phat-trien-ben-vung.html" class="nav-item-link nav-link-active hover:text-primary-blue transition py-1">Capabilities</a>
-        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
-        <a href="lien-he.html" class="nav-item-link hover:text-primary-blue transition py-1">Contact</a>
-      </nav>
-
-      <!-- Right Call-to-Action Phone Button -->
-      <div class="hidden sm:flex items-center">
-        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
-          <i class="fa-solid fa-phone text-xs"></i>
-          <span>(+84) 986 945 537</span>
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
-        <i class="fa-solid fa-bars text-lg"></i>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Backdrop Overlay -->
-  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
-
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <a href="index.html" class="flex items-center">
-          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-        </a>
-        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
-          <i class="fa-solid fa-xmark text-xl"></i>
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
+    </header>
 
-      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
-        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
-        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
-        <div class="border-b border-slate-50 py-2">
-          <button type="button" id="mobile-products-toggle" class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none">
-            <span>Products</span>
-            <i id="mobile-products-arrow" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
-          </button>
-          <div id="mobile-products-submenu" class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600">
-            <a href="san-pham.html#woven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Woven</a>
-            <a href="san-pham.html#nonwoven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Non woven</a>
-            <a href="san-pham.html#fusible" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Fusible</a>
-          </div>
-        </div>
-        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
-        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold">Capabilities</a>
-        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
-        <a href="lien-he.html" class="mobile-nav-link py-2 hover:text-primary-blue">Contact</a>
-      </nav>
-    </div>
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div
+      id="mobile-drawer-overlay"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div class="pt-6 border-t border-slate-100 space-y-3">
-      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
-        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
-      </a>
-    </div>
-  </div>
-
-  <main>
-    <!-- PAGE HERO BANNER -->
-    <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
-        <img src="assets/img/lab-room.png" alt="Lab Room Inspection" class="w-full h-full object-cover">
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
-        <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center space-x-2 text-xs font-semibold text-slate-300">
-          <a href="index.html" class="hover:text-white transition flex items-center">
-            <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
-            <span>Home</span>
+    <!-- Mobile Drawer Menu -->
+    <div
+      id="mobile-drawer"
+      class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between"
+    >
+      <div>
+        <div
+          class="flex items-center justify-between pb-6 border-b border-slate-100"
+        >
+          <a href="index.html" class="flex items-center">
+            <img
+              src="assets/img/logo-brand.png"
+              alt="NGUYEN AN INTERLINING"
+              class="h-10 w-auto object-contain"
+            />
           </a>
-          <span class="text-slate-500">/</span>
-          <span class="text-blue-300 font-bold">Capabilities</span>
+          <button
+            id="close-mobile-drawer"
+            class="p-2 text-slate-400 hover:text-slate-700"
+          >
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <nav
+          class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm"
+        >
+          <a
+            href="index.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >About Us</a
+          >
+          <div class="border-b border-slate-50 py-2">
+            <button
+              type="button"
+              id="mobile-products-toggle"
+              class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none"
+            >
+              <span>Products</span>
+              <i
+                id="mobile-products-arrow"
+                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"
+              ></i>
+            </button>
+            <div
+              id="mobile-products-submenu"
+              class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600"
+            >
+              <a
+                href="san-pham.html#woven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Woven</a
+              >
+              <a
+                href="san-pham.html#nonwoven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Non woven</a
+              >
+              <a
+                href="san-pham.html#fusible"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Fusible</a
+              >
+            </div>
+          </div>
+          <a
+            href="dich-vu-logistics.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Solutions (Logistics)</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="mobile-nav-link py-2 hover:text-primary-blue"
+            >Contact</a
+          >
         </nav>
       </div>
 
-      <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
-      <div class="relative w-full my-8 font-sans">
-        
-        <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-l-4 border-white"></div>
+      <div class="pt-6 border-t border-slate-100 space-y-3">
+        <a
+          href="tel:+84986945537"
+          class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue"
+        >
+          <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- PAGE HERO BANNER -->
+      <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none"
+        >
+          <img
+            src="assets/img/lab-room.png"
+            alt="Lab Room Inspection"
+            class="w-full h-full object-cover"
+          />
         </div>
 
-        <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
-        <div class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-white text-base sm:text-3xl font-extrabold uppercase tracking-wide pl-4">
-              LAB ROOM & SUSTAINABILITY
-            </h1>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3"
+        >
+          <!-- Breadcrumb Navigation -->
+          <nav
+            class="flex items-center space-x-2 text-xs font-semibold text-slate-300"
+          >
+            <a
+              href="index.html"
+              class="hover:text-white transition flex items-center"
+            >
+              <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
+              <span>Home</span>
+            </a>
+            <span class="text-slate-500">/</span>
+            <span class="text-blue-300 font-bold">Capabilities</span>
+          </nav>
+        </div>
+
+        <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
+        <div class="relative w-full my-8 font-sans">
+          <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-l-4 border-white"
+            ></div>
           </div>
-        </div>
 
-        <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-t-4 border-b-4 border-r-4 border-white"></div>
-        </div>
-
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
-          Driven by innovation, automated lab testing, and our sustainability commitment: Reduce, Reuse, Respect.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION 1: SUSTAINABILITY STRATEGY PLAN (PDF PAGE 11 - 100% EXACT DATA) -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">11 / SUSTAINABILITY PLAN</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
-            OUR 3 CORE CONCEPTS: REDUCE, REUSE, RESPECT
-          </h2>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center">
-            <div class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold">
-              <i class="fa-solid fa-leaf"></i>
+          <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
+          <div
+            class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20"
+          >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h1
+                class="text-white text-base sm:text-3xl font-extrabold uppercase tracking-wide pl-4"
+              >
+                LAB ROOM & SUSTAINABILITY
+              </h1>
             </div>
-            <h3 class="font-bold text-lg text-slate-800 uppercase">1. REDUCE</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Reducing energy consumption, eliminating paper waste with digital tech packages, and minimizing carbon footprint across manufacturing.
-            </p>
           </div>
 
-          <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center">
-            <div class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold">
-              <i class="fa-solid fa-recycle"></i>
-            </div>
-            <h3 class="font-bold text-lg text-slate-800 uppercase">2. REUSE</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Recycling process water, utilizing recycled polyester fibers (GRS certified), and reusing production materials efficiently.
-            </p>
+          <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-t-4 border-b-4 border-r-4 border-white"
+            ></div>
           </div>
-
-          <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center">
-            <div class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold">
-              <i class="fa-solid fa-hand-holding-heart"></i>
-            </div>
-            <h3 class="font-bold text-lg text-slate-800 uppercase">3. RESPECT</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Respecting environment safety standards, workplace ethics (BSCI audited), and strict compliance with OEKO-TEX 100 harmful substance rules.
-            </p>
-          </div>
-
         </div>
 
-      </div>
-    </section>
-
-    <!-- SECTION 2: COMPREHENSIVE SUSTAINABLE DEVELOPMENTS (PDF PAGE 12) -->
-    <section class="py-16 bg-slate-900 text-white relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-blue-400 uppercase tracking-widest">12 / ECO-MANUFACTURING</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold tracking-tight uppercase">
-            COMPREHENSIVE SUSTAINABLE MANUFACTURING
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-300">Targeted practices reducing environmental impact across product lifecycle</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <p
+            class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed"
+          >
+            Driven by innovation, automated lab testing, and our sustainability
+            commitment: Reduce, Reuse, Respect.
+          </p>
         </div>
+      </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3">
-            <div class="text-blue-400 text-3xl font-extrabold"><i class="fa-solid fa-laptop-code"></i></div>
-            <h4 class="font-bold text-base text-white uppercase">DIGITAL SAMPLES</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Eliminating manual processing and physical sample waste through 3D digital technical sampling and virtual approval workflows.
-            </p>
+      <!-- SECTION 1: SUSTAINABILITY STRATEGY PLAN (PDF PAGE 11 - 100% EXACT DATA) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+              >11 / SUSTAINABILITY PLAN</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              OUR 3 CORE CONCEPTS: REDUCE, REUSE, RESPECT
+            </h2>
+            <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
           </div>
 
-          <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3">
-            <div class="text-blue-400 text-3xl font-extrabold"><i class="fa-solid fa-seedling"></i></div>
-            <h4 class="font-bold text-base text-white uppercase">SUSTAINABLE RAW MATERIALS</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Utilizing sustainable yarns, GRS recycled polyester, and eco-certified resins for coating fusible interlining.
-            </p>
-          </div>
-
-          <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3">
-            <div class="text-blue-400 text-3xl font-extrabold"><i class="fa-solid fa-water"></i></div>
-            <h4 class="font-bold text-base text-white uppercase">WATER RECYCLING & LOW EMISSIONS</h4>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Closed-loop industrial water treatment systems that recycle process water and minimize greenhouse carbon emissions.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 3: LAB ROOM & AUTOMATIC QUALITY CONTROL (PDF PAGE 10) -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-6 space-y-6">
-            <div class="space-y-1.5">
-              <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">10 / LAB ROOM & INNOVATION</span>
-              <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase leading-tight">
-                AUTOMATIC MACHINES & STRINGENT QUALITY CONTROL
-              </h2>
-              <div class="w-12 h-1 bg-primary-blue rounded-full"></div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center"
+            >
+              <div
+                class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold"
+              >
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h3 class="font-bold text-lg text-slate-800 uppercase">
+                1. REDUCE
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Reducing energy consumption, eliminating paper waste with
+                digital tech packages, and minimizing carbon footprint across
+                manufacturing.
+              </p>
             </div>
 
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Equipped with a dedicated in-house <strong>Lab Room</strong> and advanced automatic testing equipment, we conduct rigorous quality control tests. Raw materials and output products are thoroughly inspected before and after production.
-            </p>
+            <div
+              class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center"
+            >
+              <div
+                class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold"
+              >
+                <i class="fa-solid fa-recycle"></i>
+              </div>
+              <h3 class="font-bold text-lg text-slate-800 uppercase">
+                2. REUSE
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Recycling process water, utilizing recycled polyester fibers
+                (GRS certified), and reusing production materials efficiently.
+              </p>
+            </div>
 
-            <div class="space-y-3 text-xs sm:text-sm text-slate-700 font-medium">
-              <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                <i class="fa-solid fa-vial text-primary-blue text-lg shrink-0"></i>
-                <span>Peel Strength & Bond Durability Testing</span>
+            <div
+              class="p-8 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-4 text-center"
+            >
+              <div
+                class="w-14 h-14 rounded-full bg-blue-50 text-primary-blue mx-auto flex items-center justify-center text-2xl font-extrabold"
+              >
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <h3 class="font-bold text-lg text-slate-800 uppercase">
+                3. RESPECT
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Respecting environment safety standards, workplace ethics (BSCI
+                audited), and strict compliance with OEKO-TEX 100 harmful
+                substance rules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: COMPREHENSIVE SUSTAINABLE DEVELOPMENTS (PDF PAGE 12) -->
+      <section class="py-16 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-blue-400 uppercase tracking-widest"
+              >12 / ECO-MANUFACTURING</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold tracking-tight uppercase"
+            >
+              COMPREHENSIVE SUSTAINABLE MANUFACTURING
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300">
+              Targeted practices reducing environmental impact across product
+              lifecycle
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3"
+            >
+              <div class="text-blue-400 text-3xl font-extrabold">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h4 class="font-bold text-base text-white uppercase">
+                DIGITAL SAMPLES
+              </h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Eliminating manual processing and physical sample waste through
+                3D digital technical sampling and virtual approval workflows.
+              </p>
+            </div>
+
+            <div
+              class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3"
+            >
+              <div class="text-blue-400 text-3xl font-extrabold">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <h4 class="font-bold text-base text-white uppercase">
+                SUSTAINABLE RAW MATERIALS
+              </h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Utilizing sustainable yarns, GRS recycled polyester, and
+                eco-certified resins for coating fusible interlining.
+              </p>
+            </div>
+
+            <div
+              class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/60 space-y-3"
+            >
+              <div class="text-blue-400 text-3xl font-extrabold">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <h4 class="font-bold text-base text-white uppercase">
+                WATER RECYCLING & LOW EMISSIONS
+              </h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Closed-loop industrial water treatment systems that recycle
+                process water and minimize greenhouse carbon emissions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: LAB ROOM & AUTOMATIC QUALITY CONTROL (PDF PAGE 10) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+              <div class="space-y-1.5">
+                <span
+                  class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+                  >10 / LAB ROOM & INNOVATION</span
+                >
+                <h2
+                  class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase leading-tight"
+                >
+                  AUTOMATIC MACHINES & STRINGENT QUALITY CONTROL
+                </h2>
+                <div class="w-12 h-1 bg-primary-blue rounded-full"></div>
               </div>
 
-              <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                <i class="fa-solid fa-soap text-primary-blue text-lg shrink-0"></i>
-                <span>Washing & Dry-Cleaning Fastness Verification</span>
-              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Equipped with a dedicated in-house <strong>Lab Room</strong> and
+                advanced automatic testing equipment, we conduct rigorous
+                quality control tests. Raw materials and output products are
+                thoroughly inspected before and after production.
+              </p>
 
-              <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                <i class="fa-solid fa-temperature-arrow-up text-primary-blue text-lg shrink-0"></i>
-                <span>Thermal Shrinkage & Low-Temperature Press Analysis</span>
+              <div
+                class="space-y-3 text-xs sm:text-sm text-slate-700 font-medium"
+              >
+                <div
+                  class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100"
+                >
+                  <i
+                    class="fa-solid fa-vial text-primary-blue text-lg shrink-0"
+                  ></i>
+                  <span>Peel Strength & Bond Durability Testing</span>
+                </div>
+
+                <div
+                  class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100"
+                >
+                  <i
+                    class="fa-solid fa-soap text-primary-blue text-lg shrink-0"
+                  ></i>
+                  <span>Washing & Dry-Cleaning Fastness Verification</span>
+                </div>
+
+                <div
+                  class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-100"
+                >
+                  <i
+                    class="fa-solid fa-temperature-arrow-up text-primary-blue text-lg shrink-0"
+                  ></i>
+                  <span
+                    >Thermal Shrinkage & Low-Temperature Press Analysis</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6">
+              <div
+                class="rounded-2xl overflow-hidden shadow-2xl border border-slate-100"
+              >
+                <img
+                  src="assets/img/lab-room.png"
+                  alt="In-House Lab Inspection Room"
+                  class="w-full h-[400px] object-cover"
+                />
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="lg:col-span-6">
-            <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-              <img src="assets/img/lab-room.png" alt="In-House Lab Inspection Room" class="w-full h-[400px] object-cover">
-            </div>
+      <!-- SECTION 4: CERTIFICATIONS (PDF PAGE 13) -->
+      <section class="py-16 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+              >INTERNATIONAL COMPLIANCE</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              CERTIFICATIONS & AUDITED MEMBERSHIPS
+            </h2>
+            <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
           </div>
 
-        </div>
-      </div>
-    </section>
+          <!-- OEKO-TEX STANDARD 100 CERTIFICATE DOCUMENT DISPLAY -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+              <!-- Certificate Podium Frame Preview -->
+              <div
+                class="lg:col-span-5 bg-gradient-to-b from-slate-50 to-slate-100/70 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-100"
+              >
+                <a
+                  href="assets/img/certificate-oekotex.jpg"
+                  target="_blank"
+                  rel="noopener"
+                  class="group w-full h-full flex items-center justify-center cursor-pointer block"
+                  title="Click to view full certificate"
+                >
+                  <div
+                    class="relative w-full h-full min-h-[360px] sm:min-h-[440px] overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 bg-white flex items-center justify-center p-2 sm:p-4"
+                  >
+                    <img
+                      src="assets/img/certificate-podium-preview.png"
+                      alt="OEKO-TEX Standard 100 Certificate No. 23.HVN.75767 in Presentation Stand"
+                      class="w-full h-full object-contain max-h-[500px]"
+                    />
+                    <div
+                      class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+                    >
+                      <span
+                        class="px-5 py-2.5 rounded-full bg-white text-slate-900 text-xs font-extrabold shadow-xl flex items-center space-x-2"
+                      >
+                        <i
+                          class="fa-solid fa-expand text-primary-blue text-sm"
+                        ></i>
+                        <span>View Full Certificate</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-    <!-- SECTION 4: CERTIFICATIONS (PDF PAGE 13) -->
-    <section class="py-16 bg-slate-50 border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">INTERNATIONAL COMPLIANCE</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
-            CERTIFICATIONS & AUDITED MEMBERSHIPS
-          </h2>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
-        </div>
+              <!-- Certificate Details -->
+              <div
+                class="lg:col-span-7 p-6 sm:p-9 flex flex-col justify-center space-y-5"
+              >
+                <div class="space-y-2">
+                  <span
+                    class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-extrabold uppercase tracking-wide border border-emerald-200"
+                    >OEKO-TEX&reg; STANDARD 100</span
+                  >
+                  <h3
+                    class="font-serif-title text-xl sm:text-2xl font-extrabold text-slate-800 uppercase tracking-tight"
+                  >
+                    Certified Free From Harmful Substances
+                  </h3>
+                  <p
+                    class="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xl"
+                  >
+                    CONG TY TNHH DET NGUYEN AN is granted OEKO-TEX&reg; STANDARD
+                    100 certification by Hohenstein Laboratories, covering our
+                    fusible interlining produced from woven, knitted and
+                    non-woven fabrics &mdash; including the right to use the
+                    trademark.
+                  </p>
+                </div>
 
-        <!-- OEKO-TEX STANDARD 100 CERTIFICATE DOCUMENT DISPLAY -->
-        <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
-          <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-
-            <!-- Certificate Podium Frame Preview -->
-            <div class="lg:col-span-5 bg-gradient-to-b from-slate-50 to-slate-100/70 p-4 sm:p-6 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-100">
-              <a href="assets/img/certificate-oekotex.jpg" target="_blank" rel="noopener" class="group w-full h-full flex items-center justify-center cursor-pointer block" title="Click to view full certificate">
-                <div class="relative w-full h-full min-h-[360px] sm:min-h-[440px] rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 bg-white flex items-center justify-center p-2 sm:p-4">
-                  <img src="assets/img/certificate-podium-preview.png" alt="OEKO-TEX Standard 100 Certificate No. 23.HVN.75767 in Presentation Stand" class="w-full h-full object-contain group-hover:scale-[1.03] transition duration-500 max-h-[500px]">
-                  <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                    <span class="px-5 py-2.5 rounded-full bg-white text-slate-900 text-xs font-extrabold shadow-xl flex items-center space-x-2 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
-                      <i class="fa-solid fa-expand text-primary-blue text-sm"></i>
-                      <span>View Full Certificate</span>
-                    </span>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-1">
+                  <div>
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
+                    >
+                      Certificate No.
+                    </div>
+                    <div
+                      class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5"
+                    >
+                      23.HVN.75767
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
+                    >
+                      Valid Until
+                    </div>
+                    <div
+                      class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5"
+                    >
+                      31.08.2027
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
+                    >
+                      Product Class
+                    </div>
+                    <div
+                      class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5"
+                    >
+                      I &mdash; Baby Articles
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-wider"
+                    >
+                      Issued By
+                    </div>
+                    <div
+                      class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5"
+                    >
+                      Hohenstein Labs
+                    </div>
                   </div>
                 </div>
-              </a>
-            </div>
 
-            <!-- Certificate Details -->
-            <div class="lg:col-span-7 p-6 sm:p-9 flex flex-col justify-center space-y-5">
-              <div class="space-y-2">
-                <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-extrabold uppercase tracking-wide border border-emerald-200">OEKO-TEX&reg; STANDARD 100</span>
-                <h3 class="font-serif-title text-xl sm:text-2xl font-extrabold text-slate-800 uppercase tracking-tight">
-                  Certified Free From Harmful Substances
-                </h3>
-                <p class="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xl">
-                  CONG TY TNHH DET NGUYEN AN is granted OEKO-TEX&reg; STANDARD 100 certification by Hohenstein Laboratories, covering our fusible interlining produced from woven, knitted and non-woven fabrics &mdash; including the right to use the trademark.
+                <ul class="space-y-1.5 pt-1">
+                  <li
+                    class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600"
+                  >
+                    <i
+                      class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"
+                    ></i>
+                    <span
+                      >Test report 26.1299662 &mdash; tested against the full
+                      OEKO-TEX&reg; criteria catalogue.</span
+                    >
+                  </li>
+                  <li
+                    class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600"
+                  >
+                    <i
+                      class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"
+                    ></i>
+                    <span
+                      >Declaration of conformity in accordance with EN ISO
+                      17050-1.</span
+                    >
+                  </li>
+                  <li
+                    class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600"
+                  >
+                    <i
+                      class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"
+                    ></i>
+                    <span
+                      >Accepted for export compliance across EU, US and Asian
+                      markets.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Infinite Scroll Marquee Container -->
+          <div class="marquee-container py-4">
+            <div class="flex space-x-8 animate-infinite-scroll">
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i
+                  class="fa-solid fa-certificate text-3xl text-primary-blue"
+                ></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  OEKO-TEX 100
+                </h5>
+                <p class="text-[10px] text-slate-500">Standard 100 Certified</p>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i class="fa-solid fa-award text-3xl text-primary-blue"></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  ISO 9001:2015
+                </h5>
+                <p class="text-[10px] text-slate-500">Quality Management</p>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i class="fa-solid fa-flask text-3xl text-primary-blue"></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  SGS TESTED
+                </h5>
+                <p class="text-[10px] text-slate-500">
+                  Safety & Eco Verification
                 </p>
               </div>
 
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-1">
-                <div>
-                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Certificate No.</div>
-                  <div class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">23.HVN.75767</div>
-                </div>
-                <div>
-                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Valid Until</div>
-                  <div class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">31.08.2027</div>
-                </div>
-                <div>
-                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Product Class</div>
-                  <div class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">I &mdash; Baby Articles</div>
-                </div>
-                <div>
-                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Issued By</div>
-                  <div class="text-xs sm:text-sm font-extrabold text-slate-800 mt-0.5">Hohenstein Labs</div>
-                </div>
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i
+                  class="fa-solid fa-users-gear text-3xl text-primary-blue"
+                ></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  BSCI AUDITED
+                </h5>
+                <p class="text-[10px] text-slate-500">Social Compliance</p>
               </div>
 
-              <ul class="space-y-1.5 pt-1">
-                <li class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600">
-                  <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                  <span>Test report 26.1299662 &mdash; tested against the full OEKO-TEX&reg; criteria catalogue.</span>
-                </li>
-                <li class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600">
-                  <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                  <span>Declaration of conformity in accordance with EN ISO 17050-1.</span>
-                </li>
-                <li class="flex items-start space-x-2 text-[11px] sm:text-xs text-slate-600">
-                  <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                  <span>Accepted for export compliance across EU, US and Asian markets.</span>
-                </li>
-              </ul>
-            </div>
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i class="fa-solid fa-recycle text-3xl text-primary-blue"></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  GRS RECYCLED
+                </h5>
+                <p class="text-[10px] text-slate-500">
+                  Global Recycled Standard
+                </p>
+              </div>
 
-          </div>
-        </div>
+              <!-- Duplicated Duplicate Copy for Seamless Loop -->
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i
+                  class="fa-solid fa-certificate text-3xl text-primary-blue"
+                ></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  OEKO-TEX 100
+                </h5>
+                <p class="text-[10px] text-slate-500">Standard 100 Certified</p>
+              </div>
 
-        <!-- Infinite Scroll Marquee Container -->
-        <div class="marquee-container py-4">
-          <div class="flex space-x-8 animate-infinite-scroll">
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-certificate text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">OEKO-TEX 100</h5>
-              <p class="text-[10px] text-slate-500">Standard 100 Certified</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-award text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">ISO 9001:2015</h5>
-              <p class="text-[10px] text-slate-500">Quality Management</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-flask text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">SGS TESTED</h5>
-              <p class="text-[10px] text-slate-500">Safety & Eco Verification</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-users-gear text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">BSCI AUDITED</h5>
-              <p class="text-[10px] text-slate-500">Social Compliance</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-recycle text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">GRS RECYCLED</h5>
-              <p class="text-[10px] text-slate-500">Global Recycled Standard</p>
-            </div>
-            
-            <!-- Duplicated Duplicate Copy for Seamless Loop -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-certificate text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">OEKO-TEX 100</h5>
-              <p class="text-[10px] text-slate-500">Standard 100 Certified</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2">
-              <i class="fa-solid fa-award text-3xl text-primary-blue"></i>
-              <h5 class="font-bold text-xs uppercase text-slate-800">ISO 9001:2015</h5>
-              <p class="text-[10px] text-slate-500">Quality Management</p>
+              <div
+                class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-2xs shrink-0 w-48 text-center space-y-2"
+              >
+                <i class="fa-solid fa-award text-3xl text-primary-blue"></i>
+                <h5 class="font-bold text-xs uppercase text-slate-800">
+                  ISO 9001:2015
+                </h5>
+                <p class="text-[10px] text-slate-500">Quality Management</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
 
+    <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
+    <footer
+      class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30"
+      >
+        <div
+          class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6"
+        >
+          <div class="flex items-center space-x-5 text-center lg:text-left">
+            <div
+              class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex"
+            >
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white"
+              >
+                LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
+              </h3>
+              <p class="text-xs sm:text-sm text-blue-100 font-normal">
+                Let Nguyen An Interlining experts consult directly for your
+                project requirements.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto"
+          >
+            <a
+              href="tel:+84986945537"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+              <span>(+84) 986 945 537</span>
+            </a>
+            <a
+              href="lien-he.html"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>Request a Consultation</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
-  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
-      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
-        <div class="flex items-center space-x-5 text-center lg:text-left">
-          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
-            <i class="fa-solid fa-headset"></i>
-          </div>
-          <div class="space-y-1">
-            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
-              LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
-            </h3>
-            <p class="text-xs sm:text-sm text-blue-100 font-normal">
-              Let Nguyen An Interlining experts consult directly for your project requirements.
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start"
+        >
+          <div class="lg:col-span-4 space-y-4">
+            <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+              <img
+                src="assets/img/logo-brand.png"
+                alt="NGUYEN AN INTERLINING"
+                class="h-10 w-auto object-contain"
+              />
+            </div>
+            <p
+              class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal"
+            >
+              Pioneering manufacturer in warp knitting, providing
+              high-performance fusible interlining and pocketing solutions for
+              the global apparel industry.
             </p>
+            <div class="space-y-2 text-xs text-blue-50 font-medium">
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Head Office:</strong> No 609/9/5C, Highway 13,
+                  Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh
+                  Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Factory:</strong> Nam Sach District, Hai Duong
+                  Province, Vietnam</span
+                >
+              </p>
+              <p class="flex items-center space-x-2 pt-1">
+                <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Hotline:</strong>
+                  <a href="tel:+84986945537" class="underline hover:text-white"
+                    >(+84) 986 945 537</a
+                  >
+                  (Mr. Vincen)</span
+                >
+              </p>
+              <p class="flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Email:</strong>
+                  <a
+                    href="mailto:infor@nguyenanacc.com.vn"
+                    class="underline hover:text-white"
+                    >infor@nguyenanacc.com.vn</a
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="flex items-center space-x-2.5 pt-1">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              ABOUT US
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="gioi-thieu.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Company Overview</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="san-pham.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Product Catalog</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Manufacturing Capacity</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="tin-tuc.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>News & Insights</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              SERVICES & POLICIES
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span>
+                  <span>FOB / LDP / DDP Shipping Policy</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Logistics & Customs Clearance</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="lien-he.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Technical Support & Samples</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              LOCATION MAP
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <div
+              class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Nguyen An Location Map"
+              ></iframe>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
-          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
-            <span>(+84) 986 945 537</span>
-          </a>
-          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-paper-plane text-xs"></i>
-            <span>Request a Consultation</span>
-          </a>
+
+        <div
+          class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4"
+        >
+          <div>
+            © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
+          </div>
+          <div>
+            Crafted with excellence by
+            <a href="index.html" class="font-bold underline hover:text-white"
+              >Nguyen An Interlining</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
+
+    <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+      <a
+        href="https://wa.me/84986945537"
+        target="_blank"
+        class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200"
+        title="Chat via WhatsApp"
+        ><i class="fa-solid fa-comments text-lg"></i
+      ></a>
+      <a
+        href="tel:+84986945537"
+        class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 transition duration-200"
+        title="Call Hotline"
+        ><i class="fa-solid fa-phone text-lg"></i
+      ></a>
+      <a
+        href="#"
+        class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200"
+        title="Back to Top"
+        ><i class="fa-solid fa-chevron-up text-sm"></i
+      ></a>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-4 space-y-4">
-          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
-            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-          </div>
-          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
-            Pioneering manufacturer in warp knitting, providing high-performance fusible interlining and pocketing solutions for the global apparel industry.
-          </p>
-          <div class="space-y-2 text-xs text-blue-50 font-medium">
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Head Office:</strong> No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Factory:</strong> Nam Sach District, Hai Duong Province, Vietnam</span>
-            </p>
-            <p class="flex items-center space-x-2 pt-1">
-              <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
-              <span><strong>Hotline:</strong> <a href="tel:+84986945537" class="underline hover:text-white">(+84) 986 945 537</a> (Mr. Vincen)</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
-              <span><strong>Email:</strong> <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a></span>
-            </p>
-          </div>
-          <div class="flex items-center space-x-2.5 pt-1">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">ABOUT US</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Company Overview</span></a></li>
-            <li><a href="san-pham.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Product Catalog</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Manufacturing Capacity</span></a></li>
-            <li><a href="tin-tuc.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>News & Insights</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">SERVICES & POLICIES</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>FOB / LDP / DDP Shipping Policy</span></a></li>
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Logistics & Customs Clearance</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a></li>
-            <li><a href="lien-he.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Technical Support & Samples</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">LOCATION MAP</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <div class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4">
-        <div>
-          © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
-        </div>
-        <div>
-          Crafted with excellence by <a href="index.html" class="font-bold underline hover:text-white">Nguyen An Interlining</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
-    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat via WhatsApp"><i class="fa-solid fa-comments text-lg"></i></a>
-    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Call Hotline"><i class="fa-solid fa-phone text-lg"></i></a>
-    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Back to Top"><i class="fa-solid fa-chevron-up text-sm"></i></a>
-  </div>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
