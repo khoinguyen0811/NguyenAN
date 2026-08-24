@@ -720,50 +720,114 @@
         </div>
       </section>
 
-      <!-- SECTION 3: CUSTOMIZATION & POCKETING SOLUTIONS (PDF PAGE 08) -->
-      <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- SECTION 3: CUSTOMIZATION & POCKETING SOLUTIONS (FULL SECTION WITH SILK BG & OVERLAY) -->
+      <section class="relative py-20 sm:py-28 bg-slate-50 border-t border-slate-200/80 overflow-hidden">
+        <!-- Full Section Flowing Silk Ribbon Background -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-end">
+          <img
+            src="assets/img/silk-ribbon-bg.png"
+            alt="Tailored Interlining Silk Fabric"
+            class="w-full h-full object-cover object-center sm:object-right scale-105 opacity-85"
+          />
+          <!-- Content Highlight Overlay (Soft gradient from white to translucent) -->
           <div
-            class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden space-y-6"
-          >
-            <!-- Flowing Silk Ribbon Background Graphic -->
-            <div
-              class="absolute right-0 top-0 bottom-0 w-full lg:w-3/5 pointer-events-none opacity-90 mix-blend-screen flex items-center justify-end overflow-hidden z-0"
-            >
-              <img
-                src="assets/img/silk-ribbon-bg.png"
-                alt="Tailored Interlining Silk Fabric"
-                class="w-full h-auto max-h-[140%] object-contain object-right scale-110 lg:scale-125 transform translate-x-4 lg:translate-x-12 filter drop-shadow-2xl"
-              />
-            </div>
+            class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/30 sm:to-transparent lg:w-3/5"
+          ></div>
+        </div>
 
-            <div class="max-w-2xl space-y-3 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
+          <div class="max-w-2xl space-y-4">
+            <!-- Exact TAILORED MANUFACTURING Header Badge Matching Screenshot -->
+            <div class="flex items-center space-x-3">
+              <!-- Two Parallel Slanted Accent Bars -->
+              <div class="flex items-center space-x-1 shrink-0">
+                <span
+                  class="w-1.5 h-3.5 bg-[#2563eb] -skew-x-[25deg] rounded-[1px] inline-block"
+                ></span>
+                <span
+                  class="w-1.5 h-3.5 bg-[#93c5fd] -skew-x-[25deg] rounded-[1px] inline-block"
+                ></span>
+              </div>
+              <!-- Title Text -->
               <span
-                class="text-xs font-extrabold text-blue-400 uppercase tracking-widest"
-                >TAILORED MANUFACTURING</span
+                class="text-xs sm:text-[13px] font-black uppercase tracking-[0.18em] text-[#0f172a]"
               >
-              <h2
-                class="font-serif-title text-2xl sm:text-4xl font-extrabold uppercase leading-tight"
-              >
-                CUSTOM SPECIFICATIONS & POCKETING SOLUTIONS
-              </h2>
-              <p
-                class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal"
-              >
-                We can produce circular interlining, water jet loom interlining,
-                woven and non-woven interlining according to customer
-                requirements with stable quality and competitive prices.
-              </p>
+                TAILORED MANUFACTURING
+              </span>
+              <!-- Trailing Thin Horizontal Line with End Circle Dot -->
+              <div class="flex items-center flex-1 max-w-xs sm:max-w-md">
+                <div class="h-[1.5px] bg-[#bfdbfe] flex-1"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-[#60a5fa] -ml-0.5"></div>
+              </div>
             </div>
 
-            <div class="pt-4 flex flex-wrap gap-4 relative z-10">
-              <a
-                href="lien-he.html"
-                class="px-6 py-3 bg-primary-blue text-white rounded-sm text-xs font-bold tracking-wider hover:bg-primary-hover transition uppercase shadow-md"
+            <!-- Main Heading -->
+            <h2
+              class="font-serif-title text-2xl sm:text-4xl lg:text-[40px] font-black uppercase leading-[1.15] tracking-tight text-slate-900"
+            >
+              CUSTOM SPECIFICATIONS &<br class="hidden sm:inline" />
+              POCKETING SOLUTIONS
+            </h2>
+
+            <!-- Description -->
+            <p
+              class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal max-w-xl text-justify sm:text-left"
+            >
+              We can produce circular interlining, water jet loom interlining,
+              woven and non-woven interlining according to customer
+              requirements with stable quality and competitive prices.
+            </p>
+          </div>
+
+          <!-- Feature Highlights on Translucent Glass Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+            <div
+              class="bg-white/85 backdrop-blur-md p-3.5 rounded-xl border border-blue-100/90 shadow-2xs flex items-center space-x-3"
+            >
+              <div
+                class="w-8 h-8 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center text-sm shrink-0"
               >
-                REQUEST CUSTOM SPEC & SAMPLE KIT
-              </a>
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <span class="text-xs font-bold text-slate-800"
+                >Custom GSM &amp; Width</span
+              >
             </div>
+            <div
+              class="bg-white/85 backdrop-blur-md p-3.5 rounded-xl border border-blue-100/90 shadow-2xs flex items-center space-x-3"
+            >
+              <div
+                class="w-8 h-8 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center text-sm shrink-0"
+              >
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <span class="text-xs font-bold text-slate-800"
+                >In-House Lab Testing</span
+              >
+            </div>
+            <div
+              class="bg-white/85 backdrop-blur-md p-3.5 rounded-xl border border-blue-100/90 shadow-2xs flex items-center space-x-3"
+            >
+              <div
+                class="w-8 h-8 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center text-sm shrink-0"
+              >
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <span class="text-xs font-bold text-slate-800"
+                >4-10 Days Delivery</span
+              >
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a
+              href="lien-he.html"
+              class="px-7 py-3.5 bg-primary-blue text-white rounded-lg text-xs font-bold tracking-wider hover:bg-primary-hover transition uppercase shadow-md hover:shadow-lg inline-flex items-center space-x-2"
+            >
+              <span>REQUEST CUSTOM SPEC &amp; SAMPLE KIT</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
           </div>
         </div>
       </section>
