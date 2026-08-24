@@ -377,6 +377,7 @@ const mapRegionViewBoxes = {
 function initMarketMapTab() {
   const svgMap = document.getElementById('vietnam-map-dashboard');
   const filterBtns = document.querySelectorAll('.map-region-filter-btn');
+  const kpiCards = document.querySelectorAll('.radial-kpi-card');
   const detailBox = document.getElementById('hub-detail-box');
   const closeDetailBtn = document.getElementById('close-hub-detail-btn');
   const interactivePins = document.querySelectorAll('.map-hub-pin, .map-hub-card');
@@ -387,7 +388,7 @@ function initMarketMapTab() {
     const data = regionalHubData[regionKey];
     const targetViewBox = mapRegionViewBoxes[regionKey] || mapRegionViewBoxes.all;
 
-    // 1. Update Filter Buttons Active State
+    // 1. Update Header Filter Buttons Active State
     filterBtns.forEach(btn => {
       if (btn.getAttribute('data-region') === regionKey) {
         btn.className = 'map-region-filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition duration-200 bg-primary-blue text-white shadow-xs';
@@ -395,6 +396,23 @@ function initMarketMapTab() {
         btn.className = 'map-region-filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition duration-200 text-slate-700 hover:text-primary-blue hover:bg-white/80';
       }
     });
+
+    // 1b. Update Left Column Radial Metric Cards (Preserve custom background & add clean highlight)
+    if (kpiCards.length) {
+      kpiCards.forEach(card => {
+        const cRegion = card.getAttribute('data-region');
+        if (regionKey === 'all') {
+          card.classList.remove('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1', 'opacity-60');
+          card.classList.add('opacity-100');
+        } else if (cRegion === regionKey) {
+          card.classList.add('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1', 'opacity-100');
+          card.classList.remove('opacity-60');
+        } else {
+          card.classList.remove('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1');
+          card.classList.add('opacity-60');
+        }
+      });
+    }
 
     // 2. Animate SVG viewBox with GSAP for Cinematic Zoom & Pan
     if (svgMap && typeof gsap !== 'undefined') {
@@ -515,6 +533,16 @@ function initMarketMapTab() {
     btn.addEventListener('click', () => {
       const region = btn.getAttribute('data-region') || 'all';
       switchMapRegion(region, btn);
+    });
+  });
+
+  // Bind Click Event to Left Column Radial KPI Cards
+  kpiCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const region = card.getAttribute('data-region');
+      if (region) {
+        switchMapRegion(region);
+      }
     });
   });
 
