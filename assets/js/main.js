@@ -397,19 +397,35 @@ function initMarketMapTab() {
       }
     });
 
-    // 1b. Update Left Column Radial Metric Cards (Preserve custom background & add clean highlight)
+    // 1b. Update Left Column Radial Metric Cards (Intensify matching border color only)
     if (kpiCards.length) {
       kpiCards.forEach(card => {
         const cRegion = card.getAttribute('data-region');
-        if (regionKey === 'all') {
-          card.classList.remove('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1', 'opacity-60');
-          card.classList.add('opacity-100');
-        } else if (cRegion === regionKey) {
-          card.classList.add('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1', 'opacity-100');
-          card.classList.remove('opacity-60');
-        } else {
-          card.classList.remove('ring-2', 'ring-primary-blue', 'shadow-md', '-translate-y-1');
-          card.classList.add('opacity-60');
+        
+        // Reset border colors to light defaults
+        if (cRegion === 'south') {
+          card.classList.remove('border-cyan-500');
+          card.classList.add('border-cyan-100');
+        } else if (cRegion === 'central') {
+          card.classList.remove('border-blue-600');
+          card.classList.add('border-blue-100');
+        } else if (cRegion === 'north') {
+          card.classList.remove('border-emerald-500');
+          card.classList.add('border-emerald-100');
+        }
+
+        // When active, hold the deeper matching border color
+        if (regionKey === cRegion) {
+          if (cRegion === 'south') {
+            card.classList.remove('border-cyan-100');
+            card.classList.add('border-cyan-500');
+          } else if (cRegion === 'central') {
+            card.classList.remove('border-blue-100');
+            card.classList.add('border-blue-600');
+          } else if (cRegion === 'north') {
+            card.classList.remove('border-emerald-100');
+            card.classList.add('border-emerald-500');
+          }
         }
       });
     }
