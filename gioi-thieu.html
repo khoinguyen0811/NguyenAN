@@ -1,748 +1,1476 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | NGUYEN AN INTERLINING - Value-Added Fusible Interlining Solutions</title>
-  <meta name="description" content="Với hơn 20 năm chuyên sâu, Nguyen An Interlining cung cấp giải pháp dựng keo mùng Woven, Non-Woven & Fusible Interlining chất lượng cao cho ngành may mặc toàn cầu.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      About Us | NGUYEN AN INTERLINING - Value-Added Fusible Interlining
+      Solutions
+    </title>
+    <meta
+      name="description"
+      content="Với hơn 20 năm chuyên sâu, Nguyen An Interlining cung cấp giải pháp dựng keo mùng Woven, Non-Woven & Fusible Interlining chất lượng cao cho ngành may mặc toàn cầu."
+    />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          maxWidth: {
-            '7xl': '1440px',
-            'site': '1440px',
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            maxWidth: {
+              "7xl": "1440px",
+              site: "1440px",
+            },
+            colors: {
+              "primary-blue": "#0071ce",
+              "primary-hover": "#005bb5",
+              "primary-dark": "#003b7a",
+              "primary-deep": "#061e33",
+              "primary-light": "#48a0e5",
+              "primary-ice": "#f0f7fc",
+            },
+            fontFamily: {
+              serif: ['"Phudu"', "sans-serif"],
+              phudu: ['"Phudu"', "sans-serif"],
+              sans: ['"Inter"', '"Plus Jakarta Sans"', "sans-serif"],
+            },
           },
-          colors: {
-            'primary-blue': '#0071ce',
-            'primary-hover': '#005bb5',
-            'primary-dark': '#003b7a',
-            'primary-deep': '#061e33',
-            'primary-light': '#48a0e5',
-            'primary-ice': '#f0f7fc',
-          },
-          fontFamily: {
-            serif: ['"Phudu"', 'sans-serif'],
-            phudu: ['"Phudu"', 'sans-serif'],
-            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <!-- FontAwesome Icon Library CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <!-- FontAwesome Icon Library CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <div id="scroll-progress"></div>
+  <body
+    class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue"
+  >
+    <div id="scroll-progress"></div>
 
-  <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
-  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      
-      <!-- Official Brand Logo Image -->
-      <a href="index.html" class="flex items-center group py-0.5">
-        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
-      </a>
+    <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
+    <header
+      id="main-nav"
+      class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <!-- Official Brand Logo Image -->
+        <a href="index.html" class="flex items-center group py-0.5">
+          <img
+            src="assets/img/logo-brand.png"
+            alt="NGUYEN AN INTERLINING"
+            class="h-11 sm:h-12 w-auto object-contain"
+          />
+        </a>
 
-      <!-- Desktop Nav Menu Links -->
-      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
-        <a href="index.html" class="nav-item-link hover:text-primary-blue transition py-1">Home</a>
-        <a href="gioi-thieu.html" class="nav-item-link nav-link-active hover:text-primary-blue transition py-1">About Us</a>
-        
-        <div class="relative group cursor-pointer py-1">
-          <a href="san-pham.html" class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1">
-            <span>Products</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
-          </a>
-          <!-- Seamless Dropdown Bridge Container -->
-          <div class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50">
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
-              <a href="san-pham.html#woven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven</a>
-              <a href="san-pham.html#nonwoven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Non woven</a>
-              <a href="san-pham.html#fusible" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Fusible</a>
+        <!-- Desktop Nav Menu Links -->
+        <nav
+          id="desktop-nav-menu"
+          class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1"
+        >
+          <a
+            href="index.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="nav-item-link nav-link-active hover:text-primary-blue transition py-1"
+            >About Us</a
+          >
+
+          <div class="relative group cursor-pointer py-1">
+            <a
+              href="san-pham.html"
+              class="nav-item-link hover:text-primary-blue transition flex items-center space-x-1 py-1"
+            >
+              <span>Products</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"
+              ></i>
+            </a>
+            <!-- Seamless Dropdown Bridge Container -->
+            <div
+              class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50"
+            >
+              <div
+                class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal"
+              >
+                <a
+                  href="san-pham.html#woven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Woven</a
+                >
+                <a
+                  href="san-pham.html#nonwoven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Non woven</a
+                >
+                <a
+                  href="san-pham.html#fusible"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Fusible</a
+                >
+              </div>
             </div>
           </div>
+
+          <a
+            href="dich-vu-logistics.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Solutions</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right Call-to-Action Phone Button -->
+        <div class="hidden sm:flex items-center">
+          <a
+            href="tel:+84986945537"
+            class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span>(+84) 986 945 537</span>
+          </a>
         </div>
 
-        <a href="dich-vu-logistics.html" class="nav-item-link hover:text-primary-blue transition py-1">Solutions</a>
-        <a href="phat-trien-ben-vung.html" class="nav-item-link hover:text-primary-blue transition py-1">Capabilities</a>
-        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
-        <a href="lien-he.html" class="nav-item-link hover:text-primary-blue transition py-1">Contact</a>
-      </nav>
-
-      <!-- Right Call-to-Action Phone Button -->
-      <div class="hidden sm:flex items-center">
-        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
-          <i class="fa-solid fa-phone text-xs"></i>
-          <span>(+84) 986 945 537</span>
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
-        <i class="fa-solid fa-bars text-lg"></i>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Backdrop Overlay -->
-  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
-
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <a href="index.html" class="flex items-center">
-          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-        </a>
-        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
-          <i class="fa-solid fa-xmark text-xl"></i>
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
+    </header>
 
-      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
-        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
-        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold">About Us</a>
-        <div class="border-b border-slate-50 py-2">
-          <button type="button" id="mobile-products-toggle" class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none">
-            <span>Products</span>
-            <i id="mobile-products-arrow" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
-          </button>
-          <div id="mobile-products-submenu" class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600">
-            <a href="san-pham.html#woven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Woven</a>
-            <a href="san-pham.html#nonwoven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Non woven</a>
-            <a href="san-pham.html#fusible" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Fusible</a>
-          </div>
-        </div>
-        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
-        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Capabilities</a>
-        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
-        <a href="lien-he.html" class="mobile-nav-link py-2 hover:text-primary-blue">Contact</a>
-      </nav>
-    </div>
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div
+      id="mobile-drawer-overlay"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div class="pt-6 border-t border-slate-100 space-y-3">
-      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
-        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
-      </a>
-    </div>
-  </div>
-
-  <main>
-    <!-- PAGE HERO BANNER -->
-    <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
-        <img src="assets/img/about-interlining.png" alt="Company Background" class="w-full h-full object-cover">
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
-        <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center space-x-2 text-xs font-semibold text-slate-300">
-          <a href="index.html" class="hover:text-white transition flex items-center">
-            <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
-            <span>Home</span>
+    <!-- Mobile Drawer Menu -->
+    <div
+      id="mobile-drawer"
+      class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between"
+    >
+      <div>
+        <div
+          class="flex items-center justify-between pb-6 border-b border-slate-100"
+        >
+          <a href="index.html" class="flex items-center">
+            <img
+              src="assets/img/logo-brand.png"
+              alt="NGUYEN AN INTERLINING"
+              class="h-10 w-auto object-contain"
+            />
           </a>
-          <span class="text-slate-500">/</span>
-          <span class="text-blue-300 font-bold">About Us</span>
+          <button
+            id="close-mobile-drawer"
+            class="p-2 text-slate-400 hover:text-slate-700"
+          >
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <nav
+          class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm"
+        >
+          <a
+            href="index.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 text-primary-blue font-bold"
+            >About Us</a
+          >
+          <div class="border-b border-slate-50 py-2">
+            <button
+              type="button"
+              id="mobile-products-toggle"
+              class="w-full text-slate-700 hover:text-primary-blue font-semibold flex items-center justify-between py-1 focus:outline-none"
+            >
+              <span>Products</span>
+              <i
+                id="mobile-products-arrow"
+                class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"
+              ></i>
+            </button>
+            <div
+              id="mobile-products-submenu"
+              class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600"
+            >
+              <a
+                href="san-pham.html#woven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Woven</a
+              >
+              <a
+                href="san-pham.html#nonwoven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Non woven</a
+              >
+              <a
+                href="san-pham.html#fusible"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Fusible</a
+              >
+            </div>
+          </div>
+          <a
+            href="dich-vu-logistics.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Solutions (Logistics)</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="mobile-nav-link py-2 hover:text-primary-blue"
+            >Contact</a
+          >
         </nav>
       </div>
 
-      <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
-      <div class="relative w-full my-8 font-sans">
-        
-        <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-l-4 border-white"></div>
+      <div class="pt-6 border-t border-slate-100 space-y-3">
+        <a
+          href="tel:+84986945537"
+          class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue"
+        >
+          <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- PAGE HERO BANNER -->
+      <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none"
+        >
+          <img
+            src="assets/img/about-interlining.png"
+            alt="Company Background"
+            class="w-full h-full object-cover"
+          />
         </div>
 
-        <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
-        <div class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4">
-              ABOUT US
-            </h1>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3"
+        >
+          <!-- Breadcrumb Navigation -->
+          <nav
+            class="flex items-center space-x-2 text-xs font-semibold text-slate-300"
+          >
+            <a
+              href="index.html"
+              class="hover:text-white transition flex items-center"
+            >
+              <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
+              <span>Home</span>
+            </a>
+            <span class="text-slate-500">/</span>
+            <span class="text-blue-300 font-bold">About Us</span>
+          </nav>
+        </div>
+
+        <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
+        <div class="relative w-full my-8 font-sans">
+          <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-l-4 border-white"
+            ></div>
+          </div>
+
+          <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
+          <div
+            class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20"
+          >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h1
+                class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4"
+              >
+                ABOUT US
+              </h1>
+            </div>
+          </div>
+
+          <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-t-4 border-b-4 border-r-4 border-white"
+            ></div>
           </div>
         </div>
 
-        <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-28 sm:w-36 border-t-4 border-b-4 border-r-4 border-white"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <p
+            class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed"
+          >
+            Over 20 years of specialization supplying value-added woven &
+            non-woven fusible interlining solutions for the global apparel
+            industry.
+          </p>
         </div>
+      </section>
 
-      </div>
+      <!-- SECTION 1: ABOUT US & VALUE PROPOSITION -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+              <div class="space-y-1.5">
+                <span
+                  class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+                  >WHO WE ARE</span
+                >
+                <h2
+                  class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase leading-tight"
+                >
+                  WE SUPPLY VALUE - WOVEN & NON-WOVEN FUSIBLE INTERLINING
+                </h2>
+                <div class="w-12 h-1 bg-primary-blue rounded-full"></div>
+              </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
-          Over 20 years of specialization supplying value-added woven & non-woven fusible interlining solutions for the global apparel industry.
-        </p>
-      </div>
-    </section>
+              <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                With over 20 years of specialization, we supply value-added,
+                woven &amp; non-woven fusible interlining solutions for the apparel
+                industry. We excel in providing tailored services that encompass
+                every phase: from production and stringent quality assurance to
+                cost efficiency and punctual delivery.
+              </p>
 
-    <!-- SECTION 1: ABOUT US & VALUE PROPOSITION -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-6 space-y-6">
-            <div class="space-y-1.5">
-              <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">WHO WE ARE</span>
-              <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase leading-tight">
-                WE SUPPLY VALUE - WOVEN & NON-WOVEN FUSIBLE INTERLINING
-              </h2>
-              <div class="w-12 h-1 bg-primary-blue rounded-full"></div>
+              <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                Our extensive product portfolio spans diverse categories,
+                including <strong>Warp Knitted Interlining</strong>,
+                <strong>Circular Interlining</strong>,
+                <strong>Water Jet Loom Interlining</strong>, and
+                <strong>Woven Interlining</strong>, ensuring comprehensive
+                solutions for varied manufacturing requirements.
+              </p>
+
+              <div class="grid grid-cols-2 gap-4 pt-2">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <div class="text-2xl font-extrabold text-primary-blue">
+                    20+ Years
+                  </div>
+                  <div
+                    class="text-xs text-slate-500 font-semibold uppercase tracking-wider"
+                  >
+                    Industry Specialization
+                  </div>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <div class="text-2xl font-extrabold text-primary-blue">
+                    4 Main Lines
+                  </div>
+                  <div
+                    class="text-xs text-slate-500 font-semibold uppercase tracking-wider"
+                  >
+                    Interlining Solutions
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <p class="text-slate-600 text-sm leading-relaxed">
-              With over 20 years of specialization, we supply value-added, woven & non-woven fusible interlining solutions for the apparel industry. We excel in providing tailored services that encompass every phase: from production and stringent quality assurance to cost efficiency and punctual delivery.
-            </p>
-
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Our extensive product portfolio spans diverse categories, including <strong>Warp Knitted Interlining</strong>, <strong>Circular Interlining</strong>, <strong>Water Jet Loom Interlining</strong>, and <strong>Woven Interlining</strong>, ensuring comprehensive solutions for varied manufacturing requirements.
-            </p>
-
-            <div class="grid grid-cols-2 gap-4 pt-2">
-              <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                <div class="text-2xl font-extrabold text-primary-blue">20+ Years</div>
-                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Industry Specialization</div>
-              </div>
-              <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                <div class="text-2xl font-extrabold text-primary-blue">4 Main Lines</div>
-                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Interlining Solutions</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6">
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-              <img src="assets/img/capabilities.png" alt="Nguyen An Production Facility" class="w-full h-[420px] object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-6">
-                <div class="text-white space-y-1">
-                  <h4 class="font-bold text-base">State-of-the-Art Weaving & Coating Facility</h4>
-                  <p class="text-xs text-slate-300">Nam Sach District, Hai Duong Province, Vietnam</p>
+            <div class="lg:col-span-6">
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100"
+              >
+                <img
+                  src="assets/img/capabilities.png"
+                  alt="Nguyen An Production Facility"
+                  class="w-full h-[420px] object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-6"
+                >
+                  <div class="text-white space-y-1">
+                    <h4 class="font-bold text-base">
+                      State-of-the-Art Weaving & Coating Facility
+                    </h4>
+                    <p class="text-xs text-slate-300">
+                      Nam Sach District, Hai Duong Province, Vietnam
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION 2: BUSINESS OVERVIEW & STRATEGIC MARKET DISTRIBUTION (EXACT DASHBOARD UI) -->
-    <section class="py-20 bg-slate-50 border-t border-slate-200/80 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest bg-blue-50 px-3.5 py-1 rounded-full border border-blue-100 inline-block mb-1">
-            BUSINESS OVERVIEW &amp; CAPACITY
-          </span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight uppercase">
-            GROWTH &amp; MARKET DISTRIBUTION
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 font-normal">
-            Demonstrated annual revenue growth and strategic nation-wide interlining distribution across Vietnam's apparel clusters.
-          </p>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full mt-2"></div>
-        </div>
+      <!-- SECTION 2: BUSINESS OVERVIEW & STRATEGIC MARKET DISTRIBUTION (EXACT DASHBOARD UI) -->
+      <section class="py-20 bg-slate-50 border-t border-slate-200/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center max-w-3xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest px-3.5 py-1 inline-block mb-1"
+            >
+              BUSINESS OVERVIEW &amp; CAPACITY
+            </span>
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight uppercase"
+            >
+              GROWTH &amp; MARKET DISTRIBUTION
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 font-normal">
+              Demonstrated annual revenue growth and strategic nation-wide
+              interlining distribution across Vietnam's apparel clusters.
+            </p>
+            <div
+              class="w-12 h-1 bg-primary-blue mx-auto rounded-full mt-2"
+            ></div>
+          </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
-          <!-- Left Column: Revenue Growth & Key Performance Indicators (5 Cols) -->
-          <div class="lg:col-span-5 bg-white p-6 sm:p-7 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100 flex flex-col justify-between space-y-6">
-            
-            <div class="space-y-6">
-              <!-- Top Gradient Header Banner -->
-              <div class="bg-gradient-to-r from-[#005bb5] via-[#0284c7] to-[#0d9488] p-4 sm:p-5 rounded-2xl text-white flex items-center justify-between shadow-md">
-                <div class="flex items-center space-x-3.5">
-                  <div class="w-11 h-11 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center text-white text-xl shrink-0">
-                    <i class="fa-solid fa-chart-line"></i>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            <!-- Left Column: Revenue Growth & Key Performance Indicators (5 Cols) -->
+            <div
+              class="lg:col-span-5 bg-white p-6 sm:p-7 rounded-xl border border-slate-100 shadow-xl shadow-slate-100 flex flex-col justify-between space-y-6"
+            >
+              <div class="space-y-6">
+                <!-- Top Gradient Header Banner -->
+                <div
+                  class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] p-4 sm:p-5 rounded-[5px] text-white flex items-center justify-between shadow-md"
+                >
+                  <div class="flex items-center space-x-3.5">
+                    <div
+                      class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-white text-xl shrink-0"
+                    >
+                      <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                      <h3
+                        class="font-extrabold text-sm sm:text-base text-white uppercase tracking-wide"
+                      >
+                        ANNUAL REVENUE GROWTH
+                      </h3>
+                      <p class="text-[11px] text-blue-100 font-normal">
+                        Unit: USD (Millions)
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white/95 text-emerald-700 px-3 py-1.5 rounded-xl text-center shadow-xs shrink-0"
+                  >
+                    <div
+                      class="text-xs font-black flex items-center justify-center space-x-1"
+                    >
+                      <i
+                        class="fa-solid fa-arrow-trend-up text-[10px] text-emerald-600"
+                      ></i>
+                      <span>12%</span>
+                    </div>
+                    <div
+                      class="text-[9px] text-emerald-600 font-semibold leading-tight"
+                    >
+                      YoY Growth
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Growth Progress Bars -->
+                <div class="space-y-4 px-1">
+                  <div class="space-y-1.5">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-800 font-extrabold">2021</span>
+                      <span class="text-slate-800 font-extrabold"
+                        >$1.8 MILLION</span
+                      >
+                    </div>
+                    <div
+                      class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50"
+                    >
+                      <div
+                        class="h-full bg-[#475569] rounded-full"
+                        style="width: 52%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1.5">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-800 font-extrabold">2022</span>
+                      <span class="text-slate-800 font-extrabold"
+                        >$2.5 MILLION</span
+                      >
+                    </div>
+                    <div
+                      class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50"
+                    >
+                      <div
+                        class="h-full bg-primary-blue rounded-full"
+                        style="width: 78%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1.5">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span
+                        class="text-slate-800 font-extrabold flex items-center"
+                      >
+                        <span>2023*</span>
+                        <i
+                          class="fa-solid fa-arrow-trend-up text-emerald-600 ml-1.5 text-xs"
+                        ></i>
+                      </span>
+                      <span class="text-emerald-600 font-extrabold text-sm"
+                        >$2.8+ MILLION</span
+                      >
+                    </div>
+                    <div
+                      class="w-full h-3 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-emerald-200/60 shadow-inner"
+                    >
+                      <div
+                        class="h-full bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 Radial Gauge Metric Cards with City Skylines -->
+                <div class="grid grid-cols-3 gap-3 pt-1">
+                  <!-- Card 1: SOUTH 60% -->
+                  <div
+                    class="bg-gradient-to-b from-cyan-50/80 to-white p-3 rounded-2xl border border-cyan-100/80 text-center flex flex-col justify-between overflow-hidden relative group transition"
+                  >
+                    <div class="space-y-1 pt-1">
+                      <!-- Gauge Circle -->
+                      <div
+                        class="relative w-14 h-14 mx-auto flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-full h-full -rotate-90"
+                          viewBox="0 0 36 36"
+                        >
+                          <path
+                            class="text-cyan-100"
+                            stroke-width="3.5"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                          <path
+                            class="text-cyan-500"
+                            stroke-dasharray="60, 100"
+                            stroke-width="3.5"
+                            stroke-linecap="round"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                        <span class="absolute text-xs font-black text-slate-800"
+                          >60%</span
+                        >
+                      </div>
+                      <div
+                        class="text-[11px] font-black text-slate-800 uppercase tracking-wider"
+                      >
+                        SOUTH
+                      </div>
+                      <div class="text-[9px] text-slate-500 font-medium">
+                        HCMC Hub
+                      </div>
+                    </div>
+                    <div class="pt-2 opacity-80">
+                      <img
+                        src="assets/img/skyline-hcm.svg"
+                        alt="HCMC Skyline"
+                        class="w-full h-8 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Card 2: CENTRAL 30% -->
+                  <div
+                    class="bg-gradient-to-b from-blue-50/80 to-white p-3 rounded-2xl border border-blue-100/80 text-center flex flex-col justify-between overflow-hidden relative group transition"
+                  >
+                    <div class="space-y-1 pt-1">
+                      <!-- Gauge Circle -->
+                      <div
+                        class="relative w-14 h-14 mx-auto flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-full h-full -rotate-90"
+                          viewBox="0 0 36 36"
+                        >
+                          <path
+                            class="text-blue-100"
+                            stroke-width="3.5"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                          <path
+                            class="text-blue-600"
+                            stroke-dasharray="30, 100"
+                            stroke-width="3.5"
+                            stroke-linecap="round"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                        <span class="absolute text-xs font-black text-slate-800"
+                          >30%</span
+                        >
+                      </div>
+                      <div
+                        class="text-[11px] font-black text-slate-800 uppercase tracking-wider"
+                      >
+                        CENTRAL
+                      </div>
+                      <div class="text-[9px] text-slate-500 font-medium">
+                        Da Nang Hub
+                      </div>
+                    </div>
+                    <div class="pt-2 opacity-80">
+                      <img
+                        src="assets/img/skyline-danang.svg"
+                        alt="Da Nang Skyline"
+                        class="w-full h-8 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Card 3: NORTH 10% -->
+                  <div
+                    class="bg-gradient-to-b from-emerald-50/80 to-white p-3 rounded-2xl border border-emerald-100/80 text-center flex flex-col justify-between overflow-hidden relative group transition"
+                  >
+                    <div class="space-y-1 pt-1">
+                      <!-- Gauge Circle -->
+                      <div
+                        class="relative w-14 h-14 mx-auto flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-full h-full -rotate-90"
+                          viewBox="0 0 36 36"
+                        >
+                          <path
+                            class="text-emerald-100"
+                            stroke-width="3.5"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                          <path
+                            class="text-emerald-500"
+                            stroke-dasharray="10, 100"
+                            stroke-width="3.5"
+                            stroke-linecap="round"
+                            stroke="currentColor"
+                            fill="none"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                        <span class="absolute text-xs font-black text-slate-800"
+                          >10%</span
+                        >
+                      </div>
+                      <div
+                        class="text-[11px] font-black text-slate-800 uppercase tracking-wider"
+                      >
+                        NORTH
+                      </div>
+                      <div class="text-[9px] text-slate-500 font-medium">
+                        Factory Hub
+                      </div>
+                    </div>
+                    <div class="pt-2 opacity-80">
+                      <img
+                        src="assets/img/skyline-north.svg"
+                        alt="North Skyline"
+                        class="w-full h-8 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Shield Highlight Box -->
+              <div
+                class="p-3.5 rounded-[5px] bg-blue-50/70 border border-blue-100 flex items-center space-x-3.5 text-xs text-slate-700 leading-relaxed shadow-2xs"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-primary-blue text-white flex items-center justify-center text-base shrink-0 shadow-sm"
+                >
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="text-[11.5px] font-medium text-slate-600"
+                  >Revenue has steadily grown through scalable manufacturing,
+                  prompt technical support, and enduring client trust.</span
+                >
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Vietnam Market Share Map Dashboard (7 Cols) -->
+            <div
+              class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100 flex flex-col justify-between relative overflow-hidden"
+            >
+              <!-- Header with Cyan Location/Checkmark Icon -->
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4 relative z-10"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center text-base shadow-sm"
+                  >
+                    <i class="fa-solid fa-check"></i>
                   </div>
                   <div>
-                    <h3 class="font-extrabold text-sm sm:text-base text-white uppercase tracking-wide">
-                      ANNUAL REVENUE GROWTH
+                    <h3
+                      class="font-extrabold text-sm sm:text-base text-slate-800 uppercase tracking-wide"
+                    >
+                      VIETNAM MARKET SHARE MAP
                     </h3>
-                    <p class="text-[11px] text-blue-100 font-normal">Unit: USD (Millions)</p>
+                    <p class="text-[11px] text-slate-500 font-normal">
+                      3 Key Operating Centers &amp; Domestic Supply Chain
+                    </p>
                   </div>
                 </div>
-                <div class="bg-white/95 text-emerald-700 px-3 py-1.5 rounded-xl text-center shadow-xs shrink-0">
-                  <div class="text-xs font-black flex items-center justify-center space-x-1">
-                    <i class="fa-solid fa-arrow-trend-up text-[10px] text-emerald-600"></i>
-                    <span>12%</span>
-                  </div>
-                  <div class="text-[9px] text-emerald-600 font-semibold leading-tight">YoY Growth</div>
-                </div>
-              </div>
-              
-              <!-- Growth Progress Bars -->
-              <div class="space-y-4 px-1">
-                <div class="space-y-1.5">
-                  <div class="flex justify-between text-xs font-bold">
-                    <span class="text-slate-800 font-extrabold">2021</span>
-                    <span class="text-slate-800 font-extrabold">$1.8 MILLION</span>
-                  </div>
-                  <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50">
-                    <div class="h-full bg-[#475569] rounded-full" style="width: 52%"></div>
-                  </div>
-                </div>
-
-                <div class="space-y-1.5">
-                  <div class="flex justify-between text-xs font-bold">
-                    <span class="text-slate-800 font-extrabold">2022</span>
-                    <span class="text-slate-800 font-extrabold">$2.5 MILLION</span>
-                  </div>
-                  <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50">
-                    <div class="h-full bg-primary-blue rounded-full" style="width: 78%"></div>
-                  </div>
-                </div>
-
-                <div class="space-y-1.5">
-                  <div class="flex justify-between text-xs font-bold">
-                    <span class="text-slate-800 font-extrabold flex items-center">
-                      <span>2023*</span>
-                      <i class="fa-solid fa-arrow-trend-up text-emerald-600 ml-1.5 text-xs"></i>
-                    </span>
-                    <span class="text-emerald-600 font-extrabold text-sm">$2.8+ MILLION</span>
-                  </div>
-                  <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-emerald-200/60 shadow-inner">
-                    <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full" style="width: 100%"></div>
-                  </div>
-                </div>
+                <!-- <span
+                  class="text-[11px] px-3.5 py-1 rounded-full bg-blue-50/80 text-primary-blue border border-blue-200/80 font-bold self-start sm:self-auto flex items-center space-x-1.5 shadow-2xs"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-primary-blue animate-pulse"
+                  ></span>
+                  <span>National Coverage</span>
+                </span> -->
               </div>
 
-              <!-- 3 Radial Gauge Metric Cards with City Skylines -->
-              <div class="grid grid-cols-3 gap-3 pt-1">
-                
-                <!-- Card 1: SOUTH 60% -->
-                <div class="bg-gradient-to-b from-cyan-50/80 to-white p-3 rounded-2xl border border-cyan-100/80 text-center flex flex-col justify-between overflow-hidden relative group hover:shadow-md transition">
-                  <div class="space-y-1 pt-1">
-                    <!-- Gauge Circle -->
-                    <div class="relative w-14 h-14 mx-auto flex items-center justify-center">
-                      <svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                        <path class="text-cyan-100" stroke-width="3.5" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <path class="text-cyan-500" stroke-dasharray="60, 100" stroke-width="3.5" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                      </svg>
-                      <span class="absolute text-xs font-black text-slate-800">60%</span>
-                    </div>
-                    <div class="text-[11px] font-black text-slate-800 uppercase tracking-wider">SOUTH</div>
-                    <div class="text-[9px] text-slate-500 font-medium">HCMC Hub</div>
-                  </div>
-                  <div class="pt-2 opacity-80">
-                    <img src="assets/img/skyline-hcm.svg" alt="HCMC Skyline" class="w-full h-8 object-contain">
-                  </div>
-                </div>
+              <!-- Authentic Vietnam Map Graphic with Continuous Gradient & Callouts -->
+              <div
+                class="relative w-full flex-1 flex items-center justify-center py-2 relative z-10 min-h-[440px]"
+              >
+                <img
+                  src="assets/img/vietnam-map-dashboard.svg"
+                  alt="Vietnam Market Share Map"
+                  class="w-full h-auto max-h-[560px] object-contain transition duration-300 hover:scale-[1.01]"
+                />
+              </div>
 
-                <!-- Card 2: CENTRAL 30% -->
-                <div class="bg-gradient-to-b from-blue-50/80 to-white p-3 rounded-2xl border border-blue-100/80 text-center flex flex-col justify-between overflow-hidden relative group hover:shadow-md transition">
-                  <div class="space-y-1 pt-1">
-                    <!-- Gauge Circle -->
-                    <div class="relative w-14 h-14 mx-auto flex items-center justify-center">
-                      <svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                        <path class="text-blue-100" stroke-width="3.5" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <path class="text-blue-600" stroke-dasharray="30, 100" stroke-width="3.5" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                      </svg>
-                      <span class="absolute text-xs font-black text-slate-800">30%</span>
-                    </div>
-                    <div class="text-[11px] font-black text-slate-800 uppercase tracking-wider">CENTRAL</div>
-                    <div class="text-[9px] text-slate-500 font-medium">Da Nang Hub</div>
-                  </div>
-                  <div class="pt-2 opacity-80">
-                    <img src="assets/img/skyline-danang.svg" alt="Da Nang Skyline" class="w-full h-8 object-contain">
-                  </div>
+              <!-- Bottom Skyline Backdrop & Legend Floating Bar -->
+              <div
+                class="relative z-10 pt-2 flex flex-col sm:flex-row items-center justify-end"
+              >
+                <!-- Pill Legend (Bottom Right) -->
+                <div
+                  class="bg-white/95 backdrop-blur-sm border border-slate-200/80 px-4 py-2 rounded-full flex items-center space-x-4 text-[11px] font-bold text-slate-700"
+                >
+                  <span class="flex items-center"
+                    ><span
+                      class="w-2.5 h-2.5 rounded-full bg-blue-400 mr-1.5 inline-block"
+                    ></span
+                    >North (10%)</span
+                  >
+                  <span class="flex items-center"
+                    ><span
+                      class="w-2.5 h-2.5 rounded-full bg-blue-600 mr-1.5 inline-block"
+                    ></span
+                    >Central (30%)</span
+                  >
+                  <span class="flex items-center"
+                    ><span
+                      class="w-2.5 h-2.5 rounded-full bg-primary-blue mr-1.5 inline-block"
+                    ></span
+                    >South (60%)</span
+                  >
                 </div>
+              </div>
 
-                <!-- Card 3: NORTH 10% -->
-                <div class="bg-gradient-to-b from-emerald-50/80 to-white p-3 rounded-2xl border border-emerald-100/80 text-center flex flex-col justify-between overflow-hidden relative group hover:shadow-md transition">
-                  <div class="space-y-1 pt-1">
-                    <!-- Gauge Circle -->
-                    <div class="relative w-14 h-14 mx-auto flex items-center justify-center">
-                      <svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                        <path class="text-emerald-100" stroke-width="3.5" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <path class="text-emerald-500" stroke-dasharray="10, 100" stroke-width="3.5" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                      </svg>
-                      <span class="absolute text-xs font-black text-slate-800">10%</span>
-                    </div>
-                    <div class="text-[11px] font-black text-slate-800 uppercase tracking-wider">NORTH</div>
-                    <div class="text-[9px] text-slate-500 font-medium">Factory Hub</div>
-                  </div>
-                  <div class="pt-2 opacity-80">
-                    <img src="assets/img/skyline-north.svg" alt="North Skyline" class="w-full h-8 object-contain">
-                  </div>
-                </div>
-
+              <!-- Panoramic Skyline Graphic overlay at the bottom of the card -->
+              <div
+                class="absolute bottom-0 left-0 right-0 w-full pointer-events-none opacity-40 z-0 overflow-hidden"
+              >
+                <img
+                  src="assets/img/skyline-vietnam-wide.svg"
+                  alt="Vietnam Skyline Panorama"
+                  class="w-full h-24 object-cover object-bottom"
+                />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Bottom Shield Highlight Box -->
-            <div class="p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100 flex items-center space-x-3.5 text-xs text-slate-700 leading-relaxed shadow-2xs">
-              <div class="w-9 h-9 rounded-xl bg-primary-blue text-white flex items-center justify-center text-base shrink-0 shadow-sm">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <span class="text-[11.5px] font-medium text-slate-600">Revenue has steadily grown through scalable manufacturing, prompt technical support, and enduring client trust.</span>
-            </div>
-
+      <!-- SECTION 3: BUILDING ENDURING BUSINESS RELATIONSHIPS -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div class="text-center max-w-3xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+              >STRATEGIC PARTNERSHIPS</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              BUILDING ENDURING BUSINESS RELATIONSHIPS
+            </h2>
+            <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
           </div>
 
-          <!-- Right Column: Interactive Vietnam Market Share Map Dashboard (7 Cols) -->
-          <div class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100 flex flex-col justify-between relative overflow-hidden">
-            
-            <!-- Header with Cyan Location/Checkmark Icon -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4 relative z-10">
-              <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-full bg-teal-500 text-white flex items-center justify-center text-base shadow-sm">
-                  <i class="fa-solid fa-check"></i>
-                </div>
+          <div
+            class="bg-slate-50 p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-6"
+          >
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
+              We believe that building strong, long-term business relationships
+              with a carefully chosen group of growing apparel brands is crucial
+              for sustainable success. By working closely with our customers,
+              especially in product design and development, we can grow together
+              and strengthen our mutually beneficial partnerships.
+            </p>
+
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
+              Our long-term relationships with major customers have given us
+              valuable insights into their product needs and brand requirements.
+              Thanks to these strategies, our close collaboration with customers
+              positions us well to further strengthen business relationships and
+              seize new opportunities in emerging markets.
+            </p>
+
+            <div
+              class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-6"
+            >
+              <div class="flex items-center justify-center space-x-3.5">
+                <i
+                  class="fa-solid fa-handshake text-2xl text-primary-blue shrink-0"
+                ></i>
                 <div>
-                  <h3 class="font-extrabold text-sm sm:text-base text-slate-800 uppercase tracking-wide">
-                    VIETNAM MARKET SHARE MAP
-                  </h3>
-                  <p class="text-[11px] text-slate-500 font-normal">3 Key Operating Centers &amp; Domestic Supply Chain</p>
+                  <h5
+                    class="font-bold text-xs uppercase tracking-wider text-slate-800"
+                  >
+                    Long-Term Trust
+                  </h5>
+                  <p class="text-[11px] text-slate-500">
+                    Collaborative brand development
+                  </p>
                 </div>
               </div>
-              <span class="text-[11px] px-3.5 py-1 rounded-full bg-blue-50/80 text-primary-blue border border-blue-200/80 font-bold self-start sm:self-auto flex items-center space-x-1.5 shadow-2xs">
-                <span class="w-2 h-2 rounded-full bg-primary-blue animate-pulse"></span>
-                <span>National Coverage</span>
-              </span>
-            </div>
 
-            <!-- Authentic Vietnam Map Graphic with Continuous Gradient & Callouts -->
-            <div class="relative w-full flex-1 flex items-center justify-center py-2 relative z-10 min-h-[440px]">
-              <img src="assets/img/vietnam-map-dashboard.svg" alt="Vietnam Market Share Map" class="w-full h-auto max-h-[560px] object-contain transition duration-300 hover:scale-[1.01]">
-            </div>
-
-            <!-- Bottom Skyline Backdrop & Legend Floating Bar -->
-            <div class="relative z-10 pt-2 flex flex-col sm:flex-row items-center justify-end">
-              <!-- Pill Legend (Bottom Right) -->
-              <div class="bg-white/95 backdrop-blur-sm border border-slate-200/80 px-4 py-2 rounded-full shadow-md flex items-center space-x-4 text-[11px] font-bold text-slate-700">
-                <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-blue-400 mr-1.5 inline-block"></span>North (10%)</span>
-                <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-blue-600 mr-1.5 inline-block"></span>Central (30%)</span>
-                <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-primary-blue mr-1.5 inline-block"></span>South (60%)</span>
+              <div class="flex items-center justify-center space-x-3.5">
+                <i
+                  class="fa-solid fa-microscope text-2xl text-primary-blue shrink-0"
+                ></i>
+                <div>
+                  <h5
+                    class="font-bold text-xs uppercase tracking-wider text-slate-800"
+                  >
+                    Co-R&amp;D Design
+                  </h5>
+                  <p class="text-[11px] text-slate-500">
+                    Joint product prototyping
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <!-- Panoramic Skyline Graphic overlay at the bottom of the card -->
-            <div class="absolute bottom-0 left-0 right-0 w-full pointer-events-none opacity-40 z-0 overflow-hidden">
-              <img src="assets/img/skyline-vietnam-wide.svg" alt="Vietnam Skyline Panorama" class="w-full h-24 object-cover object-bottom">
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 3: BUILDING ENDURING BUSINESS RELATIONSHIPS -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">STRATEGIC PARTNERSHIPS</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
-            BUILDING ENDURING BUSINESS RELATIONSHIPS
-          </h2>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
-        </div>
-
-        <div class="bg-slate-50 p-8 sm:p-10 rounded-2xl border border-slate-200/80 space-y-6">
-          <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-            We believe that building strong, long-term business relationships with a carefully chosen group of growing apparel brands is crucial for sustainable success. By working closely with our customers, especially in product design and development, we can grow together and strengthen our mutually beneficial partnerships.
-          </p>
-
-          <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-            Our long-term relationships with major customers have given us valuable insights into their product needs and brand requirements. Thanks to these strategies, our close collaboration with customers positions us well to further strengthen business relationships and seize new opportunities in emerging markets.
-          </p>
-
-          <div class="pt-4 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="flex items-center space-x-3">
-              <i class="fa-solid fa-handshake text-2xl text-primary-blue shrink-0"></i>
-              <div>
-                <h5 class="font-bold text-xs uppercase tracking-wider text-slate-800">Long-Term Trust</h5>
-                <p class="text-[11px] text-slate-500">Collaborative brand development</p>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-3">
-              <i class="fa-solid fa-microscope text-2xl text-primary-blue shrink-0"></i>
-              <div>
-                <h5 class="font-bold text-xs uppercase tracking-wider text-slate-800">Co-R&D Design</h5>
-                <p class="text-[11px] text-slate-500">Joint product prototyping</p>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-3">
-              <i class="fa-solid fa-globe text-2xl text-primary-blue shrink-0"></i>
-              <div>
-                <h5 class="font-bold text-xs uppercase tracking-wider text-slate-800">Global Sourcing</h5>
-                <p class="text-[11px] text-slate-500">Multinational manufacturing network</p>
+              <div class="flex items-center justify-center space-x-3.5">
+                <i
+                  class="fa-solid fa-globe text-2xl text-primary-blue shrink-0"
+                ></i>
+                <div>
+                  <h5
+                    class="font-bold text-xs uppercase tracking-wider text-slate-800"
+                  >
+                    Global Sourcing
+                  </h5>
+                  <p class="text-[11px] text-slate-500">
+                    Multinational manufacturing network
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- SECTION 4: 6 KEY BUSINESS SOLUTIONS & GROWTH PILLARS -->
+      <section class="py-16 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+              >BUSINESS STRATEGY</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              OUR 6 STRATEGIC BUSINESS SOLUTIONS
+            </h2>
+            <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                01
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Foster Long-Term Relationships
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Leverage industry experience to cultivate enduring partnerships
+                and replicate successful collaborations.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                02
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Expand Product Portfolio
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Optimize by introducing new and enhanced products across Warp
+                Knitted, Circular, Water Jet Loom & Woven categories.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                03
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Acquire Technical Expertise
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Utilize technical capabilities and specialized equipment to
+                continually enhance product quality and performance.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                04
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Boost Marketing Efforts
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Increase brand awareness and strengthen presence in apparel
+                supply chain management across key global markets.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                05
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Expand Supplier Network
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Develop a global sourcing network to broaden our raw material
+                supplier base and ensure competitive pricing.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base"
+              >
+                06
+              </div>
+              <h4 class="font-bold text-sm uppercase text-slate-800">
+                Support Growth Opportunities
+              </h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Recruit specialized talent in sales, marketing, and R&D product
+                development to enhance global competitiveness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: OUR TRUSTED CLIENTS & BRANDS -->
+      <section class="py-14 bg-white border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div class="text-center space-y-1.5">
+            <span
+              class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest"
+              >GLOBAL RECOGNITION</span
+            >
+            <h2
+              class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              OUR TRUSTED CLIENTS & BRANDS
+            </h2>
+            <p class="text-xs text-slate-500 max-w-xl mx-auto">
+              Trusted by world-renowned fashion brands and retail corporations
+              worldwide.
+            </p>
+            <div
+              class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"
+            ></div>
+          </div>
+
+          <!-- 5 Client Brand Logos Grid -->
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 items-center"
+          >
+            <div
+              class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group"
+            >
+              <img
+                src="assets/img/client-zara.jpg"
+                alt="ZARA"
+                class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <div
+              class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group"
+            >
+              <img
+                src="assets/img/client-costco.jpg"
+                alt="Costco Wholesale"
+                class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <div
+              class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group"
+            >
+              <img
+                src="assets/img/client-pink.jpg"
+                alt="PINK"
+                class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <div
+              class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group"
+            >
+              <img
+                src="assets/img/client-torrid.jpg"
+                alt="Torrid"
+                class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <div
+              class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group col-span-2 sm:col-span-1"
+            >
+              <img
+                src="assets/img/client-maurices.png"
+                alt="Maurices"
+                class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PDF PROFILE MODAL VIEWER -->
+    <div
+      id="pdf-modal"
+      class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay p-4"
+    >
+      <div
+        class="bg-white w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+      >
+        <div
+          class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between"
+        >
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-8 h-8 rounded-lg bg-primary-blue flex items-center justify-center font-bold text-sm"
+            >
+              PDF
+            </div>
+            <div>
+              <h3 class="font-bold text-base">
+                Nguyen An Interlining Profile 2026
+              </h3>
+              <p class="text-xs text-blue-200">
+                Official Company Profile Document
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <a
+              href="Profile Company 2026 (2).pdf"
+              download
+              class="px-3.5 py-1.5 bg-primary-blue hover:bg-blue-600 rounded-lg text-xs font-bold text-white transition flex items-center space-x-1"
+            >
+              <i class="fa-solid fa-download mr-1"></i>
+              <span>Download PDF (41MB)</span>
+            </a>
+            <button
+              id="close-pdf-modal"
+              class="p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800"
+            >
+              <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-1 bg-slate-900 p-2 overflow-y-auto">
+          <iframe
+            src="Profile Company 2026 (2).pdf"
+            class="w-full h-[70vh] rounded-xl border border-slate-700"
+            title="Company Profile PDF"
+          ></iframe>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- SECTION 4: 6 KEY BUSINESS SOLUTIONS & GROWTH PILLARS -->
-    <section class="py-16 bg-slate-50 border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">BUSINESS STRATEGY</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
-            OUR 6 STRATEGIC BUSINESS SOLUTIONS
-          </h2>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
+    <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
+    <footer
+      class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30"
+      >
+        <div
+          class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6"
+        >
+          <div class="flex items-center space-x-5 text-center lg:text-left">
+            <div
+              class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex"
+            >
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white"
+              >
+                LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
+              </h3>
+              <p class="text-xs sm:text-sm text-blue-100 font-normal">
+                Let Nguyen An Interlining experts consult directly for your
+                project requirements.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto"
+          >
+            <a
+              href="tel:+84986945537"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+              <span>(+84) 986 945 537</span>
+            </a>
+            <a
+              href="lien-he.html"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>Request a Consultation</span>
+            </a>
+          </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">01</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Foster Long-Term Relationships</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Leverage industry experience to cultivate enduring partnerships and replicate successful collaborations.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">02</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Expand Product Portfolio</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Optimize by introducing new and enhanced products across Warp Knitted, Circular, Water Jet Loom & Woven categories.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">03</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Acquire Technical Expertise</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Utilize technical capabilities and specialized equipment to continually enhance product quality and performance.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">04</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Boost Marketing Efforts</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Increase brand awareness and strengthen presence in apparel supply chain management across key global markets.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">05</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Expand Supplier Network</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Develop a global sourcing network to broaden our raw material supplier base and ensure competitive pricing.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-blue flex items-center justify-center font-extrabold text-base">06</div>
-            <h4 class="font-bold text-sm uppercase text-slate-800">Support Growth Opportunities</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">Recruit specialized talent in sales, marketing, and R&D product development to enhance global competitiveness.</p>
-          </div>
-
-        </div>
-
       </div>
-    </section>
 
-    <!-- SECTION 5: OUR TRUSTED CLIENTS & BRANDS -->
-    <section class="py-14 bg-white border-t border-slate-200/60">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        
-        <div class="text-center space-y-1.5">
-          <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">GLOBAL RECOGNITION</span>
-          <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase">
-            OUR TRUSTED CLIENTS & BRANDS
-          </h2>
-          <p class="text-xs text-slate-500 max-w-xl mx-auto">
-            Trusted by world-renowned fashion brands and retail corporations worldwide.
-          </p>
-          <div class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"></div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start"
+        >
+          <div class="lg:col-span-4 space-y-4">
+            <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+              <img
+                src="assets/img/logo-brand.png"
+                alt="NGUYEN AN INTERLINING"
+                class="h-10 w-auto object-contain"
+              />
+            </div>
+            <p
+              class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal"
+            >
+              Pioneering manufacturer in warp knitting, providing
+              high-performance fusible interlining and pocketing solutions for
+              the global apparel industry.
+            </p>
+            <div class="space-y-2 text-xs text-blue-50 font-medium">
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Head Office:</strong> No 609/9/5C, Highway 13,
+                  Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh
+                  Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Factory:</strong> Nam Sach District, Hai Duong
+                  Province, Vietnam</span
+                >
+              </p>
+              <p class="flex items-center space-x-2 pt-1">
+                <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Hotline:</strong>
+                  <a href="tel:+84986945537" class="underline hover:text-white"
+                    >(+84) 986 945 537</a
+                  >
+                  (Mr. Vincen)</span
+                >
+              </p>
+              <p class="flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Email:</strong>
+                  <a
+                    href="mailto:infor@nguyenanacc.com.vn"
+                    class="underline hover:text-white"
+                    >infor@nguyenanacc.com.vn</a
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="flex items-center space-x-2.5 pt-1">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              ABOUT US
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="gioi-thieu.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Company Overview</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="san-pham.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Product Catalog</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Manufacturing Capacity</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="tin-tuc.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>News & Insights</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              SERVICES & POLICIES
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span>
+                  <span>FOB / LDP / DDP Shipping Policy</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Logistics & Customs Clearance</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="lien-he.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Technical Support & Samples</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              LOCATION MAP
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <div
+              class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Nguyen An Location Map"
+              ></iframe>
+            </div>
+          </div>
         </div>
 
-        <!-- 5 Client Brand Logos Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 items-center">
-          
-          <div class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group">
-            <img src="assets/img/client-zara.jpg" alt="ZARA" class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300">
-          </div>
-
-          <div class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group">
-            <img src="assets/img/client-costco.jpg" alt="Costco Wholesale" class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300">
-          </div>
-
-          <div class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group">
-            <img src="assets/img/client-pink.jpg" alt="PINK" class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300">
-          </div>
-
-          <div class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group">
-            <img src="assets/img/client-torrid.jpg" alt="Torrid" class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300">
-          </div>
-
-          <div class="bg-slate-50 rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex items-center justify-center h-24 sm:h-28 group col-span-2 sm:col-span-1">
-            <img src="assets/img/client-maurices.png" alt="Maurices" class="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-300">
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- PDF PROFILE MODAL VIEWER -->
-  <div id="pdf-modal" class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay p-4">
-    <div class="bg-white w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 rounded-lg bg-primary-blue flex items-center justify-center font-bold text-sm">PDF</div>
+        <div
+          class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4"
+        >
           <div>
-            <h3 class="font-bold text-base">Nguyen An Interlining Profile 2026</h3>
-            <p class="text-xs text-blue-200">Official Company Profile Document</p>
+            © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
+          </div>
+          <div>
+            Crafted with excellence by
+            <a href="index.html" class="font-bold underline hover:text-white"
+              >Nguyen An Interlining</a
+            >
           </div>
         </div>
-
-        <div class="flex items-center space-x-3">
-          <a href="Profile Company 2026 (2).pdf" download class="px-3.5 py-1.5 bg-primary-blue hover:bg-blue-600 rounded-lg text-xs font-bold text-white transition flex items-center space-x-1">
-            <i class="fa-solid fa-download mr-1"></i>
-            <span>Download PDF (41MB)</span>
-          </a>
-          <button id="close-pdf-modal" class="p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800">
-            <i class="fa-solid fa-xmark text-lg"></i>
-          </button>
-        </div>
       </div>
+    </footer>
 
-      <div class="flex-1 bg-slate-900 p-2 overflow-y-auto">
-        <iframe src="Profile Company 2026 (2).pdf" class="w-full h-[70vh] rounded-xl border border-slate-700" title="Company Profile PDF"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
-  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
-      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
-        <div class="flex items-center space-x-5 text-center lg:text-left">
-          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
-            <i class="fa-solid fa-headset"></i>
-          </div>
-          <div class="space-y-1">
-            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
-              LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
-            </h3>
-            <p class="text-xs sm:text-sm text-blue-100 font-normal">
-              Let Nguyen An Interlining experts consult directly for your project requirements.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
-          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
-            <span>(+84) 986 945 537</span>
-          </a>
-          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-paper-plane text-xs"></i>
-            <span>Request a Consultation</span>
-          </a>
-        </div>
-      </div>
+    <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+      <a
+        href="https://wa.me/84986945537"
+        target="_blank"
+        class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200"
+        title="Chat via WhatsApp"
+        ><i class="fa-solid fa-comments text-lg"></i
+      ></a>
+      <a
+        href="tel:+84986945537"
+        class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200"
+        title="Call Hotline"
+        ><i class="fa-solid fa-phone text-lg"></i
+      ></a>
+      <a
+        href="#"
+        class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200"
+        title="Back to Top"
+        ><i class="fa-solid fa-chevron-up text-sm"></i
+      ></a>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-4 space-y-4">
-          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
-            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-          </div>
-          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
-            Pioneering manufacturer in warp knitting, providing high-performance fusible interlining and pocketing solutions for the global apparel industry.
-          </p>
-          <div class="space-y-2 text-xs text-blue-50 font-medium">
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Head Office:</strong> No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Factory:</strong> Nam Sach District, Hai Duong Province, Vietnam</span>
-            </p>
-            <p class="flex items-center space-x-2 pt-1">
-              <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
-              <span><strong>Hotline:</strong> <a href="tel:+84986945537" class="underline hover:text-white">(+84) 986 945 537</a> (Mr. Vincen)</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
-              <span><strong>Email:</strong> <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a></span>
-            </p>
-          </div>
-          <div class="flex items-center space-x-2.5 pt-1">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">ABOUT US</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Company Overview</span></a></li>
-            <li><a href="san-pham.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Product Catalog</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Manufacturing Capacity</span></a></li>
-            <li><a href="tin-tuc.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>News & Insights</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">SERVICES & POLICIES</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>FOB / LDP / DDP Shipping Policy</span></a></li>
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Logistics & Customs Clearance</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a></li>
-            <li><a href="lien-he.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Technical Support & Samples</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">LOCATION MAP</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <div class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4">
-        <div>
-          © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
-        </div>
-        <div>
-          Crafted with excellence by <a href="index.html" class="font-bold underline hover:text-white">Nguyen An Interlining</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
-    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat via WhatsApp"><i class="fa-solid fa-comments text-lg"></i></a>
-    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Call Hotline"><i class="fa-solid fa-phone text-lg"></i></a>
-    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Back to Top"><i class="fa-solid fa-chevron-up text-sm"></i></a>
-  </div>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
