@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" class="w-full h-auto opacity-70" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sun-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="sky-grad-1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="sky-grad-2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfdbfe" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sun -->
+  <circle cx="420" cy="65" r="28" fill="url(#sun-grad)" />
+
+  <!-- Far Layer (Tall Skyscrapers & Pagodas) -->
+  <path d="M0,160 L0,120 L25,120 L25,75 L45,75 L45,120 L60,120 L60,95 L80,95 L80,120 L110,120 L110,60 L125,45 L140,60 L140,120 L180,120 L180,85 L200,85 L200,120 L240,120 L240,100 L260,100 L260,120 L300,120 L300,70 L315,55 L330,70 L330,120 L380,120 L380,80 L400,80 L400,120 L440,120 L440,50 L455,30 L470,50 L470,120 L520,120 L520,75 L540,75 L540,120 L580,120 L580,90 L600,90 L600,120 L640,120 L640,65 L660,65 L660,120 L700,120 L700,80 L720,80 L720,120 L760,120 L760,60 L780,60 L780,120 L800,120 L800,160 Z" fill="url(#sky-grad-2)" />
+
+  <!-- Near Layer (Bridge Cables & Traditional Architecture) -->
+  <path d="M0,160 L0,135 L40,135 L50,110 L65,110 L75,135 L120,135 L130,95 L145,95 L155,135 L200,135 L215,85 L230,135 L260,135 L280,105 L300,135 L340,135 L350,115 L370,115 L380,135 L420,135 L440,75 L460,135 L490,135 L510,100 L530,135 L560,135 L580,110 L600,135 L640,135 L650,90 L665,90 L675,135 L710,135 L725,105 L740,135 L780,135 L790,115 L800,115 L800,160 Z" fill="url(#sky-grad-1)" />
+
+  <!-- Cable Stayed Bridge Overlay in center -->
+  <g stroke="#3b82f6" stroke-width="0.8" opacity="0.4">
+    <line x1="440" y1="75" x2="390" y2="135" />
+    <line x1="440" y1="75" x2="405" y2="135" />
+    <line x1="440" y1="75" x2="420" y2="135" />
+    <line x1="440" y1="75" x2="460" y2="135" />
+    <line x1="440" y1="75" x2="475" y2="135" />
+    <line x1="440" y1="75" x2="490" y2="135" />
+  </g>
+</svg>

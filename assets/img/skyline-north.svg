@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 70" class="w-full h-auto" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="north-grad-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.7" />
+    </linearGradient>
+  </defs>
+  <!-- Pagoda roofs and factory chimneys -->
+  <path d="M0,70 L0,55 L15,55 L20,45 L30,45 L35,55 L50,55 L55,40 L65,30 L75,40 L80,55 L100,55 L105,25 L115,25 L120,55 L135,55 L140,42 L150,42 L155,55 L170,55 L175,35 L180,35 L185,55 L200,55 L200,70 Z" fill="url(#north-grad-sky)" />
+</svg>
