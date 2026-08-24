@@ -7,3 +7,6 @@ pdf_extracted_content.txt
 pdf_text.txt
 .env
 *.env
+
+# Company profile source file - not deployed
+*.pdf
