@@ -593,24 +593,24 @@
 
           <!-- OEKO-TEX STANDARD 100 CERTIFICATE DOCUMENT DISPLAY -->
           <div
-            class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden"
+            class="bg-white rounded-3xl border border-slate-200/80 shadow-md overflow-hidden max-w-5xl mx-auto"
           >
-            <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-              <!-- Certificate Podium Frame Preview -->
+            <div class="flex flex-col lg:flex-row items-stretch">
+              <!-- Left Side: Image Only (Exact fit, zero whitespace) -->
               <div
-                class="lg:col-span-5 bg-gradient-to-b from-slate-50 to-slate-100/70 p-4 sm:p-6 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-100"
+                class="w-full lg:w-[380px] shrink-0 p-0 m-0 bg-white flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-100 overflow-hidden"
               >
                 <a
                   href="assets/img/certificate-oekotex.jpg"
                   target="_blank"
                   rel="noopener"
-                  class="group relative inline-block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 w-fit max-w-[340px] sm:max-w-[380px] lg:max-w-[400px]"
+                  class="group relative block w-full h-full cursor-pointer overflow-hidden"
                   title="Click to view full certificate"
                 >
                   <img
                     src="assets/img/certificate-podium-preview.png"
                     alt="OEKO-TEX Standard 100 Certificate No. 23.HVN.75767 in Presentation Stand"
-                    class="w-full h-auto block object-contain"
+                    class="w-full h-full object-cover block"
                   />
                   <div
                     class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
@@ -627,9 +627,9 @@
                 </a>
               </div>
 
-              <!-- Certificate Details -->
+              <!-- Right Side: Certificate Details (Equal Height) -->
               <div
-                class="lg:col-span-7 p-6 sm:p-9 flex flex-col justify-center space-y-5"
+                class="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center space-y-5 bg-white"
               >
                 <div class="space-y-2">
                   <span
