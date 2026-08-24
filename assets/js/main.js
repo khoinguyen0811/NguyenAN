@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordion();
   initRFQForm();
   initLanguageToggle();
-  initPDFModal();
   initMobileMenu();
 });
 
@@ -588,7 +587,7 @@ const productSpecsData = {
   woven: {
     title: 'Woven Interlining',
     tag: 'Woven Product Series',
-    image: 'assets/img/about-interlining.png',
+    image: 'assets/img/product-circular-interlining.png',
     desc: 'High-precision woven fusible interlinings engineered for structural stability, crisp collar shaping, and long-lasting garment shape retention across premium cotton, wool, and blended fabrics.',
     features: [
       'Strong peel strength with uniform double-dot adhesive coating',
@@ -604,7 +603,7 @@ const productSpecsData = {
   nonwoven: {
     title: 'Non-Woven Interlining',
     tag: 'Non-Woven Product Series',
-    image: 'assets/img/product-spec.png',
+    image: 'assets/img/product-waterjet-doc.png',
     desc: 'Lightweight, versatile non-woven fusible interlinings designed for soft reinforcement, smooth surface finish, and cost-effective garment construction.',
     features: [
       'Soft and smooth hand feel with low-temperature fusing',
@@ -636,7 +635,7 @@ const productSpecsData = {
   circular: {
     title: 'Circular Interlining',
     tag: 'Flexible Stretch Series',
-    image: 'assets/img/capabilities.png',
+    image: 'assets/img/product-circular-doc.png',
     desc: 'Circular knitted interlining providing 4-way elastic stretch flexibility for activewear, knitwear, polo shirts, and motion-heavy garments.',
     features: [
       'High elastic recovery following natural body movements',
@@ -782,39 +781,6 @@ function initRFQForm() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 7. PDF Modal Viewer & Download                                             */
-/* -------------------------------------------------------------------------- */
-function initPDFModal() {
-  const modal = document.getElementById('pdf-modal');
-  const openBtns = document.querySelectorAll('.open-pdf-modal');
-  const closeBtn = document.getElementById('close-pdf-modal');
-
-  if (!modal) return;
-
-  openBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    });
-  });
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    });
-  }
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    }
-  });
-}
-
-/* -------------------------------------------------------------------------- */
 /* 8. Mobile Navigation Drawer                                                 */
 /* -------------------------------------------------------------------------- */
 function initMobileMenu() {
@@ -944,10 +910,9 @@ const langDict = {
     nav_contact: 'Liên Hệ',
     hero_badge: 'NHÀ SẢN XUẤT KEỎ DỰNG HÀNG ĐẦU VIỆT NAM',
     hero_title: 'NGUYEN AN INTERLINING',
-    hero_subtitle: 'Reliable Interlining Solutions for the Global Apparel Industry. Hơn 20 năm chuyên sâu cung cấp các giải pháp dựng vải Woven, Non Woven & Fusible Interlining đạt chuẩn quốc tế.',
+    hero_subtitle: 'Reliable Interlining Solutions for the Global Apparel Industry. Hơn 10 năm chuyên sâu cung cấp các giải pháp dựng vải Woven, Non Woven & Fusible Interlining đạt chuẩn quốc tế.',
     cta_catalog: 'Khám Phá Sản Phẩm',
-    cta_rfq: 'Báo Giá & Nhận Mẫu',
-    cta_pdf: 'Xem Company Profile PDF'
+    cta_rfq: 'Báo Giá & Nhận Mẫu'
   },
   en: {
     nav_about: 'About Us',
@@ -957,10 +922,9 @@ const langDict = {
     nav_contact: 'Contact Us',
     hero_badge: 'LEADING INTERLINING MANUFACTURER IN VIETNAM',
     hero_title: 'NGUYEN AN INTERLINING',
-    hero_subtitle: 'Reliable Interlining Solutions for the Global Apparel Industry. Over 20 years of specialization in woven, non-woven, and fusible interlining solutions.',
+    hero_subtitle: 'Reliable Interlining Solutions for the Global Apparel Industry. Over 10 years of specialization in woven, non-woven, and fusible interlining solutions.',
     cta_catalog: 'Explore Products',
-    cta_rfq: 'Get Quote & Samples',
-    cta_pdf: 'View PDF Profile'
+    cta_rfq: 'Get Quote & Samples'
   }
 };
 

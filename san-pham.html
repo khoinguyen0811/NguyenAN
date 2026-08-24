@@ -1,597 +1,1044 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products Catalog | NGUYEN AN INTERLINING - Fusible & Pocketing Solutions</title>
-  <meta name="description" content="Danh mục giải pháp dựng keo mùng Warp Knitted, Circular, Water Jet Loom, Woven Interlining & Pocketing tiêu chuẩn xuất khẩu.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Products Catalog | NGUYEN AN INTERLINING - Fusible & Pocketing Solutions
+    </title>
+    <meta
+      name="description"
+      content="Product catalog of Warp Knitted, Circular, Water Jet Loom, Woven Interlining and Pocketing solutions built to export standards."
+    />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          maxWidth: {
-            '7xl': '1440px',
-            'site': '1440px',
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            maxWidth: {
+              "7xl": "1440px",
+              site: "1440px",
+            },
+            colors: {
+              "primary-blue": "#0071ce",
+              "primary-hover": "#005bb5",
+              "primary-dark": "#003b7a",
+              "primary-deep": "#061e33",
+              "primary-light": "#48a0e5",
+              "primary-ice": "#f0f7fc",
+            },
+            fontFamily: {
+              serif: ['"Phudu"', "sans-serif"],
+              phudu: ['"Phudu"', "sans-serif"],
+              sans: ['"Inter"', '"Plus Jakarta Sans"', "sans-serif"],
+            },
           },
-          colors: {
-            'primary-blue': '#0071ce',
-            'primary-hover': '#005bb5',
-            'primary-dark': '#003b7a',
-            'primary-deep': '#061e33',
-            'primary-light': '#48a0e5',
-            'primary-ice': '#f0f7fc',
-          },
-          fontFamily: {
-            serif: ['"Phudu"', 'sans-serif'],
-            phudu: ['"Phudu"', 'sans-serif'],
-            sans: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <!-- FontAwesome Icon Library CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <!-- FontAwesome Icon Library CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Phudu:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <div id="scroll-progress"></div>
+  <body
+    class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-primary-blue"
+  >
+    <div id="scroll-progress"></div>
 
-  <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
-  <header id="main-nav" class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      
-      <!-- Official Brand Logo Image -->
-      <a href="index.html" class="flex items-center group py-0.5">
-        <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-11 sm:h-12 w-auto object-contain">
-      </a>
+    <!-- 1. MAIN NAVIGATION HEADER (SHARED 100% WITH INDEX.HTML) -->
+    <header
+      id="main-nav"
+      class="font-sans sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-xs transition-all duration-300 py-3.5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <!-- Official Brand Logo Image -->
+        <a href="index.html" class="flex items-center group py-0.5">
+          <img
+            src="assets/img/logo-brand.png"
+            alt="NGUYEN AN INTERLINING"
+            class="h-11 sm:h-12 w-auto object-contain"
+          />
+        </a>
 
-      <!-- Desktop Nav Menu Links -->
-      <nav id="desktop-nav-menu" class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1">
-        <a href="index.html" class="nav-item-link hover:text-primary-blue transition py-1">Home</a>
-        <a href="gioi-thieu.html" class="nav-item-link hover:text-primary-blue transition py-1">About Us</a>
-        
-        <div class="relative group cursor-pointer py-1">
-          <a href="san-pham.html" class="nav-item-link nav-link-active hover:text-primary-blue transition flex items-center space-x-1 py-1">
-            <span>Products</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"></i>
-          </a>
-          <!-- Seamless Dropdown Bridge Container -->
-          <div class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50">
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal">
-              <a href="san-pham.html#woven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Woven</a>
-              <a href="san-pham.html#nonwoven" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Non woven</a>
-              <a href="san-pham.html#fusible" class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition">Fusible</a>
+        <!-- Desktop Nav Menu Links -->
+        <nav
+          id="desktop-nav-menu"
+          class="font-sans hidden lg:flex items-center space-x-7 text-[13px] font-bold text-slate-700 relative py-1"
+        >
+          <a
+            href="index.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >About Us</a
+          >
+
+          <div class="relative group cursor-pointer py-1">
+            <a
+              href="san-pham.html"
+              class="nav-item-link nav-link-active hover:text-primary-blue transition flex items-center space-x-1 py-1"
+            >
+              <span>Products</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-primary-blue"
+              ></i>
+            </a>
+            <!-- Seamless Dropdown Bridge Container -->
+            <div
+              class="absolute left-0 top-full pt-1 w-48 hidden group-hover:block z-50"
+            >
+              <div
+                class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 text-xs normal-case tracking-normal"
+              >
+                <a
+                  href="san-pham.html#woven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Woven</a
+                >
+                <a
+                  href="san-pham.html#nonwoven"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Non woven</a
+                >
+                <a
+                  href="san-pham.html#fusible"
+                  class="block px-3 py-2 rounded-lg hover:bg-blue-50 text-slate-700 font-semibold transition"
+                  >Fusible</a
+                >
+              </div>
             </div>
           </div>
+
+          <a
+            href="dich-vu-logistics.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Solutions</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="nav-item-link hover:text-primary-blue transition py-1"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right Call-to-Action Phone Button -->
+        <div class="hidden sm:flex items-center">
+          <a
+            href="tel:+84986945537"
+            class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2"
+          >
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span>(+84) 986 945 537</span>
+          </a>
         </div>
 
-        <a href="dich-vu-logistics.html" class="nav-item-link hover:text-primary-blue transition py-1">Solutions</a>
-        <a href="phat-trien-ben-vung.html" class="nav-item-link hover:text-primary-blue transition py-1">Capabilities</a>
-        <a href="tin-tuc.html" class="nav-item-link hover:text-primary-blue transition py-1">News</a>
-        <a href="lien-he.html" class="nav-item-link hover:text-primary-blue transition py-1">Contact</a>
-      </nav>
-
-      <!-- Right Call-to-Action Phone Button -->
-      <div class="hidden sm:flex items-center">
-        <a href="tel:+84986945537" class="px-5 py-2.5 rounded-full text-xs font-bold text-white bg-primary-blue hover:bg-primary-hover shadow-md hover:shadow-lg transition duration-200 flex items-center space-x-2">
-          <i class="fa-solid fa-phone text-xs"></i>
-          <span>(+84) 986 945 537</span>
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
-        <i class="fa-solid fa-bars text-lg"></i>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Backdrop Overlay -->
-  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"></div>
-
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-drawer" class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-        <a href="index.html" class="flex items-center">
-          <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-        </a>
-        <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-slate-700">
-          <i class="fa-solid fa-xmark text-xl"></i>
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
+    </header>
 
-      <nav class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm">
-        <a href="index.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Home</a>
-        <a href="gioi-thieu.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">About Us</a>
-        <div class="border-b border-slate-50 py-2">
-          <button type="button" id="mobile-products-toggle" class="w-full text-primary-blue font-bold flex items-center justify-between py-1 focus:outline-none">
-            <span>Products</span>
-            <i id="mobile-products-arrow" class="fa-solid fa-chevron-down text-xs text-primary-blue transition-transform duration-200"></i>
-          </button>
-          <div id="mobile-products-submenu" class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600">
-            <a href="san-pham.html#woven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Woven</a>
-            <a href="san-pham.html#nonwoven" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Non woven</a>
-            <a href="san-pham.html#fusible" class="mobile-nav-link block py-1 hover:text-primary-blue transition">Fusible</a>
-          </div>
-        </div>
-        <a href="dich-vu-logistics.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Solutions (Logistics)</a>
-        <a href="phat-trien-ben-vung.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">Capabilities</a>
-        <a href="tin-tuc.html" class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue">News</a>
-        <a href="lien-he.html" class="mobile-nav-link py-2 hover:text-primary-blue">Contact</a>
-      </nav>
-    </div>
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div
+      id="mobile-drawer-overlay"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div class="pt-6 border-t border-slate-100 space-y-3">
-      <a href="tel:+84986945537" class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue">
-        <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
-      </a>
-    </div>
-  </div>
-
-  <main>
-    <!-- PAGE HERO BANNER -->
-    <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
-        <img src="assets/img/product-spec.png" alt="Products Background" class="w-full h-full object-cover">
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
-        <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center space-x-2 text-xs font-semibold text-slate-300">
-          <a href="index.html" class="hover:text-white transition flex items-center">
-            <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
-            <span>Home</span>
+    <!-- Mobile Drawer Menu -->
+    <div
+      id="mobile-drawer"
+      class="fixed inset-y-0 right-0 z-50 w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between"
+    >
+      <div>
+        <div
+          class="flex items-center justify-between pb-6 border-b border-slate-100"
+        >
+          <a href="index.html" class="flex items-center">
+            <img
+              src="assets/img/logo-brand.png"
+              alt="NGUYEN AN INTERLINING"
+              class="h-10 w-auto object-contain"
+            />
           </a>
-          <span class="text-slate-500">/</span>
-          <span class="text-blue-300 font-bold">Products</span>
+          <button
+            id="close-mobile-drawer"
+            class="p-2 text-slate-400 hover:text-slate-700"
+          >
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <nav
+          class="mt-6 flex flex-col space-y-4 font-semibold text-slate-700 text-sm"
+        >
+          <a
+            href="index.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Home</a
+          >
+          <a
+            href="gioi-thieu.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >About Us</a
+          >
+          <div class="border-b border-slate-50 py-2">
+            <button
+              type="button"
+              id="mobile-products-toggle"
+              class="w-full text-primary-blue font-bold flex items-center justify-between py-1 focus:outline-none"
+            >
+              <span>Products</span>
+              <i
+                id="mobile-products-arrow"
+                class="fa-solid fa-chevron-down text-xs text-primary-blue transition-transform duration-200"
+              ></i>
+            </button>
+            <div
+              id="mobile-products-submenu"
+              class="hidden pl-3 pt-2 space-y-2 text-xs font-semibold text-slate-600"
+            >
+              <a
+                href="san-pham.html#woven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Woven</a
+              >
+              <a
+                href="san-pham.html#nonwoven"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Non woven</a
+              >
+              <a
+                href="san-pham.html#fusible"
+                class="mobile-nav-link block py-1 hover:text-primary-blue transition"
+                >Fusible</a
+              >
+            </div>
+          </div>
+          <a
+            href="dich-vu-logistics.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Solutions (Logistics)</a
+          >
+          <a
+            href="phat-trien-ben-vung.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >Capabilities</a
+          >
+          <a
+            href="tin-tuc.html"
+            class="mobile-nav-link py-2 border-b border-slate-50 hover:text-primary-blue"
+            >News</a
+          >
+          <a
+            href="lien-he.html"
+            class="mobile-nav-link py-2 hover:text-primary-blue"
+            >Contact</a
+          >
         </nav>
       </div>
 
-      <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
-      <div class="relative w-full my-8 font-sans">
-        
-        <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-l-4 border-white"></div>
+      <div class="pt-6 border-t border-slate-100 space-y-3">
+        <a
+          href="tel:+84986945537"
+          class="block text-center w-full py-3 rounded-full text-xs font-bold text-white bg-primary-blue"
+        >
+          <i class="fa-solid fa-phone mr-1.5"></i> Call (+84) 986 945 537
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- PAGE HERO BANNER -->
+      <section class="bg-slate-900 text-white py-12 sm:py-16 relative">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none"
+        >
+          <img
+            src="assets/img/product-spec.png"
+            alt="Products Background"
+            class="w-full h-full object-cover"
+          />
         </div>
 
-        <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
-        <div class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4">
-              OUR PRODUCTS
-            </h1>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3"
+        >
+          <!-- Breadcrumb Navigation -->
+          <nav
+            class="flex items-center space-x-2 text-xs font-semibold text-slate-300"
+          >
+            <a
+              href="index.html"
+              class="hover:text-white transition flex items-center"
+            >
+              <i class="fa-solid fa-house mr-1.5 text-[11px] text-blue-400"></i>
+              <span>Home</span>
+            </a>
+            <span class="text-slate-500">/</span>
+            <span class="text-blue-300 font-bold">Products</span>
+          </nav>
+        </div>
+
+        <!-- FULL-BLEED HORIZONTAL BLUE BAND STRIP -->
+        <div class="relative w-full my-8 font-sans">
+          <!-- 1. CẠNH BÊN TRÁI CỦA KHUNG TRẮNG (Chạy đè NỔI LÊN TRÊN dải xanh - z-30) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-30"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-l-4 border-white"
+            ></div>
           </div>
-        </div>
 
-        <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10">
-          <div class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-t-4 border-b-4 border-r-4 border-white"></div>
-        </div>
-
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
-          Comprehensive portfolio of Warp Knitted, Circular, Water Jet Loom, and Woven fusible interlining tailored to apparel specifications.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION 1: 4 CORE PRODUCT CATEGORIES (PDF PAGE 08 - 2 CARDS / ROW ON MOBILE) -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center space-y-1.5">
-          <span class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest">08 / PRODUCT LINEUP</span>
-          <h2 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase">
-            OUR MAIN PRODUCT CATEGORIES
-          </h2>
-          <div class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"></div>
-        </div>
-
-        <!-- 4 Column Product Grid (2 Cards per row on Mobile grid-cols-2) -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
-          
-          <!-- Product Card 1: WARP KNITTED INTERLINING -->
-          <a href="#product-specs" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
-            <div>
-              <div class="relative h-36 sm:h-44 bg-slate-100">
-                <div class="w-full h-full overflow-hidden rounded-t-sm">
-                  <img src="assets/img/product-warp-knitted.png" alt="Warp Knitted Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="card-badge-overlap">
-                  <i class="fa-solid fa-border-all text-slate-700 text-base sm:text-lg"></i>
-                </div>
-              </div>
-
-              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
-                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
-                  WARP KNITTED INTERLINING
-                </h3>
-                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
-                  High stability and durability for suits, coats, and uniform garments.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-hover-bar">
-              <span class="card-hover-text">XEM THÊM</span>
-              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
-            </div>
-          </a>
-
-          <!-- Product Card 2: CIRCULAR INTERLINING -->
-          <a href="#product-specs" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
-            <div>
-              <div class="relative h-36 sm:h-44 bg-slate-100">
-                <div class="w-full h-full overflow-hidden rounded-t-sm">
-                  <img src="assets/img/product-spec.png" alt="Circular Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="card-badge-overlap">
-                  <i class="fa-solid fa-circle-notch text-slate-700 text-base sm:text-lg"></i>
-                </div>
-              </div>
-
-              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
-                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
-                  CIRCULAR INTERLINING
-                </h3>
-                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
-                  Excellent dimensional stability and soft handle feeling.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-hover-bar">
-              <span class="card-hover-text">XEM THÊM</span>
-              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
-            </div>
-          </a>
-
-          <!-- Product Card 3: WATER JET LOOM INTERLINING -->
-          <a href="#product-specs" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
-            <div>
-              <div class="relative h-36 sm:h-44 bg-slate-100">
-                <div class="w-full h-full overflow-hidden rounded-t-sm">
-                  <img src="assets/img/lab-room.png" alt="Water Jet Loom Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="card-badge-overlap">
-                  <i class="fa-solid fa-water text-slate-700 text-base sm:text-lg"></i>
-                </div>
-              </div>
-
-              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
-                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
-                  WATER JET LOOM <span class="text-primary-blue">INTERLINING</span>
-                </h3>
-                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
-                  Smooth surface and consistent quality for premium tailored garments.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-hover-bar">
-              <span class="card-hover-text">XEM THÊM</span>
-              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
-            </div>
-          </a>
-
-          <!-- Product Card 4: WOVEN INTERLINING -->
-          <a href="#product-specs" class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden">
-            <div>
-              <div class="relative h-36 sm:h-44 bg-slate-100">
-                <div class="w-full h-full overflow-hidden rounded-t-sm">
-                  <img src="assets/img/about-interlining.png" alt="Woven Interlining" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="card-badge-overlap">
-                  <i class="fa-solid fa-layer-group text-slate-700 text-base sm:text-lg"></i>
-                </div>
-              </div>
-
-              <div class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2">
-                <h3 class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug">
-                  WOVEN INTERLINING
-                </h3>
-                <p class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal">
-                  Classic woven structure for structured tailored looks and pocketing.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-hover-bar">
-              <span class="card-hover-text">XEM THÊM</span>
-              <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
-            </div>
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 2: DETAILED PRODUCT SPECIFICATIONS (PDF PAGE 09 - 100% ACCURATE SPECS) -->
-    <section id="product-specs" class="py-16 bg-slate-50 border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs font-extrabold text-primary-blue uppercase tracking-widest">09 / TECHNICAL SPECIFICATIONS</span>
-          <h2 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase">
-            PRODUCT FEATURES & LOADING ABILITY
-          </h2>
-          <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          <!-- Key Features Column (6 Cols) -->
-          <div class="lg:col-span-6 bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
-            <h3 class="font-bold text-lg text-slate-800 uppercase tracking-wide flex items-center">
-              <i class="fa-solid fa-star text-primary-blue mr-2.5"></i>
-              Key Product Features
-            </h3>
-
-            <ul class="space-y-4 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start space-x-3">
-                <i class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"></i>
-                <span><strong>Double-dot Coating:</strong> Fusible interlining with strong peel strength, highly washable, and exceptionally durable.</span>
-              </li>
-              <li class="flex items-start space-x-3">
-                <i class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"></i>
-                <span><strong>Soft Handle Feeling:</strong> Comfortable and natural touch maintaining garment elegance and drape.</span>
-              </li>
-              <li class="flex items-start space-x-3">
-                <i class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"></i>
-                <span><strong>Low-Temperature Press:</strong> Engineered to fuse at lower temperatures to preserve the original style and texture of outer fabrics.</span>
-              </li>
-            </ul>
-
-            <div class="pt-4 border-t border-slate-100">
-              <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800 mb-3">Garment Applications</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs">Normal Suits (Men & Women)</span>
-                <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs">Jackets & Coats</span>
-                <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs">Denim & Jeans</span>
-                <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs">All Kinds of Uniforms</span>
-              </div>
+          <!-- 2. DẢI MÀU XANH (Nằm lớp giữa z-20) -->
+          <div
+            class="w-full bg-primary-blue text-white py-3.5 sm:py-4 shadow-md relative z-20"
+          >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h1
+                class="text-white text-lg sm:text-3xl font-extrabold uppercase tracking-wide pl-4"
+              >
+                OUR PRODUCTS
+              </h1>
             </div>
           </div>
 
-          <!-- Loading Ability & Delivery Time Column (6 Cols) -->
-          <div class="lg:col-span-6 space-y-6">
-            
-            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
-              <h3 class="font-bold text-lg text-slate-800 uppercase tracking-wide flex items-center">
-                <i class="fa-solid fa-truck-ramp-box text-primary-blue mr-2.5"></i>
-                Container Loading Ability (PDF Page 09)
+          <!-- 3. PHẦN CÒN LẠI CỦA KHUNG TRẮNG (Cạnh trên, dưới, phải - Nằm BÊN ĐƯỚI dải xanh - z-10) -->
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute inset-0 pointer-events-none z-10"
+          >
+            <div
+              class="absolute -top-5 -bottom-5 left-4 sm:left-6 lg:left-8 w-36 sm:w-44 border-t-4 border-b-4 border-r-4 border-white"
+            ></div>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <p
+            class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed"
+          >
+            Comprehensive portfolio of Warp Knitted, Circular, Water Jet Loom,
+            and Woven fusible interlining tailored to apparel specifications.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 1: 4 CORE PRODUCT CATEGORIES (PDF PAGE 08 - 2 CARDS / ROW ON MOBILE) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center space-y-1.5">
+            <span
+              class="text-[11px] font-extrabold text-primary-blue uppercase tracking-widest"
+              >PRODUCT LINEUP</span
+            >
+            <h2
+              class="font-serif-title text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              OUR MAIN PRODUCT CATEGORIES
+            </h2>
+            <div
+              class="w-12 h-[3px] bg-primary-blue mx-auto rounded-full mt-2"
+            ></div>
+          </div>
+
+          <!-- 4 Column Product Grid (2 Cards per row on Mobile grid-cols-2) -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
+            <!-- Product Card 1: WARP KNITTED INTERLINING -->
+            <a
+              href="#product-specs"
+              class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden"
+            >
+              <div>
+                <div class="relative h-36 sm:h-44 bg-slate-100">
+                  <div class="w-full h-full overflow-hidden rounded-t-sm">
+                    <img
+                      src="assets/img/product-warp-knitted.png"
+                      alt="Warp Knitted Interlining"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  </div>
+                  <div class="card-badge-overlap">
+                    <i
+                      class="fa-solid fa-border-all text-slate-700 text-base sm:text-lg"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2"
+                >
+                  <h3
+                    class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug"
+                  >
+                    WARP KNITTED INTERLINING
+                  </h3>
+                  <p
+                    class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal"
+                  >
+                    High stability and durability for suits, coats, and uniform
+                    garments.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-hover-bar">
+                <span class="card-hover-text">VIEW MORE</span>
+                <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+              </div>
+            </a>
+
+            <!-- Product Card 2: CIRCULAR INTERLINING -->
+            <a
+              href="#product-specs"
+              class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden"
+            >
+              <div>
+                <div class="relative h-36 sm:h-44 bg-slate-100">
+                  <div class="w-full h-full overflow-hidden rounded-t-sm">
+                    <img
+                      src="assets/img/product-circular-doc.png"
+                      alt="Circular Interlining"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  </div>
+                  <div class="card-badge-overlap">
+                    <i
+                      class="fa-solid fa-circle-notch text-slate-700 text-base sm:text-lg"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2"
+                >
+                  <h3
+                    class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug"
+                  >
+                    CIRCULAR INTERLINING
+                  </h3>
+                  <p
+                    class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal"
+                  >
+                    Excellent dimensional stability and soft handle feeling.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-hover-bar">
+                <span class="card-hover-text">VIEW MORE</span>
+                <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+              </div>
+            </a>
+
+            <!-- Product Card 3: WATER JET LOOM INTERLINING -->
+            <a
+              href="#product-specs"
+              class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden"
+            >
+              <div>
+                <div class="relative h-36 sm:h-44 bg-slate-100">
+                  <div class="w-full h-full overflow-hidden rounded-t-sm">
+                    <img
+                      src="assets/img/product-waterjet-doc.png"
+                      alt="Water Jet Loom Interlining"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  </div>
+                  <div class="card-badge-overlap">
+                    <i
+                      class="fa-solid fa-water text-slate-700 text-base sm:text-lg"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2"
+                >
+                  <h3
+                    class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug"
+                  >
+                    WATER JET LOOM
+                    <span class="text-primary-blue">INTERLINING</span>
+                  </h3>
+                  <p
+                    class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal"
+                  >
+                    Smooth surface and consistent quality for premium tailored
+                    garments.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-hover-bar">
+                <span class="card-hover-text">VIEW MORE</span>
+                <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+              </div>
+            </a>
+
+            <!-- Product Card 4: WOVEN INTERLINING -->
+            <a
+              href="#product-specs"
+              class="group bg-white rounded-sm border border-slate-200/80 shadow-2xs hover:shadow-md transition duration-300 flex flex-col justify-between relative overflow-hidden"
+            >
+              <div>
+                <div class="relative h-36 sm:h-44 bg-slate-100">
+                  <div class="w-full h-full overflow-hidden rounded-t-sm">
+                    <img
+                      src="assets/img/product-circular-interlining.png"
+                      alt="Woven Interlining"
+                      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  </div>
+                  <div class="card-badge-overlap">
+                    <i
+                      class="fa-solid fa-layer-group text-slate-700 text-base sm:text-lg"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-7 sm:pt-8 px-3.5 sm:px-5 pb-3 sm:pb-4 space-y-1.5 sm:space-y-2"
+                >
+                  <h3
+                    class="text-[11px] sm:text-[13px] font-extrabold text-slate-800 group-hover:text-primary-blue transition uppercase tracking-wider leading-snug"
+                  >
+                    WOVEN INTERLINING
+                  </h3>
+                  <p
+                    class="text-[10px] sm:text-[11px] text-slate-500 leading-relaxed font-normal"
+                  >
+                    Classic woven structure for structured tailored looks and
+                    pocketing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-hover-bar">
+                <span class="card-hover-text">VIEW MORE</span>
+                <i class="fa-solid fa-arrow-right card-hover-arrow"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: DETAILED PRODUCT SPECIFICATIONS (PDF PAGE 09 - 100% ACCURATE SPECS) -->
+      <section
+        id="product-specs"
+        class="py-16 bg-slate-50 border-t border-slate-100"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span
+              class="text-xs font-extrabold text-primary-blue uppercase tracking-widest"
+              >TECHNICAL SPECIFICATIONS</span
+            >
+            <h2
+              class="font-serif-title text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight uppercase"
+            >
+              PRODUCT FEATURES & LOADING ABILITY
+            </h2>
+            <div class="w-12 h-1 bg-primary-blue mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Key Features Column (6 Cols) -->
+            <div
+              class="lg:col-span-6 bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6"
+            >
+              <h3
+                class="font-bold text-lg text-slate-800 uppercase tracking-wide flex items-center"
+              >
+                <i class="fa-solid fa-star text-primary-blue mr-2.5"></i>
+                Key Product Features
               </h3>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-5 bg-slate-900 text-white rounded-xl space-y-2">
-                  <span class="text-xs font-bold text-blue-400 uppercase tracking-wider block">20' FCL CONTAINER</span>
-                  <div class="text-2xl font-extrabold">81,000 m</div>
-                  <p class="text-[11px] text-slate-300">50gsm Warp Knitted Interlining (width 150cm)</p>
-                </div>
+              <ul class="space-y-4 text-xs sm:text-sm text-slate-600">
+                <li class="flex items-start space-x-3">
+                  <i
+                    class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"
+                  ></i>
+                  <span
+                    ><strong>Double-dot Coating:</strong> Fusible interlining
+                    with strong peel strength, highly washable, and
+                    exceptionally durable.</span
+                  >
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i
+                    class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"
+                  ></i>
+                  <span
+                    ><strong>Soft Handle Feeling:</strong> Comfortable and
+                    natural touch maintaining garment elegance and drape.</span
+                  >
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i
+                    class="fa-solid fa-circle-check text-primary-blue mt-1 shrink-0"
+                  ></i>
+                  <span
+                    ><strong>Low-Temperature Press:</strong> Engineered to fuse
+                    at lower temperatures to preserve the original style and
+                    texture of outer fabrics.</span
+                  >
+                </li>
+              </ul>
 
-                <div class="p-5 bg-primary-blue text-white rounded-xl space-y-2">
-                  <span class="text-xs font-bold text-blue-200 uppercase tracking-wider block">40' HQ CONTAINER</span>
-                  <div class="text-2xl font-extrabold">222,800 m</div>
-                  <p class="text-[11px] text-blue-100">50gsm Warp Knitted Interlining (width 150cm)</p>
+              <div class="pt-4 border-t border-slate-100">
+                <h4
+                  class="font-bold text-xs uppercase tracking-wider text-slate-800 mb-3"
+                >
+                  Garment Applications
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs"
+                    >Normal Suits (Men & Women)</span
+                  >
+                  <span
+                    class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs"
+                    >Jackets & Coats</span
+                  >
+                  <span
+                    class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs"
+                    >Denim & Jeans</span
+                  >
+                  <span
+                    class="px-3 py-1.5 rounded-lg bg-blue-50 text-primary-blue font-bold text-xs"
+                    >All Kinds of Uniforms</span
+                  >
                 </div>
               </div>
             </div>
 
-            <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 flex items-center justify-between">
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 rounded-xl bg-primary-blue text-white flex items-center justify-center text-xl shrink-0">
-                  <i class="fa-solid fa-clock"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-sm text-slate-800 uppercase">Standard Delivery Time</h4>
-                  <p class="text-xs text-slate-600">Within <strong>4 days to 2 weeks</strong> from order confirmation.</p>
+            <!-- Loading Ability & Delivery Time Column (6 Cols) -->
+            <div class="lg:col-span-6 space-y-6">
+              <div
+                class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6"
+              >
+                <h3
+                  class="font-bold text-lg text-slate-800 uppercase tracking-wide flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-truck-ramp-box text-primary-blue mr-2.5"
+                  ></i>
+                  Container Loading Ability
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="p-5 bg-slate-900 text-white rounded-xl space-y-2">
+                    <span
+                      class="text-xs font-bold text-blue-400 uppercase tracking-wider block"
+                      >20' FCL CONTAINER</span
+                    >
+                    <div class="text-2xl font-extrabold">81,000 m</div>
+                    <p class="text-[11px] text-slate-300">
+                      50gsm Warp Knitted Interlining (width 150cm)
+                    </p>
+                  </div>
+
+                  <div
+                    class="p-5 bg-primary-blue text-white rounded-xl space-y-2"
+                  >
+                    <span
+                      class="text-xs font-bold text-blue-200 uppercase tracking-wider block"
+                      >40' HQ CONTAINER</span
+                    >
+                    <div class="text-2xl font-extrabold">222,800 m</div>
+                    <p class="text-[11px] text-blue-100">
+                      50gsm Warp Knitted Interlining (width 150cm)
+                    </p>
+                  </div>
                 </div>
               </div>
-              <a href="lien-he.html" class="px-4 py-2 bg-primary-blue text-white rounded-lg text-xs font-bold hover:bg-primary-hover transition">
-                Request Samples
+
+              <div
+                class="bg-blue-50 p-6 rounded-2xl border border-blue-100 flex items-center justify-between"
+              >
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-blue text-white flex items-center justify-center text-xl shrink-0"
+                  >
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-slate-800 uppercase">
+                      Standard Delivery Time
+                    </h4>
+                    <p class="text-xs text-slate-600">
+                      Within <strong>4 days to 2 weeks</strong> from order
+                      confirmation.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="lien-he.html"
+                  class="px-4 py-2 bg-primary-blue text-white rounded-lg text-xs font-bold hover:bg-primary-hover transition"
+                >
+                  Request Samples
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CUSTOMIZATION & POCKETING SOLUTIONS (PDF PAGE 08) -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden space-y-6"
+          >
+            <div class="max-w-2xl space-y-3 relative z-10">
+              <span
+                class="text-xs font-extrabold text-blue-400 uppercase tracking-widest"
+                >TAILORED MANUFACTURING</span
+              >
+              <h2
+                class="font-serif-title text-2xl sm:text-4xl font-extrabold uppercase leading-tight"
+              >
+                CUSTOM SPECIFICATIONS & POCKETING SOLUTIONS
+              </h2>
+              <p
+                class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal"
+              >
+                We can produce circular interlining, water jet loom interlining,
+                woven and non-woven interlining according to customer
+                requirements with stable quality and competitive prices.
+              </p>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-4 relative z-10">
+              <a
+                href="lien-he.html"
+                class="px-6 py-3 bg-primary-blue text-white rounded-sm text-xs font-bold tracking-wider hover:bg-primary-hover transition uppercase shadow-md"
+              >
+                REQUEST CUSTOM SPEC & SAMPLE KIT
               </a>
             </div>
-
           </div>
-
         </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-
-    <!-- SECTION 3: CUSTOMIZATION & POCKETING SOLUTIONS (PDF PAGE 08) -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden space-y-6">
-          <div class="max-w-2xl space-y-3 relative z-10">
-            <span class="text-xs font-extrabold text-blue-400 uppercase tracking-widest">TAILORED MANUFACTURING</span>
-            <h2 class="font-serif-title text-2xl sm:text-4xl font-extrabold uppercase leading-tight">
-              CUSTOM SPECIFICATIONS & POCKETING SOLUTIONS
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-              We can produce circular interlining, water jet loom interlining, woven and non-woven interlining according to customer requirements with stable quality and competitive prices.
-            </p>
+    <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
+    <footer
+      class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30"
+      >
+        <div
+          class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6"
+        >
+          <div class="flex items-center space-x-5 text-center lg:text-left">
+            <div
+              class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex"
+            >
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="space-y-1">
+              <h3
+                class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white"
+              >
+                LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
+              </h3>
+              <p class="text-xs sm:text-sm text-blue-100 font-normal">
+                Let Nguyen An Interlining experts consult directly for your
+                project requirements.
+              </p>
+            </div>
           </div>
-
-          <div class="pt-4 flex flex-wrap gap-4 relative z-10">
-            <a href="lien-he.html" class="px-6 py-3 bg-primary-blue text-white rounded-sm text-xs font-bold tracking-wider hover:bg-primary-hover transition uppercase shadow-md">
-              REQUEST CUSTOM SPEC & SAMPLE KIT
+          <div
+            class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto"
+          >
+            <a
+              href="tel:+84986945537"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
+              <span>(+84) 986 945 537</span>
             </a>
-            <button class="open-pdf-modal px-6 py-3 bg-white/10 text-white border border-white/20 rounded-sm text-xs font-bold tracking-wider hover:bg-white/20 transition uppercase">
-              VIEW PDF SPEC SHEET
-            </button>
+            <a
+              href="lien-he.html"
+              class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center"
+            >
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>Request a Consultation</span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- PDF PROFILE MODAL VIEWER -->
-  <div id="pdf-modal" class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay p-4">
-    <div class="bg-white w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 rounded-lg bg-primary-blue flex items-center justify-center font-bold text-sm">PDF</div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start"
+        >
+          <div class="lg:col-span-4 space-y-4">
+            <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
+              <img
+                src="assets/img/logo-brand.png"
+                alt="NGUYEN AN INTERLINING"
+                class="h-10 w-auto object-contain"
+              />
+            </div>
+            <p
+              class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal"
+            >
+              Pioneering manufacturer in warp knitting, providing
+              high-performance fusible interlining and pocketing solutions for
+              the global apparel industry.
+            </p>
+            <div class="space-y-2 text-xs text-blue-50 font-medium">
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Head Office:</strong> No 609/9/5C, Highway 13,
+                  Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh
+                  Ward, Ho Chi Minh City, Vietnam</span
+                >
+              </p>
+              <p class="flex items-start space-x-2">
+                <i
+                  class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"
+                ></i>
+                <span
+                  ><strong>Factory:</strong> Nam Sach District, Hai Duong
+                  Province, Vietnam</span
+                >
+              </p>
+              <p class="flex items-center space-x-2 pt-1">
+                <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Hotline:</strong>
+                  <a href="tel:+84986945537" class="underline hover:text-white"
+                    >(+84) 986 945 537</a
+                  >
+                  (Mr. Vincen)</span
+                >
+              </p>
+              <p class="flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
+                <span
+                  ><strong>Email:</strong>
+                  <a
+                    href="mailto:infor@nguyenanacc.com.vn"
+                    class="underline hover:text-white"
+                    >infor@nguyenanacc.com.vn</a
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="flex items-center space-x-2.5 pt-1">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              ABOUT US
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="gioi-thieu.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Company Overview</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="san-pham.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Product Catalog</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Manufacturing Capacity</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="tin-tuc.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>News & Insights</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              SERVICES & POLICIES
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <ul class="space-y-2.5 text-xs text-blue-100">
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span>
+                  <span>FOB / LDP / DDP Shipping Policy</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="dich-vu-logistics.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Logistics & Customs Clearance</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="phat-trien-ben-vung.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="lien-he.html"
+                  class="hover:text-white transition flex items-center space-x-1"
+                  ><span>–</span> <span>Technical Support & Samples</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4
+              class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider"
+            >
+              LOCATION MAP
+            </h4>
+            <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
+            <div
+              class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Nguyen An Location Map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4"
+        >
           <div>
-            <h3 class="font-bold text-base">Nguyen An Interlining Profile 2026</h3>
-            <p class="text-xs text-blue-200">Official Company Profile Document</p>
+            © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
+          </div>
+          <div>
+            Crafted with excellence by
+            <a href="index.html" class="font-bold underline hover:text-white"
+              >Nguyen An Interlining</a
+            >
           </div>
         </div>
-
-        <div class="flex items-center space-x-3">
-          <a href="Profile Company 2026 (2).pdf" download class="px-3.5 py-1.5 bg-primary-blue hover:bg-blue-600 rounded-lg text-xs font-bold text-white transition flex items-center space-x-1">
-            <i class="fa-solid fa-download mr-1"></i>
-            <span>Download PDF (41MB)</span>
-          </a>
-          <button id="close-pdf-modal" class="p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800">
-            <i class="fa-solid fa-xmark text-lg"></i>
-          </button>
-        </div>
       </div>
+    </footer>
 
-      <div class="flex-1 bg-slate-900 p-2 overflow-y-auto">
-        <iframe src="Profile Company 2026 (2).pdf" class="w-full h-[70vh] rounded-xl border border-slate-700" title="Company Profile PDF"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER (100% ENGLISH TRANSLATED WITH 3 LOCATIONS & MR VINCEN) -->
-  <footer class="relative bg-primary-blue text-white pt-48 sm:pt-40 lg:pt-24 pb-12 mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute -top-16 left-0 right-0 z-30">
-      <div class="bg-gradient-to-r from-[#003b7a] via-[#005bb5] to-[#003b7a] rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-blue-400/20 text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-6">
-        <div class="flex items-center space-x-5 text-center lg:text-left">
-          <div class="w-14 h-14 shrink-0 rounded-full bg-blue-500/30 border border-blue-300/40 flex items-center justify-center text-white text-2xl shadow-inner hidden sm:flex">
-            <i class="fa-solid fa-headset"></i>
-          </div>
-          <div class="space-y-1">
-            <h3 class="text-base sm:text-lg font-extrabold uppercase tracking-wide text-white">
-              LOOKING FOR OPTIMAL INTERLINING SOLUTIONS?
-            </h3>
-            <p class="text-xs sm:text-sm text-blue-100 font-normal">
-              Let Nguyen An Interlining experts consult directly for your project requirements.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
-          <a href="tel:+84986945537" class="px-5 py-3 rounded-xl text-xs font-extrabold text-primary-blue bg-white hover:bg-blue-50 transition shadow-md flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-phone text-xs text-primary-blue"></i>
-            <span>(+84) 986 945 537</span>
-          </a>
-          <a href="lien-he.html" class="px-5 py-3 rounded-xl text-xs font-extrabold text-white bg-primary-blue hover:bg-primary-hover transition shadow-md border border-blue-300/40 flex items-center space-x-2 w-full sm:w-auto justify-center">
-            <i class="fa-solid fa-paper-plane text-xs"></i>
-            <span>Request a Consultation</span>
-          </a>
-        </div>
-      </div>
+    <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+      <a
+        href="https://wa.me/84986945537"
+        target="_blank"
+        class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200"
+        title="Chat via WhatsApp"
+        ><i class="fa-solid fa-comments text-lg"></i
+      ></a>
+      <a
+        href="tel:+84986945537"
+        class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200"
+        title="Call Hotline"
+        ><i class="fa-solid fa-phone text-lg"></i
+      ></a>
+      <a
+        href="#"
+        class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200"
+        title="Back to Top"
+        ><i class="fa-solid fa-chevron-up text-sm"></i
+      ></a>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pt-4 sm:pt-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-4 space-y-4">
-          <div class="bg-white p-2.5 rounded-xl inline-block shadow-md">
-            <img src="assets/img/logo-brand.png" alt="NGUYEN AN INTERLINING" class="h-10 w-auto object-contain">
-          </div>
-          <p class="text-xs text-blue-100 leading-relaxed max-w-sm font-normal">
-            Pioneering manufacturer in warp knitting, providing high-performance fusible interlining and pocketing solutions for the global apparel industry.
-          </p>
-          <div class="space-y-2 text-xs text-blue-50 font-medium">
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-building text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Head Office:</strong> No 609/9/5C, Highway 13, Quarter 3, Hiep Binh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-warehouse text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Warehouse:</strong> 39 Tay Thanh Street, Tay Thanh Ward, Ho Chi Minh City, Vietnam</span>
-            </p>
-            <p class="flex items-start space-x-2">
-              <i class="fa-solid fa-industry text-blue-200 mt-0.5 shrink-0"></i>
-              <span><strong>Factory:</strong> Nam Sach District, Hai Duong Province, Vietnam</span>
-            </p>
-            <p class="flex items-center space-x-2 pt-1">
-              <i class="fa-solid fa-phone text-blue-200 shrink-0"></i>
-              <span><strong>Hotline:</strong> <a href="tel:+84986945537" class="underline hover:text-white">(+84) 986 945 537</a> (Mr. Vincen)</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <i class="fa-solid fa-envelope text-blue-200 shrink-0"></i>
-              <span><strong>Email:</strong> <a href="mailto:infor@nguyenanacc.com.vn" class="underline hover:text-white">infor@nguyenanacc.com.vn</a></span>
-            </p>
-          </div>
-          <div class="flex items-center space-x-2.5 pt-1">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">ABOUT US</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="gioi-thieu.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Company Overview</span></a></li>
-            <li><a href="san-pham.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Product Catalog</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Manufacturing Capacity</span></a></li>
-            <li><a href="tin-tuc.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>News & Insights</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">SERVICES & POLICIES</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <ul class="space-y-2.5 text-xs text-blue-100">
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>FOB / LDP / DDP Shipping Policy</span></a></li>
-            <li><a href="dich-vu-logistics.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Logistics & Customs Clearance</span></a></li>
-            <li><a href="phat-trien-ben-vung.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>OEKO-TEX® & ISO Certifications</span></a></li>
-            <li><a href="lien-he.html" class="hover:text-white transition flex items-center space-x-1"><span>–</span> <span>Technical Support & Samples</span></a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-serif-title text-sm font-extrabold text-white uppercase tracking-wider">LOCATION MAP</h4>
-          <div class="w-8 h-0.5 bg-blue-300 mb-3"></div>
-          <div class="rounded-xl overflow-hidden border border-blue-400/40 shadow-md bg-white/10 h-36 relative group">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206640326466!2d106.7118128759062!3d10.855574757726588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f0ad4365%3A0x6b4f74d0e6ecdf46!2zNjA5LzkvNUMgUVMxMywgSGnhu4dwIELDrG5oIFBoxrDhu5tjLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" class="w-full h-full border-0 filter opacity-90 group-hover:opacity-100 transition" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nguyen An Location Map"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="pt-8 border-t border-blue-400/30 flex flex-col sm:flex-row items-center justify-between text-xs text-blue-100 gap-4">
-        <div>
-          © 2026 NGUYEN AN INTERLINING Manufacturers. All rights reserved.
-        </div>
-        <div>
-          Crafted with excellence by <a href="index.html" class="font-bold underline hover:text-white">Nguyen An Interlining</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Fixed Bottom Right Action Widgets (WhatsApp, Phone Call, Back to Top) -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
-    <a href="https://wa.me/84986945537" target="_blank" class="w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center hover:bg-blue-700 hover:scale-110 transition duration-200" title="Chat via WhatsApp"><i class="fa-solid fa-comments text-lg"></i></a>
-    <a href="tel:+84986945537" class="w-11 h-11 rounded-full bg-emerald-500 text-white shadow-lg flex items-center justify-center hover:bg-emerald-600 hover:scale-110 transition duration-200" title="Call Hotline"><i class="fa-solid fa-phone text-lg"></i></a>
-    <a href="#" class="w-11 h-11 rounded-full bg-primary-blue text-white border border-blue-300/40 shadow-lg flex items-center justify-center hover:bg-primary-hover hover:scale-110 transition duration-200" title="Back to Top"><i class="fa-solid fa-chevron-up text-sm"></i></a>
-  </div>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
