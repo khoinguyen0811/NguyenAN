@@ -469,13 +469,26 @@ function initMarketMapTab() {
         `).join('');
       }
 
+      // Position Detail Box (Top-Right for South so it never covers the Southern map area, Bottom-Left for North/Central)
+      if (regionKey === 'south') {
+        detailBox.style.top = '16px';
+        detailBox.style.bottom = 'auto';
+        detailBox.style.right = '16px';
+        detailBox.style.left = 'auto';
+      } else {
+        detailBox.style.top = 'auto';
+        detailBox.style.bottom = '16px';
+        detailBox.style.right = 'auto';
+        detailBox.style.left = '16px';
+      }
+
       if (regionKey === 'all') {
         if (typeof gsap !== 'undefined') {
           gsap.to(detailBox, {
             opacity: 0,
-            y: 20,
+            y: regionKey === 'south' ? -15 : 15,
             scale: 0.95,
-            duration: 0.35,
+            duration: 0.3,
             ease: 'power2.in',
             onComplete: () => {
               detailBox.classList.add('hidden');
@@ -486,9 +499,10 @@ function initMarketMapTab() {
         }
       } else {
         detailBox.classList.remove('hidden');
+        const startY = regionKey === 'south' ? -25 : 25;
         if (typeof gsap !== 'undefined') {
           gsap.fromTo(detailBox,
-            { opacity: 0, y: 30, scale: 0.94 },
+            { opacity: 0, y: startY, scale: 0.94 },
             { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: 'back.out(1.4)' }
           );
         }
