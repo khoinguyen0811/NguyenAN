@@ -313,51 +313,187 @@ const marketData = {
   }
 };
 
+/* -------------------------------------------------------------------------- */
+/* 3. Interactive Vietnam Geographic Map with Cinematic GSAP Zoom & Details   */
+/* -------------------------------------------------------------------------- */
+const regionalHubData = {
+  all: {
+    title: 'National Distribution Network',
+    subtitle: 'Supplying 500+ Garment Factories Across Vietnam',
+    icon: 'fa-solid fa-network-wired',
+    share: 'Total: 100% Market Coverage',
+    metrics: [
+      { icon: 'fa-solid fa-industry', text: '1 Large Plant (Hai Duong)' },
+      { icon: 'fa-solid fa-warehouse', text: '1 Central Mega Warehouse (HCMC)' },
+      { icon: 'fa-solid fa-truck-fast', text: '24h - 48h Nationwide Lead Time' },
+      { icon: 'fa-solid fa-boxes-stacked', text: '5M+ Meters Stock Ready' }
+    ]
+  },
+  north: {
+    title: 'Hai Duong Production Plant',
+    subtitle: 'Nam Sach District, Hai Duong Province',
+    icon: 'fa-solid fa-industry',
+    share: 'North Market Share: 10%',
+    metrics: [
+      { icon: 'fa-solid fa-maximize', text: '10,000+ m² Weaving Facility' },
+      { icon: 'fa-solid fa-gear', text: 'Precision Double-Dot Coating' },
+      { icon: 'fa-solid fa-truck-ramp-box', text: 'Express to Hanoi & Hai Phong' },
+      { icon: 'fa-solid fa-certificate', text: 'OEKO-TEX Standard 100' }
+    ]
+  },
+  central: {
+    title: 'Central Logistics & Service Hub',
+    subtitle: 'Da Nang & Quang Nam Garment Clusters',
+    icon: 'fa-solid fa-shirt',
+    share: 'Central Market Share: 30%',
+    metrics: [
+      { icon: 'fa-solid fa-building-columns', text: 'Key Supplier for Exporters' },
+      { icon: 'fa-solid fa-truck-fast', text: 'Daily Direct Routes to Da Nang' },
+      { icon: 'fa-solid fa-handshake', text: 'On-Site Technical Fusing' },
+      { icon: 'fa-solid fa-chart-line', text: '30% Market Share & Growing' }
+    ]
+  },
+  south: {
+    title: 'Head Office & Central Warehouse',
+    subtitle: 'Highway 13 & Tay Thanh, Ho Chi Minh City',
+    icon: 'fa-solid fa-warehouse',
+    share: 'South Market Share: 60%',
+    metrics: [
+      { icon: 'fa-solid fa-city', text: 'Corporate HQ & Global Export Hub' },
+      { icon: 'fa-solid fa-bolt', text: '4h - 24h Same-Day Delivery' },
+      { icon: 'fa-solid fa-map-pin', text: 'HCMC, Binh Duong, Dong Nai, Long An' },
+      { icon: 'fa-solid fa-box-open', text: '5,000,000m Fusible Stock' }
+    ]
+  }
+};
+
+const mapRegionViewBoxes = {
+  all: '0 0 540 760',
+  north: '60 40 360 270',
+  central: '180 270 340 270',
+  south: '60 510 360 270'
+};
+
 function initMarketMapTab() {
-  const buttons = document.querySelectorAll('.market-tab-btn');
-  if (!buttons.length) return;
+  const svgMap = document.getElementById('vietnam-map-dashboard');
+  const filterBtns = document.querySelectorAll('.map-region-filter-btn');
+  const detailBox = document.getElementById('hub-detail-box');
+  const closeDetailBtn = document.getElementById('close-hub-detail-btn');
+  const interactivePins = document.querySelectorAll('.map-hub-pin, .map-hub-card');
 
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.getAttribute('data-region');
-      const data = marketData[target];
-      if (!data) return;
+  if (!svgMap && !filterBtns.length) return;
 
-      buttons.forEach(b => {
-        b.classList.remove('bg-primary-blue', 'text-white', 'shadow-md');
-        b.classList.add('bg-white', 'text-slate-700', 'hover:bg-slate-100');
+  function switchMapRegion(regionKey, triggerBtn = null) {
+    const data = regionalHubData[regionKey];
+    const targetViewBox = mapRegionViewBoxes[regionKey] || mapRegionViewBoxes.all;
+
+    // 1. Update Filter Buttons Active State
+    filterBtns.forEach(btn => {
+      if (btn.getAttribute('data-region') === regionKey) {
+        btn.className = 'map-region-filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition duration-200 bg-primary-blue text-white shadow-xs';
+      } else {
+        btn.className = 'map-region-filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition duration-200 text-slate-700 hover:text-primary-blue hover:bg-white/80';
+      }
+    });
+
+    // 2. Animate SVG viewBox with GSAP for Cinematic Zoom & Pan
+    if (svgMap && typeof gsap !== 'undefined') {
+      gsap.to(svgMap, {
+        attr: { viewBox: targetViewBox },
+        duration: 0.85,
+        ease: 'power2.inOut'
       });
-      btn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-slate-100');
-      btn.classList.add('bg-primary-blue', 'text-white', 'shadow-md');
 
-      const regionTitle = document.getElementById('market-region-name');
-      const regionShare = document.getElementById('market-region-share');
-      const regionDesc = document.getElementById('market-region-desc');
-      const citiesContainer = document.getElementById('market-cities-list');
-      const progressBar = document.getElementById('market-progress-fill');
+      // 3. Highlight target province group & soften non-active groups
+      const northGroup = document.getElementById('group-north');
+      const centralGroup = document.getElementById('group-central');
+      const southGroup = document.getElementById('group-south');
 
-      if (regionTitle) regionTitle.textContent = data.region;
-      if (regionShare) regionShare.textContent = data.share;
-      if (regionDesc) regionDesc.textContent = data.description;
-      if (progressBar) progressBar.style.width = data.share;
+      if (northGroup && centralGroup && southGroup) {
+        if (regionKey === 'all') {
+          gsap.to([northGroup, centralGroup, southGroup], { opacity: 1, filter: 'none', duration: 0.4 });
+        } else {
+          gsap.to(northGroup, { opacity: regionKey === 'north' ? 1 : 0.4, duration: 0.4 });
+          gsap.to(centralGroup, { opacity: regionKey === 'central' ? 1 : 0.4, duration: 0.4 });
+          gsap.to(southGroup, { opacity: regionKey === 'south' ? 1 : 0.4, duration: 0.4 });
+        }
+      }
+    }
 
-      if (citiesContainer) {
-        citiesContainer.innerHTML = data.cities.map(c => `
-          <div class="flex items-center space-x-2 bg-blue-50/80 px-3 py-2 rounded-lg text-primary-dark font-medium text-sm border border-blue-100">
-            <svg class="w-4 h-4 text-primary-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            <span>${c}</span>
+    // 4. Update Detail Box Information & Show Animated Drawer
+    if (detailBox && data) {
+      const titleEl = document.getElementById('hub-detail-title');
+      const subtitleEl = document.getElementById('hub-detail-subtitle');
+      const iconEl = document.getElementById('hub-detail-icon');
+      const shareBadgeEl = document.getElementById('hub-detail-share-badge');
+      const metricsEl = document.getElementById('hub-detail-metrics');
+
+      if (titleEl) titleEl.textContent = data.title;
+      if (subtitleEl) subtitleEl.textContent = data.subtitle;
+      if (iconEl) iconEl.className = data.icon;
+      if (shareBadgeEl) shareBadgeEl.textContent = data.share;
+
+      if (metricsEl && data.metrics) {
+        metricsEl.innerHTML = data.metrics.map(m => `
+          <div class="flex items-center space-x-2 bg-slate-50 p-2 rounded-lg border border-slate-100">
+            <i class="${m.icon} text-primary-blue text-xs shrink-0"></i>
+            <span class="font-semibold text-[10.5px] truncate">${m.text}</span>
           </div>
         `).join('');
       }
 
-      document.querySelectorAll('.map-pin').forEach(pin => {
-        pin.classList.remove('scale-125', 'ring-4', 'ring-blue-400');
-        if (pin.getAttribute('data-pin') === target) {
-          pin.classList.add('scale-125', 'ring-4', 'ring-blue-400');
+      if (regionKey === 'all') {
+        if (typeof gsap !== 'undefined') {
+          gsap.to(detailBox, {
+            opacity: 0,
+            y: 20,
+            scale: 0.95,
+            duration: 0.35,
+            ease: 'power2.in',
+            onComplete: () => {
+              detailBox.classList.add('hidden');
+            }
+          });
+        } else {
+          detailBox.classList.add('hidden');
         }
-      });
+      } else {
+        detailBox.classList.remove('hidden');
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo(detailBox,
+            { opacity: 0, y: 30, scale: 0.94 },
+            { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: 'back.out(1.4)' }
+          );
+        }
+      }
+    }
+  }
+
+  // Bind Click Event to Filter Buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const region = btn.getAttribute('data-region') || 'all';
+      switchMapRegion(region, btn);
     });
   });
+
+  // Bind Click Event directly on Map Pins & SVG Callout Cards
+  interactivePins.forEach(pin => {
+    pin.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const region = pin.getAttribute('data-region');
+      if (region) {
+        switchMapRegion(region);
+      }
+    });
+  });
+
+  // Close Detail Box Button (Resets to All)
+  if (closeDetailBtn) {
+    closeDetailBtn.addEventListener('click', () => {
+      switchMapRegion('all');
+    });
+  }
 }
 
 /* -------------------------------------------------------------------------- */
